@@ -56,6 +56,9 @@ vCounter = 0;
 
 // Whether or not the player is on the ground
 onGround = false;
+
+// Whether or not the player is affected by jump throughs
+jumpThru = true;
 </string>
           </argument>
         </arguments>
