@@ -26,6 +26,10 @@
       <sprite>sprites\sprDashEnd</sprite>
       <sprite>sprites\sprCamera</sprite>
     </sprites>
+    <sprites name="Backgrounds">
+      <sprite>sprites\bgSky</sprite>
+      <sprite>sprites\bgMoon</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
