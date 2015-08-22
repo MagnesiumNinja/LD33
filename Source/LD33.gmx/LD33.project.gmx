@@ -38,8 +38,11 @@
       <script>scripts\approach.gml</script>
       <script>scripts\checkBelow.gml</script>
       <script>scripts\smoothMove.gml</script>
+      <script>scripts\setShadowState.gml</script>
     </scripts>
-    <script>scripts\setShadowState.gml</script>
+    <scripts name="Drawing">
+      <script>scripts\addBackground.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="Controllers">
@@ -57,6 +60,7 @@
     <objects name="HUD">
       <object>objects\objCamera</object>
       <object>objects\objCursor</object>
+      <object>objects\objBackground</object>
     </objects>
     <objects name="Collisions">
       <object>objects\objGround</object>
