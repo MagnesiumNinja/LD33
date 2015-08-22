@@ -424,7 +424,7 @@ switch(state)
                         if (!collision_point(bbox_left - abs(hspd) + sprite_width / 2 - 1, bbox_top - 1, objBlock, false, true))
                         {
                             var i;
-                            for (i = abs(hspd); i &gt; 0; i--)
+                            for (i = abs(hspd) + sprite_width / 2; i &gt; 0; i--)
                             {
                                 if (collision_point(bbox_left - i + sprite_width / 2, bbox_top - 1, objBlock, false, true))
                                 {
@@ -440,7 +440,7 @@ switch(state)
                         if (!collision_point(bbox_left - abs(hspd) + sprite_width / 2 - 1, bbox_bottom + 1, objBlock, false, true))
                         {
                             var i;
-                            for (i = abs(hspd); i &gt; 0; i--)
+                            for (i = abs(hspd) + sprite_width / 2; i &gt; 0; i--)
                             {
                                 if (collision_point(bbox_left - i + sprite_width / 2, bbox_bottom + 1, objBlock, false, true))
                                 {
@@ -474,7 +474,7 @@ switch(state)
                         if (!collision_point(bbox_right + abs(hspd) - sprite_width / 2 + 1, bbox_top - 1, objBlock, false, true))
                         {
                             var i;
-                            for (i = abs(hspd); i &gt; 0; i--)
+                            for (i = abs(hspd) + sprite_width / 2; i &gt; 0; i--)
                             {
                                 if (collision_point(bbox_right + i - sprite_width / 2, bbox_top - 1, objBlock, false, true))
                                 {
@@ -490,7 +490,7 @@ switch(state)
                         if (!collision_point(bbox_right + abs(hspd) - sprite_width / 2 + 1, bbox_bottom + 1, objBlock, false, true))
                         {
                             var i;
-                            for (i = abs(hspd); i &gt; 0; i--)
+                            for (i = abs(hspd) + sprite_width / 2; i &gt; 0; i--)
                             {
                                 if (collision_point(bbox_right + i - sprite_width / 2, bbox_bottom + 1, objBlock, false, true))
                                 {
@@ -507,6 +507,52 @@ switch(state)
                     // Stop
                     hspd = approach(hspd, 0, fric);
                     dirSwitch = false;
+                }
+                
+                if (hShadowPos == ShadowPos.NONE)
+                {
+                    if (keyboard_check(global.KEY_UP) &amp;&amp; vShadowPos == ShadowPos.TOP)
+                    {
+                        if (!place_meeting(x + sprite_width / 2, y - 1, objBlock))
+                        {
+                            image_angle = 0;
+                            x += sprite_width / 2;
+                            x = round(x / 32) * 32;
+                            
+                            y -= sprite_height / 2;
+                            y = round(y / 32) * 32 - 2;                        
+                        }
+                        else if (!place_meeting(x - sprite_width / 2, y - 1, objBlock))
+                        {
+                            image_angle = 180;
+                            x -= sprite_width / 2;
+                            x = round(x / 32) * 32;
+                            
+                            y -= sprite_height / 2;
+                            y = round(y / 32) * 32 - 2;
+                        }
+                    }
+                    else if (keyboard_check(global.KEY_DOWN) &amp;&amp; vShadowPos == ShadowPos.BOTTOM)
+                    {
+                        if (!place_meeting(x + sprite_width / 2, y + 1, objBlock))
+                        {
+                            image_angle = 0;
+                            x += sprite_width / 2;
+                            x = round(x / 32) * 32;
+                            
+                            y += sprite_height / 2;
+                            y = round(y / 32) * 32 + 2;
+                        }
+                        else if (!place_meeting(x - sprite_width / 2, y + 1, objBlock))
+                        {
+                            image_angle = 180;
+                            x -= sprite_width / 2;
+                            x = round(x / 32) * 32;
+                            
+                            y += sprite_height / 2;
+                            y = round(y / 32) * 32 + 2;
+                        }
+                    }
                 }
             }    
             
@@ -539,7 +585,7 @@ switch(state)
                         if (!collision_point(bbox_left - 1, bbox_top - abs(vspd) + sprite_height / 2 - 1, objBlock, false, true))
                         {
                             var i;
-                            for (i = abs(vspd); i &gt; 0; i--)
+                            for (i = abs(vspd) + sprite_width / 2; i &gt; 0; i--)
                             {
                                 if (collision_point(bbox_left - 1, bbox_top - i + sprite_height / 2, objBlock, false, true))
                                 {
@@ -555,7 +601,7 @@ switch(state)
                         if (!collision_point(bbox_right + 1, bbox_top - abs(vspd) + sprite_height / 2 - 1, objBlock, false, true))
                         {
                             var i;
-                            for (i = abs(vspd); i &gt; 0; i--)
+                            for (i = abs(vspd) + sprite_width / 2; i &gt; 0; i--)
                             {
                                 if (collision_point(bbox_right + 1, bbox_top - i + sprite_height / 2, objBlock, false, true))
                                 {
@@ -588,7 +634,7 @@ switch(state)
                         if (!collision_point(bbox_left - 1, bbox_bottom + abs(vspd) - sprite_height / 2 + 1, objBlock, false, true))
                         {
                             var i;
-                            for (i = abs(vspd); i &gt; 0; i--)
+                            for (i = abs(vspd) + sprite_width / 2; i &gt; 0; i--)
                             {
                                 if (collision_point(bbox_left - 1, bbox_bottom + i - sprite_height / 2, objBlock, false, true))
                                 {
@@ -604,7 +650,7 @@ switch(state)
                         if (!collision_point(bbox_right + 1, bbox_bottom + abs(vspd) - sprite_height / 2 + 1, objBlock, false, true))
                         {
                             var i;
-                            for (i = abs(vspd); i &gt; 0; i--)
+                            for (i = abs(vspd) + sprite_width / 2; i &gt; 0; i--)
                             {
                                 if (collision_point(bbox_right + 1, bbox_bottom + i - sprite_height / 2, objBlock, false, true))
                                 {
@@ -621,6 +667,52 @@ switch(state)
                     // Stop
                     vspd = approach(vspd, 0, fric);
                     dirSwitch = false;
+                }
+                
+                if (vShadowPos == ShadowPos.NONE)
+                {
+                    if (keyboard_check(global.KEY_LEFT) &amp;&amp; hShadowPos == ShadowPos.LEFT)
+                    {
+                        if (!place_meeting(x - 1, y + sprite_height / 2, objBlock))
+                        {
+                            image_angle = 270;
+                            x -= sprite_width / 2;
+                            x = round(x / 32) * 32 - 2;
+                            
+                            y += sprite_height / 2;
+                            y = round(y / 32) * 32;
+                        }
+                        else if (!place_meeting(x - 1, y - sprite_height / 2, objBlock))
+                        {
+                            image_angle = 90;
+                            x -= sprite_width / 2;
+                            x = round(x / 32) * 32 - 2;
+                            
+                            y -= sprite_height / 2;
+                            y = round(y / 32) * 32;
+                        }
+                    }
+                    else if (keyboard_check(global.KEY_RIGHT) &amp;&amp; hShadowPos == ShadowPos.RIGHT)
+                    {
+                        if (!place_meeting(x + 1, y + sprite_height / 2, objBlock))
+                        {
+                            image_angle = 270;
+                            x += sprite_width / 2;
+                            x = round(x / 32) * 32 + 2;
+                            
+                            y += sprite_height / 2;
+                            y = round(y / 32) * 32;
+                        }
+                        else if (!place_meeting(x + 1, y - sprite_height / 2, objBlock))
+                        {
+                            image_angle = 90;  
+                            x += sprite_width / 2;
+                            x = round(x / 32) * 32 + 2;
+                            
+                            y -= sprite_height / 2;
+                            y = round(y / 32) * 32;
+                        }
+                    }
                 }
             }
         }
@@ -735,7 +827,7 @@ switch(state)
     
     case PlayerStates.SHADOW:
     {
-        draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_black, 1);
+        draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_white, 1);
         break;
     }
 }
