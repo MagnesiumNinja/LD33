@@ -11,4 +11,4 @@
 //      c. it is not moving upwards
 
 return place_meeting( x, y+1, objBlock )
-    || (place_meeting( x, y+1, objJumpThru ) && !place_meeting( x, y, objJumpThru ) && vspd >= 0);
+    || (place_meeting( x, y+1, objJumpThru ) && !place_meeting( x, y, objJumpThru ) && vspd >= 0 && jumpThru);

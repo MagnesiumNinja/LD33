@@ -3,7 +3,7 @@
   <spriteName>sprPlayer</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-100</depth>
   <persistent>0</persistent>
   <parentName>objMoveEntity</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -41,7 +41,8 @@ enum ShadowPos
     TOP,
     LEFT,
     RIGHT,
-    BOTTOM
+    BOTTOM,
+    NONE
 }
 
 //////////////////////////
@@ -72,6 +73,7 @@ DASH_SPEED = 24;
 
 // PLAYER ACTIONS //
 NUM_DOUBLE_JUMPS = 1;
+MAX_DASH_TIME = 30;
 
 
 //////////////////////////
@@ -82,6 +84,7 @@ NUM_DOUBLE_JUMPS = 1;
 // STATE //
 
 state = PlayerStates.PHYSICAL;
+dead = false;
 
 
 // PHYSICAL //
@@ -96,8 +99,11 @@ canWallJump = false;
 
 // SHADOW //
 
-shadowPos = ShadowPos.BOTTOM;
+hShadowPos = ShadowPos.NONE;
+vShadowPos = ShadowPos.NONE;
 dashing = false;
+dashDir = 0;
+dashTime = MAX_DASH_TIME;
 </string>
           </argument>
         </arguments>
@@ -189,22 +195,23 @@ switch(state)
             if (place_meeting(x - 1, y, objBlock))
             {
                 state = PlayerStates.SHADOW;
-                shadowPos = ShadowPos.LEFT;
-            }
+                hShadowPos = ShadowPos.LEFT;
+            }    
             else if (place_meeting(x + 1, y, objBlock))
             {
                 state = PlayerStates.SHADOW;
-                shadowPos = ShadowPos.RIGHT;
+                hShadowPos = ShadowPos.RIGHT;
             }
-            else if (place_meeting(x, y - 1, objBlock))
+            
+            if (place_meeting(x, y - 1, objBlock))
             {
                 state = PlayerStates.SHADOW;
-                shadowPos = ShadowPos.TOP;     
+                vShadowPos = ShadowPos.TOP;     
             }
             else if (place_meeting(x, y + 1, objBlock))
             {
                 state = PlayerStates.SHADOW;
-                shadowPos = ShadowPos.BOTTOM;            
+                vShadowPos = ShadowPos.BOTTOM;     
             }
         }
         
@@ -315,11 +322,44 @@ switch(state)
     {
         if (!dashing)
         {
-            // Horizontal Movement
-            if (shadowPos == ShadowPos.BOTTOM || shadowPos == ShadowPos.TOP)
+            // Checking Shadow Position
+            if (place_meeting(x - 1, y, objBlock))
             {
-                vspd = 0;
+                hShadowPos = ShadowPos.LEFT;
+            }
+            else if (place_meeting(x + 1, y, objBlock))
+            {
+                hShadowPos = ShadowPos.RIGHT;
+            }
+            else
+            {
+                hShadowPos = ShadowPos.NONE;
+            }
+        
+            if (place_meeting(x, y - 1, objBlock))
+            {
+                vShadowPos = ShadowPos.TOP;
+            }
+            else if (place_meeting(x, y + 1, objBlock))
+            {
+                vShadowPos = ShadowPos.BOTTOM;
+            }
+            else
+            {
+                vShadowPos = ShadowPos.NONE;
+            }
             
+            setShadowState();
+            
+            
+            // Horizontal Movement
+            if (vShadowPos == ShadowPos.BOTTOM || vShadowPos == ShadowPos.TOP)
+            {
+                if (hShadowPos == ShadowPos.NONE)
+                {
+                    vspd = 0;
+                }
+                
                 if (keyboard_check(global.KEY_LEFT))
                 {
                     // Move left
@@ -335,10 +375,40 @@ switch(state)
                     
                     hspd = approach(hspd, -MAX_H, accel);
                     
-                    if (!collision_point(bbox_left - hspd, bbox_top - 1, objBlock, false, true) &amp;&amp; !collision_point(bbox_left - hspd, bbox_bottom + 1, objBlock, false, true))
+                    // Stopping before the end of a platform
+                    if (vShadowPos == ShadowPos.TOP)
                     {
-                        hspd = 0;
+                        if (!collision_point(bbox_left - abs(hspd) + sprite_width / 2 - 1, bbox_top - 1, objBlock, false, true))
+                        {
+                            var i;
+                            for (i = abs(hspd); i &gt; 0; i--)
+                            {
+                                if (collision_point(bbox_left - i + sprite_width / 2, bbox_top - 1, objBlock, false, true))
+                                {
+                                    x -= i;
+                                }
+                            }
+                            
+                            hspd = 0;
+                        }
                     }
+                    else
+                    {
+                        if (!collision_point(bbox_left - abs(hspd) + sprite_width / 2 - 1, bbox_bottom + 1, objBlock, false, true))
+                        {
+                            var i;
+                            for (i = abs(hspd); i &gt; 0; i--)
+                            {
+                                if (collision_point(bbox_left - i + sprite_width / 2, bbox_bottom + 1, objBlock, false, true))
+                                {
+                                    x -= i;
+                                }
+                            }
+                            
+                            hspd = 0;
+                        }
+                    }
+                    
                 }
                 else if (keyboard_check(global.KEY_RIGHT))
                 {
@@ -355,9 +425,38 @@ switch(state)
                     
                     hspd = approach(hspd, MAX_H, accel);
                     
-                    if (!collision_point(bbox_right + hspd, bbox_top - 1, objBlock, false, true) &amp;&amp; !collision_point(bbox_right + hspd, bbox_bottom + 1, objBlock, false, true))
+                    // Stopping before the end of a platform
+                    if (vShadowPos == ShadowPos.TOP)
                     {
-                        hspd = 0;
+                        if (!collision_point(bbox_right + abs(hspd) - sprite_width / 2 + 1, bbox_top - 1, objBlock, false, true))
+                        {
+                            var i;
+                            for (i = abs(hspd); i &gt; 0; i--)
+                            {
+                                if (collision_point(bbox_right + i - sprite_width / 2, bbox_top - 1, objBlock, false, true))
+                                {
+                                    x += i;
+                                }
+                            }
+                            
+                            hspd = 0;
+                        }
+                    }
+                    else
+                    {
+                        if (!collision_point(bbox_right + abs(hspd) - sprite_width / 2 + 1, bbox_bottom + 1, objBlock, false, true))
+                        {
+                            var i;
+                            for (i = abs(hspd); i &gt; 0; i--)
+                            {
+                                if (collision_point(bbox_right + i - sprite_width / 2, bbox_bottom + 1, objBlock, false, true))
+                                {
+                                    x += i;
+                                }
+                            }
+                            
+                            hspd = 0;
+                        }
                     }
                 }
                 else
@@ -367,10 +466,14 @@ switch(state)
                     dirSwitch = false;
                 }
             }    
-            else if (shadowPos == ShadowPos.LEFT || shadowPos == ShadowPos.RIGHT)
+            
+            if (hShadowPos == ShadowPos.LEFT || hShadowPos == ShadowPos.RIGHT)
             {
                 // Vertical Movement
-                hspd = 0;
+                if (vShadowPos == ShadowPos.NONE)
+                {
+                    hspd = 0;
+                }
             
                 if (keyboard_check(global.KEY_UP))
                 {
@@ -387,9 +490,38 @@ switch(state)
                     
                     vspd = approach(vspd, -MAX_H, accel);
                     
-                    if (!collision_point(bbox_left - 1, bbox_top - vspd, objBlock, false, true) &amp;&amp; !collision_point(bbox_right + 1, bbox_top - vspd, objBlock, false, true))
+                    // Stopping before the end of a platform
+                    if (hShadowPos == ShadowPos.LEFT)
                     {
-                        vspd = 0;
+                        if (!collision_point(bbox_left - 1, bbox_top - abs(vspd) + sprite_height / 2 - 1, objBlock, false, true))
+                        {
+                            var i;
+                            for (i = abs(vspd); i &gt; 0; i--)
+                            {
+                                if (collision_point(bbox_left - 1, bbox_top - i + sprite_height / 2, objBlock, false, true))
+                                {
+                                    y -= i;
+                                }
+                            }
+                            
+                            vspd = 0;
+                        }
+                    }
+                    else
+                    {
+                        if (!collision_point(bbox_right + 1, bbox_top - abs(vspd) + sprite_height / 2 - 1, objBlock, false, true))
+                        {
+                            var i;
+                            for (i = abs(vspd); i &gt; 0; i--)
+                            {
+                                if (collision_point(bbox_right + 1, bbox_top - i + sprite_height / 2, objBlock, false, true))
+                                {
+                                    y -= i;
+                                }
+                            }
+                            
+                            vspd = 0;
+                        }
                     }
                 }
                 else if (keyboard_check(global.KEY_DOWN))
@@ -407,9 +539,38 @@ switch(state)
                     
                     vspd = approach(vspd, MAX_H, accel);
                     
-                    if (!collision_point(bbox_left - 1, bbox_bottom + vspd, objBlock, false, true) &amp;&amp; !collision_point(bbox_right + 1, bbox_bottom + vspd, objBlock, false, true))
+                    // Stopping before the end of a platform
+                    if (hShadowPos == ShadowPos.LEFT)
                     {
-                        vspd = 0;
+                        if (!collision_point(bbox_left - 1, bbox_bottom + abs(vspd) - sprite_height / 2 + 1, objBlock, false, true))
+                        {
+                            var i;
+                            for (i = abs(vspd); i &gt; 0; i--)
+                            {
+                                if (collision_point(bbox_left - 1, bbox_bottom + i - sprite_height / 2, objBlock, false, true))
+                                {
+                                    y += i;
+                                }
+                            }
+                            
+                            vspd = 0;
+                        }
+                    }
+                    else
+                    {
+                        if (!collision_point(bbox_right + 1, bbox_bottom + abs(vspd) - sprite_height / 2 + 1, objBlock, false, true))
+                        {
+                            var i;
+                            for (i = abs(vspd); i &gt; 0; i--)
+                            {
+                                if (collision_point(bbox_right + 1, bbox_bottom + i - sprite_height / 2, objBlock, false, true))
+                                {
+                                    y += i;
+                                }
+                            }
+                            
+                            vspd = 0;
+                        }
                     }
                 }
                 else
@@ -422,29 +583,76 @@ switch(state)
         }
         else
         {
-            // Dashing
+            if (dashTime &gt; 0)
+            {
+                dashTime--;
+            }
+            else
+            {
+                // Ending dash via time
+                dashing = false;   
+                jumpThru = true;
+                state = PlayerStates.PHYSICAL;
+            
+                sprite_index = sprPlayer;
+                hShadowPos = ShadowPos.NONE;
+                vShadowPos = ShadowPos.NONE;
+            }
+        
+            // Ending dash via collision
             if (place_meeting(x + hspd, y + vspd, objBlock))
             {
-                dashing = false;
+                var i;
+                for (i = DASH_SPEED; i &gt; 0; i--)
+                {
+                    if (!place_meeting(x + lengthdir_x(i, dashDir), y + lengthdir_y(i, dashDir), objBlock))
+                    {
+                        
+                        x += lengthdir_x(i, dashDir);
+                        y += lengthdir_y(i, dashDir);
+                        
+                        break;
+                    }
+                    
+                    dashing = false;
+                    jumpThru = true;
+                    hspd = 0;
+                    vspd = 0;
+                }
             }
         }
         
         // Dashing
         if (mouse_check_button_pressed(global.KEY_DASH) &amp;&amp; !dashing)
         {
-            dashing = true;
-            
             // Retrieve dash angle
-            var dashDir = point_direction(x, y, mouse_x, mouse_y);
+            dashDir = point_direction(x, y, mouse_x, mouse_y);
             
-            hspd = lengthdir_x(DASH_SPEED, dashDir);
-            vspd = lengthdir_y(DASH_SPEED, dashDir);    
+            if (collision_line(x, y, x + lengthdir_x(sprite_width + DASH_SPEED, dashDir), y + lengthdir_y(sprite_height + DASH_SPEED, dashDir), objBlock, false, true))
+            {
+                // Failed dash
+            }
+            else
+            {
+                dashing = true;
+                jumpThru = false;
+                
+                dashTime = MAX_DASH_TIME;
+                sprite_index = sprPlayerShadowDash;
+                
+                hspd = lengthdir_x(DASH_SPEED, dashDir);
+                vspd = lengthdir_y(DASH_SPEED, dashDir);    
+            }
         }
     
         // Leaving Shadow 
         if (mouse_check_button_pressed(global.KEY_SWAP))
         {
             state = PlayerStates.PHYSICAL;
+            
+            sprite_index = sprPlayer;
+            hShadowPos = ShadowPos.NONE;
+            vShadowPos = ShadowPos.NONE;
         }
         
         break;
@@ -489,6 +697,9 @@ switch(state)
     }
 }
 
+//draw_set_color(c_red);
+//draw_line(x, y, mouse_x, mouse_y);
+//draw_set_color(c_white);
 </string>
           </argument>
         </arguments>

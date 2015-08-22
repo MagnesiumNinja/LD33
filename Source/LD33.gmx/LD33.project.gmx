@@ -9,11 +9,22 @@
     <sprites name="Entities">
       <sprites name="Player">
         <sprite>sprites\sprPlayer</sprite>
+        <sprites name="Shadow">
+          <sprite>sprites\sprPlayerShadowDash</sprite>
+          <sprite>sprites\sprPlayerShadow</sprite>
+          <sprite>sprites\sprPlayerShadowInnerCorner</sprite>
+          <sprite>sprites\sprPlayerShadowOuterCorner</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="Collisions">
       <sprite>sprites\sprBlock</sprite>
       <sprite>sprites\sprJumpThru</sprite>
+    </sprites>
+    <sprites name="HUD">
+      <sprite>sprites\sprCursor</sprite>
+      <sprite>sprites\sprDashEnd</sprite>
+      <sprite>sprites\sprCamera</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -24,10 +35,13 @@
       <script>scripts\checkBelow.gml</script>
       <script>scripts\smoothMove.gml</script>
     </scripts>
+    <script>scripts\setShadowState.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Controllers">
       <object>objects\objGameSettings</object>
+      <object>objects\objController</object>
+      <object>objects\objRoomController</object>
     </objects>
     <objects name="Entities">
       <object>objects\objEntity</object>
@@ -35,6 +49,10 @@
       <objects name="Player">
         <object>objects\objPlayer</object>
       </objects>
+    </objects>
+    <objects name="HUD">
+      <object>objects\objCamera</object>
+      <object>objects\objCursor</object>
     </objects>
     <objects name="Collisions">
       <object>objects\objGround</object>
