@@ -74,6 +74,7 @@ DASH_SPEED = 24;
 // PLAYER ACTIONS //
 NUM_DOUBLE_JUMPS = 1;
 MAX_DASH_TIME = 30;
+SWAP_BUFFER = 10;
 
 
 //////////////////////////
@@ -104,6 +105,7 @@ vShadowPos = ShadowPos.NONE;
 dashing = false;
 dashDir = 0;
 dashTime = MAX_DASH_TIME;
+swapBuffer = 0;
 </string>
           </argument>
         </arguments>
@@ -213,6 +215,46 @@ switch(state)
                 state = PlayerStates.SHADOW;
                 vShadowPos = ShadowPos.BOTTOM;     
             }
+            else
+            {
+                swapBuffer = SWAP_BUFFER;
+            }
+        }
+        
+        // Swap buffering
+        if (swapBuffer &gt; 0)
+        {
+            swapBuffer--;
+            
+            if (place_meeting(x - 1, y, objBlock))
+            {
+                state = PlayerStates.SHADOW;
+                hShadowPos = ShadowPos.LEFT;
+                
+                swapBuffer = 0;
+            }    
+            else if (place_meeting(x + 1, y, objBlock))
+            {
+                state = PlayerStates.SHADOW;
+                hShadowPos = ShadowPos.RIGHT;
+                
+                swapBuffer = 0;
+            }
+            
+            if (place_meeting(x, y - 1, objBlock))
+            {
+                state = PlayerStates.SHADOW;
+                vShadowPos = ShadowPos.TOP;     
+                
+                swapBuffer = 0;
+            }
+            else if (place_meeting(x, y + 1, objBlock))
+            {
+                state = PlayerStates.SHADOW;
+                vShadowPos = ShadowPos.BOTTOM;   
+                
+                swapBuffer = 0;  
+            }
         }
         
         
@@ -307,6 +349,7 @@ switch(state)
         
         if (((place_meeting(x - 1, y, objBlock) &amp;&amp; place_meeting(x - 1, y - 2, objBlock)) || (place_meeting(x + 1, y - 2, objBlock) &amp;&amp; place_meeting(x + 1, y, objBlock))) &amp;&amp; !onGround) 
         {
+            doubleJumps = NUM_DOUBLE_JUMPS;
             canWallJump = true;
         }
         else if ((!place_meeting(x - WALL_JUMP_STICK_BUFFER, y, objBlock) &amp;&amp; !place_meeting(x + WALL_JUMP_STICK_BUFFER, y, objBlock)))
