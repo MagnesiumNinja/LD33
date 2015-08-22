@@ -366,11 +366,11 @@ switch(state)
         if (!dashing)
         {
             // Checking Shadow Position
-            if (place_meeting(x - 1, y, objBlock))
+            if (place_meeting(x - 5, y, objBlock))
             {
                 hShadowPos = ShadowPos.LEFT;
             }
-            else if (place_meeting(x + 1, y, objBlock))
+            else if (place_meeting(x + 5, y, objBlock))
             {
                 hShadowPos = ShadowPos.RIGHT;
             }
@@ -379,11 +379,11 @@ switch(state)
                 hShadowPos = ShadowPos.NONE;
             }
         
-            if (place_meeting(x, y - 1, objBlock))
+            if (place_meeting(x, y - 5, objBlock))
             {
                 vShadowPos = ShadowPos.TOP;
             }
-            else if (place_meeting(x, y + 1, objBlock))
+            else if (place_meeting(x, y + 5, objBlock))
             {
                 vShadowPos = ShadowPos.BOTTOM;
             }
@@ -508,6 +508,52 @@ switch(state)
                     hspd = approach(hspd, 0, fric);
                     dirSwitch = false;
                 }
+                
+                if (hShadowPos == ShadowPos.NONE)
+                {
+                    if (keyboard_check(global.KEY_UP) &amp;&amp; vShadowPos == ShadowPos.TOP)
+                    {
+                        if (!place_meeting(x + sprite_width / 2, y - 1, objBlock))
+                        {
+                            image_angle = 0;
+                            x += sprite_width / 2;
+                            x = round(x / 32) * 32;
+                            
+                            y -= sprite_height / 2;
+                            y = round(y / 32) * 32 - 2;                        
+                        }
+                        else if (!place_meeting(x - sprite_width / 2, y - 1, objBlock))
+                        {
+                            image_angle = 180;
+                            x -= sprite_width / 2;
+                            x = round(x / 32) * 32;
+                            
+                            y -= sprite_height / 2;
+                            y = round(y / 32) * 32 - 2;
+                        }
+                    }
+                    else if (keyboard_check(global.KEY_DOWN) &amp;&amp; vShadowPos == ShadowPos.BOTTOM)
+                    {
+                        if (!place_meeting(x + sprite_width / 2, y + 1, objBlock))
+                        {
+                            image_angle = 0;
+                            x += sprite_width / 2;
+                            x = round(x / 32) * 32;
+                            
+                            y += sprite_height / 2;
+                            y = round(y / 32) * 32 + 2;
+                        }
+                        else if (!place_meeting(x - sprite_width / 2, y + 1, objBlock))
+                        {
+                            image_angle = 180;
+                            x -= sprite_width / 2;
+                            x = round(x / 32) * 32;
+                            
+                            y += sprite_height / 2;
+                            y = round(y / 32) * 32 + 2;
+                        }
+                    }
+                }
             }    
             
             if (hShadowPos == ShadowPos.LEFT || hShadowPos == ShadowPos.RIGHT)
@@ -621,6 +667,52 @@ switch(state)
                     // Stop
                     vspd = approach(vspd, 0, fric);
                     dirSwitch = false;
+                }
+                
+                if (vShadowPos == ShadowPos.NONE)
+                {
+                    if (keyboard_check(global.KEY_LEFT) &amp;&amp; hShadowPos == ShadowPos.LEFT)
+                    {
+                        if (!place_meeting(x - 1, y + sprite_height / 2, objBlock))
+                        {
+                            image_angle = 270;
+                            x -= sprite_width / 2;
+                            x = round(x / 32) * 32 - 2;
+                            
+                            y += sprite_height / 2;
+                            y = round(y / 32) * 32;
+                        }
+                        else if (!place_meeting(x - 1, y - sprite_height / 2, objBlock))
+                        {
+                            image_angle = 90;
+                            x -= sprite_width / 2;
+                            x = round(x / 32) * 32 - 2;
+                            
+                            y -= sprite_height / 2;
+                            y = round(y / 32) * 32;
+                        }
+                    }
+                    else if (keyboard_check(global.KEY_RIGHT) &amp;&amp; hShadowPos == ShadowPos.RIGHT)
+                    {
+                        if (!place_meeting(x + 1, y + sprite_height / 2, objBlock))
+                        {
+                            image_angle = 270;
+                            x += sprite_width / 2;
+                            x = round(x / 32) * 32 + 2;
+                            
+                            y += sprite_height / 2;
+                            y = round(y / 32) * 32;
+                        }
+                        else if (!place_meeting(x + 1, y - sprite_height / 2, objBlock))
+                        {
+                            image_angle = 90;  
+                            x += sprite_width / 2;
+                            x = round(x / 32) * 32 + 2;
+                            
+                            y -= sprite_height / 2;
+                            y = round(y / 32) * 32;
+                        }
+                    }
                 }
             }
         }
