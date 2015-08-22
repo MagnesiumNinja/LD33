@@ -366,11 +366,11 @@ switch(state)
         if (!dashing)
         {
             // Checking Shadow Position
-            if (place_meeting(x - 5, y, objBlock))
+            if (place_meeting(x - 1, y, objBlock))
             {
                 hShadowPos = ShadowPos.LEFT;
             }
-            else if (place_meeting(x + 5, y, objBlock))
+            else if (place_meeting(x + 1, y, objBlock))
             {
                 hShadowPos = ShadowPos.RIGHT;
             }
@@ -379,11 +379,11 @@ switch(state)
                 hShadowPos = ShadowPos.NONE;
             }
         
-            if (place_meeting(x, y - 5, objBlock))
+            if (place_meeting(x, y - 1, objBlock))
             {
                 vShadowPos = ShadowPos.TOP;
             }
-            else if (place_meeting(x, y + 5, objBlock))
+            else if (place_meeting(x, y + 1, objBlock))
             {
                 vShadowPos = ShadowPos.BOTTOM;
             }
@@ -424,7 +424,7 @@ switch(state)
                         if (!collision_point(bbox_left - abs(hspd) + sprite_width / 2 - 1, bbox_top - 1, objBlock, false, true))
                         {
                             var i;
-                            for (i = abs(hspd); i &gt; 0; i--)
+                            for (i = abs(hspd) + sprite_width / 2; i &gt; 0; i--)
                             {
                                 if (collision_point(bbox_left - i + sprite_width / 2, bbox_top - 1, objBlock, false, true))
                                 {
@@ -440,7 +440,7 @@ switch(state)
                         if (!collision_point(bbox_left - abs(hspd) + sprite_width / 2 - 1, bbox_bottom + 1, objBlock, false, true))
                         {
                             var i;
-                            for (i = abs(hspd); i &gt; 0; i--)
+                            for (i = abs(hspd) + sprite_width / 2; i &gt; 0; i--)
                             {
                                 if (collision_point(bbox_left - i + sprite_width / 2, bbox_bottom + 1, objBlock, false, true))
                                 {
@@ -474,7 +474,7 @@ switch(state)
                         if (!collision_point(bbox_right + abs(hspd) - sprite_width / 2 + 1, bbox_top - 1, objBlock, false, true))
                         {
                             var i;
-                            for (i = abs(hspd); i &gt; 0; i--)
+                            for (i = abs(hspd) + sprite_width / 2; i &gt; 0; i--)
                             {
                                 if (collision_point(bbox_right + i - sprite_width / 2, bbox_top - 1, objBlock, false, true))
                                 {
@@ -490,7 +490,7 @@ switch(state)
                         if (!collision_point(bbox_right + abs(hspd) - sprite_width / 2 + 1, bbox_bottom + 1, objBlock, false, true))
                         {
                             var i;
-                            for (i = abs(hspd); i &gt; 0; i--)
+                            for (i = abs(hspd) + sprite_width / 2; i &gt; 0; i--)
                             {
                                 if (collision_point(bbox_right + i - sprite_width / 2, bbox_bottom + 1, objBlock, false, true))
                                 {
@@ -585,7 +585,7 @@ switch(state)
                         if (!collision_point(bbox_left - 1, bbox_top - abs(vspd) + sprite_height / 2 - 1, objBlock, false, true))
                         {
                             var i;
-                            for (i = abs(vspd); i &gt; 0; i--)
+                            for (i = abs(vspd) + sprite_width / 2; i &gt; 0; i--)
                             {
                                 if (collision_point(bbox_left - 1, bbox_top - i + sprite_height / 2, objBlock, false, true))
                                 {
@@ -601,7 +601,7 @@ switch(state)
                         if (!collision_point(bbox_right + 1, bbox_top - abs(vspd) + sprite_height / 2 - 1, objBlock, false, true))
                         {
                             var i;
-                            for (i = abs(vspd); i &gt; 0; i--)
+                            for (i = abs(vspd) + sprite_width / 2; i &gt; 0; i--)
                             {
                                 if (collision_point(bbox_right + 1, bbox_top - i + sprite_height / 2, objBlock, false, true))
                                 {
@@ -634,7 +634,7 @@ switch(state)
                         if (!collision_point(bbox_left - 1, bbox_bottom + abs(vspd) - sprite_height / 2 + 1, objBlock, false, true))
                         {
                             var i;
-                            for (i = abs(vspd); i &gt; 0; i--)
+                            for (i = abs(vspd) + sprite_width / 2; i &gt; 0; i--)
                             {
                                 if (collision_point(bbox_left - 1, bbox_bottom + i - sprite_height / 2, objBlock, false, true))
                                 {
@@ -650,7 +650,7 @@ switch(state)
                         if (!collision_point(bbox_right + 1, bbox_bottom + abs(vspd) - sprite_height / 2 + 1, objBlock, false, true))
                         {
                             var i;
-                            for (i = abs(vspd); i &gt; 0; i--)
+                            for (i = abs(vspd) + sprite_width / 2; i &gt; 0; i--)
                             {
                                 if (collision_point(bbox_right + 1, bbox_bottom + i - sprite_height / 2, objBlock, false, true))
                                 {
@@ -827,7 +827,7 @@ switch(state)
     
     case PlayerStates.SHADOW:
     {
-        draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_black, 1);
+        draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_white, 1);
         break;
     }
 }
