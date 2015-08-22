@@ -37,7 +37,9 @@
     <sprites name="Backgrounds">
       <sprite>sprites\bgSky</sprite>
       <sprite>sprites\bgMoon</sprite>
+      <sprite>sprites\bgCloudsFarthest</sprite>
       <sprite>sprites\bgCloudsFar</sprite>
+      <sprite>sprites\bgCloudsClosest</sprite>
     </sprites>
     <sprites name="Stage">
       <sprite>sprites\sprSaveBlock</sprite>
