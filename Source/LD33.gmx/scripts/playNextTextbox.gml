@@ -19,8 +19,5 @@ isPlayer = argument[0];
 
 with (objTextbox)
 {
-    if (player == isPlayer)
-    {
-        num--;
-    }
+    num--;
 }

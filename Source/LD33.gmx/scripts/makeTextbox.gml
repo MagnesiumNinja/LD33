@@ -24,11 +24,8 @@ isPlayer = argument[2];
 var numType = 0;
 
 with (objTextbox)
-{
-    if (player == isPlayer)
-    {
-        numType++;
-    }
+{        
+    numType++;
 }
 
 var textbox = instance_create(x, y, objTextbox);
