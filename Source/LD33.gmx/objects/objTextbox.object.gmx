@@ -54,6 +54,7 @@ text = "";
 
 partText = "";
 pos = 0;
+offset = 0;
 
 num = -1;
 </string>
@@ -137,29 +138,38 @@ num = -1;
     draw_set_alpha(alpha);
     draw_set_font(fntText);
     
+    if (offset == 0)
+    {  
+        offset = string_width(text) / 2;
+    }
+    
     if (player)
     {
         draw_set_valign(fa_bottom)
     
         
-        draw_text_ext(view_xview[0] + X_EDGE_BUFFER, view_yview[0] + view_hview[0] - Y_EDGE_BUFFER, partText, -1, view_wview[0] - X_EDGE_BUFFER / 2);
+        draw_text_ext(view_xview[0] + view_wview[0] / 2 - offset, view_yview[0] + view_hview[0] - Y_EDGE_BUFFER, partText, -1, view_wview[0] - X_EDGE_BUFFER / 2);
         
         draw_set_font(fntName);
         draw_set_alpha(nameAlpha);
+        draw_set_halign(fa_center);
         
-        draw_text(view_xview[0] + X_EDGE_BUFFER, view_yview[0] + view_hview[0] - Y_EDGE_BUFFER - Y_NAME_OFFSET, name);
+        draw_text(view_xview[0] + view_wview[0] / 2, view_yview[0] + view_hview[0] - Y_EDGE_BUFFER - Y_NAME_OFFSET, name);
         
-        
+        draw_set_halign(fa_left);
         draw_set_valign(fa_top);
     }
     else
     {
-        draw_text_ext(view_xview[0] + X_EDGE_BUFFER, view_yview[0] + Y_EDGE_BUFFER, partText, -1, view_wview[0] - X_EDGE_BUFFER / 2);
+        draw_text_ext(view_xview[0] + view_wview[0] / 2 - offset, view_yview[0] + Y_EDGE_BUFFER, partText, -1, view_wview[0] - X_EDGE_BUFFER / 2);
         
         draw_set_font(fntName);
         draw_set_alpha(nameAlpha);
+        draw_set_halign(fa_center);
         
-        draw_text(view_xview[0] + X_EDGE_BUFFER, view_yview[0] + Y_EDGE_BUFFER + Y_NAME_OFFSET, name);
+        draw_text(view_xview[0] + view_wview[0] / 2, view_yview[0] + Y_EDGE_BUFFER + Y_NAME_OFFSET, name);
+        
+        draw_set_halign(fa_left);
     }
     
     // Increment the text
