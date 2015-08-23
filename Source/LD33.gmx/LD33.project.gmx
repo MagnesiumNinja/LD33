@@ -20,6 +20,9 @@
       <sprites name="Player">
         <sprites name="Physical">
           <sprite>sprites\sprPlayer</sprite>
+          <sprite>sprites\sprPlayerJumpUp</sprite>
+          <sprite>sprites\sprPlayerJumpCrest</sprite>
+          <sprite>sprites\sprPlayerJumpDown</sprite>
           <sprite>sprites\sprPlayerWallslide</sprite>
         </sprites>
         <sprites name="Shadow">
