@@ -124,14 +124,14 @@ if (global.SAVED_X &gt;= 0)
     x = global.SAVED_X;
     y = global.SAVED_Y;
     
-    while (!place_meeting(x, y + 1, objBlock))
+    while (!place_meeting(x, y + 2, objBlock))
     {
         y += 1;   
     }
 }
 else
 {
-    while (!place_meeting(x, y + 1, objBlock))
+    while (!place_meeting(x, y + 2, objBlock))
     {
         y += 1;   
     }
@@ -992,6 +992,8 @@ if (vspd &gt;= FALL_SHAKE_THRESHOLD)
 {
     shakeScreen(4, 0.15);
 }
+
+vspd = 0;
 </string>
           </argument>
         </arguments>

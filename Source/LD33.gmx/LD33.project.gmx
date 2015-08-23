@@ -8,6 +8,9 @@
   <sprites name="sprites">
     <sprites name="Dangers">
       <sprite>sprites\sprLightFull</sprite>
+      <sprite>sprites\sprLightRadial</sprite>
+      <sprite>sprites\sprLightDiagonal</sprite>
+      <sprite>sprites\sprLightDiagonalFlip</sprite>
     </sprites>
     <sprites name="Entities">
       <sprites name="Player">
@@ -49,6 +52,7 @@
     </sprites>
     <sprites name="Stage">
       <sprite>sprites\sprSaveBlock</sprite>
+      <sprite>sprites\sprDialogueBox</sprite>
       <sprite>sprites\sprSaveBlocker</sprite>
     </sprites>
   </sprites>
@@ -72,6 +76,7 @@
       <script>scripts\loadGame.gml</script>
     </scripts>
     <scripts name="Dialogue">
+      <script>scripts\addTextbox.gml</script>
       <script>scripts\makeTextbox.gml</script>
       <script>scripts\playNextTextbox.gml</script>
     </scripts>
@@ -92,6 +97,13 @@
       <object>objects\objRoomController</object>
       <object>objects\objMenuController</object>
     </objects>
+    <objects name="Dangers">
+      <object>objects\objDanger</object>
+      <object>objects\objLightFull</object>
+      <object>objects\objLightDiagonal</object>
+      <object>objects\objLightDiagonalFlip</object>
+      <object>objects\objLightRadial</object>
+    </objects>
     <objects name="Entities">
       <object>objects\objEntity</object>
       <object>objects\objMoveEntity</object>
@@ -100,10 +112,6 @@
         <object>objects\objPlayerDead</object>
         <object>objects\objHitbox</object>
         <object>objects\objSmokeEffect</object>
-      </objects>
-      <objects name="Dangers">
-        <object>objects\objDanger</object>
-        <object>objects\objLightFull</object>
       </objects>
     </objects>
     <objects name="HUD">
@@ -120,6 +128,7 @@
     </objects>
     <objects name="Stage">
       <object>objects\objSaveBlock</object>
+      <object>objects\objDialogueBlock</object>
       <object>objects\objSaveBlocker</object>
     </objects>
   </objects>
