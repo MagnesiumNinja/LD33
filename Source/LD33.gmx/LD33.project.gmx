@@ -11,7 +11,10 @@
       <sprite>sprites\sprLightRadial</sprite>
       <sprite>sprites\sprLightDiagonal</sprite>
       <sprite>sprites\sprLightCone</sprite>
+      <sprite>sprites\sprLightAlarm</sprite>
       <sprite>sprites\sprLightDiagonalFlip</sprite>
+      <sprite>sprites\sprEnemyStopper</sprite>
+      <sprite>sprites\sprEnemySimple</sprite>
     </sprites>
     <sprites name="Entities">
       <sprites name="Player">
@@ -37,6 +40,7 @@
     </sprites>
     <sprites name="Collisions">
       <sprite>sprites\sprBlock</sprite>
+      <sprite>sprites\sprBlockNoShadow</sprite>
       <sprite>sprites\sprJumpThru</sprite>
     </sprites>
     <sprites name="HUD">
@@ -108,8 +112,12 @@
       <object>objects\objLightDiagonal</object>
       <object>objects\objLightDiagonalFlip</object>
       <object>objects\objLightRadial</object>
+      <object>objects\objLightOscillate</object>
       <object>objects\objLightConeFlicker</object>
       <object>objects\objLightConeSwing</object>
+      <object>objects\objLightAlarm</object>
+      <object>objects\objEnemyStopper</object>
+      <object>objects\objEnemySimple</object>
     </objects>
     <objects name="Entities">
       <object>objects\objEntity</object>
@@ -132,6 +140,7 @@
     <objects name="Collisions">
       <object>objects\objGround</object>
       <object>objects\objBlock</object>
+      <object>objects\objBlockNoShadow</object>
       <object>objects\objJumpThru</object>
     </objects>
     <objects name="Stage">
@@ -140,11 +149,13 @@
       <object>objects\objDialogueFreeze</object>
       <object>objects\objTitleCardBlock</object>
       <object>objects\objSaveBlocker</object>
+      <object>objects\objSwitchArea</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmMenu</room>
-    <room>rooms\rmGame</room>
+    <room>rooms\rmApartments</room>
+    <room>rooms\rmSewers</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

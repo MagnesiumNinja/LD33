@@ -416,7 +416,7 @@ if (!dead)
         
         
         case PlayerStates.SHADOW:
-        {
+        {        
             if (!dashing)
             {
                 // Checking Shadow Position
@@ -960,6 +960,12 @@ if (!dead)
                 image_angle = 0;
                 hShadowPos = ShadowPos.NONE;
                 vShadowPos = ShadowPos.NONE;
+            }
+            
+            if (place_meeting(x + 1, y, objBlockNoShadow) || place_meeting(x - 1, y, objBlockNoShadow) ||
+                place_meeting(x, y + 1, objBlockNoShadow) || place_meeting(x, y - 1, objBlockNoShadow))
+            {
+                dead = true;
             }
             
             break;
