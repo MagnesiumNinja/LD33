@@ -82,6 +82,7 @@
     <objects name="Controllers">
       <object>objects\objGameSettings</object>
       <object>objects\objController</object>
+      <object>objects\objLightController</object>
       <object>objects\objRoomController</object>
       <object>objects\objMenuController</object>
     </objects>

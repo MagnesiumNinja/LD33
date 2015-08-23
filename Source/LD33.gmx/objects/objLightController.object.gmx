@@ -3,8 +3,8 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-9999</depth>
-  <persistent>-1</persistent>
+  <depth>-9000</depth>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -27,12 +27,12 @@
             <kind>1</kind>
             <string>// CONSTANTS //
 
-VIEW_BUFFER = 256;
+DARK_LEVEL = 0.6;
 
 
-// GLOBAL VARIABLES //
+// VARIABLES //
 
-global.CAMERA_OBJECT = noone;
+light = surface_create(view_wview[0], view_hview[0]);
 </string>
           </argument>
         </arguments>
@@ -55,23 +55,54 @@ global.CAMERA_OBJECT = noone;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// INSTANCE DEACTIVATION //
+            <string>surface_set_target(light);
 
-instance_deactivate_all(true);
+// DRAW DARKNESS //
 
-instance_activate_object(objRoomController);
-instance_activate_object(objLightController);
-instance_activate_object(objGameSettings);
-instance_activate_object(objBackground);
-instance_activate_object(objCamera);
-instance_activate_object(objPlayer);
-instance_activate_object(objCursor);
-instance_activate_object(objScreenTransition);
-instance_activate_object(objTextbox);
+draw_set_color(c_black);
+draw_set_alpha(DARK_LEVEL);
+
+draw_rectangle(0, 0, view_wview[0], view_hview[0], false);
+
+draw_set_color(c_white);
+draw_set_alpha(1);
 
 
-instance_activate_region(view_xview[0] - VIEW_BUFFER, view_yview[0] - VIEW_BUFFER, view_wview[0] + VIEW_BUFFER * 2, view_hview[0] + VIEW_BUFFER * 2, true);
+// DRAW LIGHTS //
 
+draw_set_blend_mode(bm_subtract);
+
+with (objDanger)
+{
+    draw_sprite_ext(sprite_index, 0, x - view_xview[0], y - view_yview[0], image_xscale, image_yscale, image_angle, c_white, 1);
+}
+
+draw_set_blend_mode(bm_normal);
+
+surface_reset_target();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_surface(light, view_xview[0], view_yview[0]);
 </string>
           </argument>
         </arguments>
