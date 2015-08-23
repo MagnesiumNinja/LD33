@@ -53,6 +53,10 @@ if (file_text_read_real(file) == 1)
     global.SAVED_ROOM = file_text_read_real(file);
     file_text_readln(file);
         
+    // Read the player's area
+    global.SAVED_AREA = file_text_read_real(file);
+    file_text_readln(file);
+    
     // Read the player's x
     global.SAVED_X = file_text_read_real(file);
     file_text_readln(file);

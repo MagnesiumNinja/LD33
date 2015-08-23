@@ -29,4 +29,3 @@ isPlayer[numTextboxes] = tisPlayer;
 colour[numTextboxes] = tcolour;
 
 numTextboxes++;
-
