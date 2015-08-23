@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>1</page>
-    <xoffset>158</xoffset>
-    <yoffset>272</yoffset>
+    <xoffset>674</xoffset>
+    <yoffset>412</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -944,7 +944,7 @@
     <instance objName="objLightDiagonalFlip" x="4416" y="3104" name="inst_559F1199" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightDiagonalFlip" x="4448" y="3136" name="inst_8CF96680" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlock" x="4800" y="2976" name="inst_DA96827E" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
-    <instance objName="objSaveBlocker" x="4672" y="2976" name="inst_B6488331" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
+    <instance objName="objSaveBlocker" x="4672" y="2976" name="inst_B6488331" locked="0" code="saveNum = 5;&#xA;" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="objDialogueBlock" x="2880" y="2976" name="inst_66123FB8" locked="0" code="addTextbox(&quot;Shifter&quot;, &quot;The city feasts on my brothers tonight...&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;...I must find a way out before I share their fate.&quot;, true, c_white);&#xA;" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
