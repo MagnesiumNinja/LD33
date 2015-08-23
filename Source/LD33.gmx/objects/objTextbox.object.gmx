@@ -49,6 +49,7 @@ SHADOW_OFFSET = 2;
 waitTime = WAIT_TIME;
 alpha = MAX_ALPHA;
 nameAlpha = 0;
+dieEarly = false;
 
 player = true;
 name = "";
@@ -83,7 +84,15 @@ num = -1;
             <kind>1</kind>
             <string>if (num == 0)
 {
-    if (string_length(partText) == string_length(text))
+    if (!dieEarly &amp;&amp; keyboard_check(vk_escape))
+    {
+        deleteOtherTextboxes(id);
+        waitTime = 0;
+        FADE_RATE /= 2;
+        dieEarly = true;
+    }
+
+    if (dieEarly || string_length(partText) == string_length(text))
     {
         if (objPlayer.frozen &amp;&amp; mouse_check_button_pressed(global.KEY_DASH))
         {
@@ -203,19 +212,21 @@ num = -1;
     }
     
     // Increment the text
-    if (string_char_at(partText, string_length(partText)) == "." || 
-        string_char_at(partText, string_length(partText)) == "," || 
-        string_char_at(partText, string_length(partText)) == "!" ||  
-        string_char_at(partText, string_length(partText)) == "?" ||
-        string_char_at(partText, string_length(partText)) == "-") 
+    if (!dieEarly)
     {
-        pos += SCROLL_RATE / 10;
-    } 
-    else
-    {
-        pos += SCROLL_RATE;
+        if (string_char_at(partText, string_length(partText)) == "." || 
+            string_char_at(partText, string_length(partText)) == "," || 
+            string_char_at(partText, string_length(partText)) == "!" ||  
+            string_char_at(partText, string_length(partText)) == "?" ||
+            string_char_at(partText, string_length(partText)) == "-") 
+        {
+            pos += SCROLL_RATE / 10;
+        } 
+        else
+        {
+            pos += SCROLL_RATE;
+        }
     }
-    
     
     draw_set_alpha(1);
 }

@@ -89,6 +89,7 @@
       <script>scripts\addTextbox.gml</script>
       <script>scripts\addTitleCard.gml</script>
       <script>scripts\makeTextbox.gml</script>
+      <script>scripts\deleteOtherTextboxes.gml</script>
       <script>scripts\playNextTextbox.gml</script>
     </scripts>
     <scripts name="Effects">
