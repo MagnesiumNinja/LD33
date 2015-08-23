@@ -53,6 +53,10 @@
     var st = instance_create(x, y, objScreenTransition);
     st.rm = rm;
     
+    global.SAVED_ROOM = rm;
+    global.SAVED_X = xPos;
+    global.SAVED_Y = yPos;
+    
     instance_destroy();
 }
 </string>

@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>// CONSTANTS //
 
-VIEW_BUFFER = 128;
+VIEW_BUFFER = 256;
 
 
 // GLOBAL VARIABLES //
@@ -73,6 +73,7 @@ instance_activate_object(objTextbox);
 instance_activate_object(objLightConeSwing);
 instance_activate_object(objLightOscillate);
 instance_activate_object(objEnemySimple);
+instance_activate_object(objEnemyStopper);
 
 
 instance_activate_region(view_xview[0] - VIEW_BUFFER, view_yview[0] - VIEW_BUFFER, view_wview[0] + VIEW_BUFFER * 2, view_hview[0] + VIEW_BUFFER * 2, true);
