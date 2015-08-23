@@ -6,6 +6,9 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprites name="Dangers">
+      <sprite>sprites\sprLightFull</sprite>
+    </sprites>
     <sprites name="Entities">
       <sprites name="Player">
         <sprite>sprites\sprPlayer</sprite>
@@ -14,6 +17,11 @@
           <sprite>sprites\sprPlayerShadow</sprite>
           <sprite>sprites\sprPlayerShadowInnerCorner</sprite>
           <sprite>sprites\sprPlayerShadowOuterCorner</sprite>
+        </sprites>
+        <sprites name="Hitboxes">
+          <sprite>sprites\sprHitbox</sprite>
+          <sprite>sprites\sprHitboxShadow</sprite>
+          <sprite>sprites\sprHitboxShadowDashing</sprite>
         </sprites>
       </sprites>
     </sprites>
@@ -33,6 +41,10 @@
       <sprite>sprites\bgCloudsFar</sprite>
       <sprite>sprites\bgCloudsClosest</sprite>
     </sprites>
+    <sprites name="Stage">
+      <sprite>sprites\sprSaveBlock</sprite>
+      <sprite>sprites\sprSaveBlocker</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -46,32 +58,61 @@
     <scripts name="Drawing">
       <script>scripts\addBackground.gml</script>
     </scripts>
+    <scripts name="Saving">
+      <script>scripts\saveFileExists.gml</script>
+      <script>scripts\createSaveFile.gml</script>
+      <script>scripts\deleteSaveFile.gml</script>
+      <script>scripts\saveGame.gml</script>
+      <script>scripts\loadGame.gml</script>
+    </scripts>
+    <scripts name="Dialogue">
+      <script>scripts\makeTextbox.gml</script>
+      <script>scripts\playNextTextbox.gml</script>
+    </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fntText</font>
+    <font>fonts\fntName</font>
+  </fonts>
   <objects name="objects">
     <objects name="Controllers">
       <object>objects\objGameSettings</object>
       <object>objects\objController</object>
       <object>objects\objRoomController</object>
+      <object>objects\objMenuController</object>
     </objects>
     <objects name="Entities">
       <object>objects\objEntity</object>
       <object>objects\objMoveEntity</object>
       <objects name="Player">
         <object>objects\objPlayer</object>
+        <object>objects\objPlayerDead</object>
+        <object>objects\objHitbox</object>
+      </objects>
+      <objects name="Dangers">
+        <object>objects\objDanger</object>
+        <object>objects\objLightFull</object>
       </objects>
     </objects>
     <objects name="HUD">
       <object>objects\objCamera</object>
       <object>objects\objCursor</object>
       <object>objects\objBackground</object>
+      <object>objects\objScreenTransition</object>
+      <object>objects\objTextbox</object>
     </objects>
     <objects name="Collisions">
       <object>objects\objGround</object>
       <object>objects\objBlock</object>
       <object>objects\objJumpThru</object>
     </objects>
+    <objects name="Stage">
+      <object>objects\objSaveBlock</object>
+      <object>objects\objSaveBlocker</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rmMenu</room>
     <room>rooms\rmTest</room>
   </rooms>
   <help>
