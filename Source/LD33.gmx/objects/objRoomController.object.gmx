@@ -25,10 +25,26 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>camera = instance_create(objPlayer.x, objPlayer.y, objCamera);
+            <string>// CAMERA AND CURSOR //
+
+camera = instance_create(objPlayer.x, objPlayer.y, objCamera);
 camera.focus = objPlayer;
 
 cursor = instance_create(mouse_x, mouse_y, objCursor);
+
+
+// SCREEN SHAKE //
+
+global.SCREEN_SHAKE = false;
+global.DEFAULT_SHAKE_VALUE = 4;
+
+default_x = view_xport[0]; //Find what the view was originally
+default_y = view_yport[0]; //Find what the view was originally
+
+shakes = global.DEFAULT_SHAKE_VALUE; //The shake intensity (maximum-pixel-shake-per-side)
+incr = 2; //The amount of intensity increment when the quake starts and stops.
+factor = 0; //Current Intensity.
+shakeTimer = -1;
 </string>
           </argument>
         </arguments>
@@ -51,10 +67,66 @@ cursor = instance_create(mouse_x, mouse_y, objCursor);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (keyboard_check_pressed(global.KEY_RESTART) &amp;&amp; !instance_exists(objScreenTransition))
+            <string>// ROOM RESTARTING //
+
+if (keyboard_check_pressed(global.KEY_RESTART) &amp;&amp; !instance_exists(objScreenTransition))
 {
     var st = instance_create(x, y, objScreenTransition);
     st.rm = room;
+}
+
+
+// SCREEN SHAKE //
+
+if (global.CAMERA_OBJECT &gt;= 0)
+{
+    global.CAMERA_X = (global.CAMERA_OBJECT.x - view_wview[0] / 2);
+    global.CAMERA_Y = (global.CAMERA_OBJECT.y - view_hview[0] / 2);
+}
+
+if (global.SCREEN_SHAKE == true) 
+{
+    // If we are shaking
+    if (factor &lt; shakes) 
+    {
+        factor += incr;
+    } 
+    else 
+    {
+        factor = shakes;
+    }
+}
+else 
+{
+    // Stop the shaking
+    if (factor &gt; 0) 
+    {
+        factor -= incr;
+    }
+    else 
+    {
+        factor = 0;
+    }
+}
+
+if (factor &gt; 0) 
+{ 
+    view_object[0] = noone;
+    view_xview[0] = clamp(global.CAMERA_X - factor + random(factor * 2), 0, room_width - view_wview[0]);
+    view_yview[0] = clamp(global.CAMERA_Y - factor + random(factor * 2), 0, room_height - view_hview[0]);
+} 
+else 
+{
+    view_object[0] = global.CAMERA_OBJECT;
+}
+
+if (shakeTimer &gt; 0) 
+{
+    shakeTimer--;
+} 
+else 
+{
+    global.SCREEN_SHAKE = false;
 }
 </string>
           </argument>

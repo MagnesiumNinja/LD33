@@ -70,6 +70,9 @@
       <script>scripts\makeTextbox.gml</script>
       <script>scripts\playNextTextbox.gml</script>
     </scripts>
+    <scripts name="Effects">
+      <script>scripts\shakeScreen.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fntText</font>
