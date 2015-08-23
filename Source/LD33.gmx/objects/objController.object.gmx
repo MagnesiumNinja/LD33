@@ -66,6 +66,8 @@ instance_activate_object(objCamera);
 instance_activate_object(objPlayer);
 instance_activate_object(objCursor);
 instance_activate_object(objScreenTransition);
+instance_activate_object(objTextbox);
+
 
 instance_activate_region(view_xview[0] - VIEW_BUFFER, view_yview[0] - VIEW_BUFFER, view_wview[0] + VIEW_BUFFER * 2, view_hview[0] + VIEW_BUFFER * 2, true);
 

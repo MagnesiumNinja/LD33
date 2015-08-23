@@ -65,7 +65,15 @@
       <script>scripts\saveGame.gml</script>
       <script>scripts\loadGame.gml</script>
     </scripts>
+    <scripts name="Dialogue">
+      <script>scripts\makeTextbox.gml</script>
+      <script>scripts\playNextTextbox.gml</script>
+    </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fntText</font>
+    <font>fonts\fntName</font>
+  </fonts>
   <objects name="objects">
     <objects name="Controllers">
       <object>objects\objGameSettings</object>
@@ -91,6 +99,7 @@
       <object>objects\objCursor</object>
       <object>objects\objBackground</object>
       <object>objects\objScreenTransition</object>
+      <object>objects\objTextbox</object>
     </objects>
     <objects name="Collisions">
       <object>objects\objGround</object>
