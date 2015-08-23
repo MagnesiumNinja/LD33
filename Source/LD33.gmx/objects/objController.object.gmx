@@ -65,6 +65,7 @@ instance_activate_object(objGameSettings);
 instance_activate_object(objBackground);
 instance_activate_object(objCamera);
 instance_activate_object(objPlayer);
+instance_activate_object(objHitbox);
 instance_activate_object(objCursor);
 instance_activate_object(objScreenTransition);
 instance_activate_object(objTextbox);
