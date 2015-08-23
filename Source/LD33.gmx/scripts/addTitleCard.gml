@@ -21,4 +21,3 @@ tarea = argument[1];
 
 text = ttext;
 area = tarea;
-
