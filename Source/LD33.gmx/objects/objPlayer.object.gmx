@@ -237,6 +237,7 @@ if (!dead)
                 {
                     state = PlayerStates.SHADOW;
                     hShadowPos = ShadowPos.LEFT;
+                    image_yscale = -1;
                     hspd = 0;
                     vspd = 0;
                 }    
@@ -244,6 +245,7 @@ if (!dead)
                 {
                     state = PlayerStates.SHADOW;
                     hShadowPos = ShadowPos.RIGHT;
+                    image_yscale = 1;
                     hspd = 0;
                     vspd = 0;
                 }
@@ -251,7 +253,8 @@ if (!dead)
                 if (place_meeting(x, y - 1, objBlock))
                 {
                     state = PlayerStates.SHADOW;
-                    vShadowPos = ShadowPos.TOP;   
+                    vShadowPos = ShadowPos.TOP;
+                    image_yscale = image_xscale;
                     hspd = 0;
                     vspd = 0;  
                 }
@@ -259,6 +262,7 @@ if (!dead)
                 {
                     state = PlayerStates.SHADOW;
                     vShadowPos = ShadowPos.BOTTOM; 
+                    image_yscale = image_xscale;
                     hspd = 0;
                     vspd = 0;    
                 }
@@ -277,6 +281,7 @@ if (!dead)
                 {
                     state = PlayerStates.SHADOW;
                     hShadowPos = ShadowPos.LEFT;
+                    image_yscale = -1;
                     hspd = 0;
                     vspd = 0;
                     
@@ -286,6 +291,7 @@ if (!dead)
                 {
                     state = PlayerStates.SHADOW;
                     hShadowPos = ShadowPos.RIGHT;
+                    image_yscale = 1;
                     hspd = 0;
                     vspd = 0;
                     
@@ -295,7 +301,8 @@ if (!dead)
                 if (place_meeting(x, y - 1, objBlock))
                 {
                     state = PlayerStates.SHADOW;
-                    vShadowPos = ShadowPos.TOP;     
+                    vShadowPos = ShadowPos.TOP;
+                    image_yscale = image_xscale;
                     hspd = 0;
                     vspd = 0;
                     
@@ -304,7 +311,8 @@ if (!dead)
                 else if (place_meeting(x, y + 1, objBlock))
                 {
                     state = PlayerStates.SHADOW;
-                    vShadowPos = ShadowPos.BOTTOM;   
+                    vShadowPos = ShadowPos.BOTTOM;
+                    image_yscale = image_xscale; 
                     hspd = 0;
                     vspd = 0;
                     
@@ -958,7 +966,7 @@ if (!dead)
                 state = PlayerStates.PHYSICAL;
                 
                 sprite_index = sprPlayer;
-                image_angle = 0;
+                image_xscale = image_yscale;
                 hShadowPos = ShadowPos.NONE;
                 vShadowPos = ShadowPos.NONE;
             }
@@ -1064,6 +1072,26 @@ vspd = 0;
     case PlayerStates.PHYSICAL:
     {
         image_angle = 0;
+        image_yscale = 1;
+        if (wallsliding &amp;&amp; place_meeting(x - 1, y, objBlock) &amp;&amp; place_meeting(x - 1, y - 2, objBlock))
+        {
+            // Left wallslide
+            image_xscale = 1;
+        }
+        else if (wallsliding &amp;&amp; place_meeting(x + 1, y - 2, objBlock) &amp;&amp; place_meeting(x + 1, y, objBlock))
+        {
+            // Right wallslide
+            image_xscale = -1;
+        }
+        else if (hspd &lt; 0)
+        {
+            image_xscale = -1;
+        }
+        else if (hspd &gt; 0)
+        {
+            image_xscale = 1;
+        }
+        
         if (wallsliding)
         {
             sprite_index = sprPlayerWallslide;
@@ -1094,6 +1122,7 @@ vspd = 0;
     
     case PlayerStates.SHADOW:
     {
+        image_xscale = 1;
         if (abs(hspd) &gt; 0 || abs(vspd) &gt; 0)
         {
             image_speed = ANIMATION_MOVE_SPEED;
