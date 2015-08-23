@@ -53,6 +53,8 @@
     <sprites name="Stage">
       <sprite>sprites\sprSaveBlock</sprite>
       <sprite>sprites\sprDialogueBox</sprite>
+      <sprite>sprites\sprDialogueFreeze</sprite>
+      <sprite>sprites\sprTitleCardBox</sprite>
       <sprite>sprites\sprSaveBlocker</sprite>
     </sprites>
   </sprites>
@@ -77,6 +79,7 @@
     </scripts>
     <scripts name="Dialogue">
       <script>scripts\addTextbox.gml</script>
+      <script>scripts\addTitleCard.gml</script>
       <script>scripts\makeTextbox.gml</script>
       <script>scripts\playNextTextbox.gml</script>
     </scripts>
@@ -88,6 +91,7 @@
   <fonts name="fonts">
     <font>fonts\fntText</font>
     <font>fonts\fntName</font>
+    <font>fonts\fntTitleCard</font>
   </fonts>
   <objects name="objects">
     <objects name="Controllers">
@@ -119,6 +123,7 @@
       <object>objects\objCursor</object>
       <object>objects\objBackground</object>
       <object>objects\objScreenTransition</object>
+      <object>objects\objAreaTitleCard</object>
       <object>objects\objTextbox</object>
     </objects>
     <objects name="Collisions">
@@ -129,12 +134,14 @@
     <objects name="Stage">
       <object>objects\objSaveBlock</object>
       <object>objects\objDialogueBlock</object>
+      <object>objects\objDialogueFreeze</object>
+      <object>objects\objTitleCardBlock</object>
       <object>objects\objSaveBlocker</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmMenu</room>
-    <room>rooms\rmTest</room>
+    <room>rooms\rmGame</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

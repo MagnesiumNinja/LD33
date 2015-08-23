@@ -85,6 +85,11 @@ num = -1;
 {
     if (string_length(partText) == string_length(text))
     {
+        if (objPlayer.frozen &amp;&amp; mouse_check_button_pressed(global.KEY_DASH))
+        {
+            waitTime = 0;
+        }
+        
         if (waitTime &gt; 0)
         {
             waitTime--;
@@ -107,6 +112,12 @@ num = -1;
     }
     else
     {
+        if (objPlayer.frozen &amp;&amp; mouse_check_button_pressed(global.KEY_DASH))
+        {
+            pos = string_length(text);
+            nameAlpha = 1;
+        }
+    
         nameAlpha += smoothMove(nameAlpha, MAX_ALPHA, FADE_IN_RATE);
     }
 }

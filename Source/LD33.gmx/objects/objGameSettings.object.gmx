@@ -40,6 +40,7 @@ global.KEY_RESTART = ord("R");
 
 global.SAVEFILE_VERSION = 1;
 global.SAVED_ROOM = -1;
+global.SAVED_AREA = -1;
 global.SAVED_X = -1;
 global.SAVED_Y = -1;
 
