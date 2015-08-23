@@ -10,6 +10,7 @@
       <sprite>sprites\sprLightFull</sprite>
       <sprite>sprites\sprLightRadial</sprite>
       <sprite>sprites\sprLightDiagonal</sprite>
+      <sprite>sprites\sprLightCone</sprite>
       <sprite>sprites\sprLightDiagonalFlip</sprite>
     </sprites>
     <sprites name="Entities">
@@ -107,6 +108,8 @@
       <object>objects\objLightDiagonal</object>
       <object>objects\objLightDiagonalFlip</object>
       <object>objects\objLightRadial</object>
+      <object>objects\objLightConeFlicker</object>
+      <object>objects\objLightConeSwing</object>
     </objects>
     <objects name="Entities">
       <object>objects\objEntity</object>
