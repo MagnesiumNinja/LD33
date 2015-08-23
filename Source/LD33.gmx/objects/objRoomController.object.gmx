@@ -32,6 +32,8 @@ camera.focus = objPlayer;
 
 cursor = instance_create(mouse_x, mouse_y, objCursor);
 
+instance_create(x, y, objLightController);
+
 
 // SCREEN SHAKE //
 

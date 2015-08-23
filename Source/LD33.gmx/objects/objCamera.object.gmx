@@ -2,8 +2,8 @@
 <object>
   <spriteName>sprCamera</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
-  <depth>-1000</depth>
+  <visible>-1</visible>
+  <depth>-9001</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -46,6 +46,11 @@ MAX_DISTANCE = 64;
 xOff = 0;
 yOff = 0;
 
+xPrev = x;
+yPrev = y;
+xChange = 0;
+yChange = 0;
+
 
 // INITIALIZE VIEWS //
 
@@ -64,60 +69,6 @@ view_object[0] = id;
 view_visible[1] = false;
 
 global.CAMERA_OBJECT = id;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>// POSITIONING //
-
-if (instance_exists(objPlayer))
-{
-    xOff = MAX_DISTANCE * (objPlayer.hspd / objPlayer.MAX_H);
-    yOff = MAX_DISTANCE * (objPlayer.vspd / objPlayer.MAX_V);
-    
-    if (!objPlayer.dead)
-    {
-        x += smoothMove(x, focus.x, CAMERA_SPEED);
-        y += smoothMove(y, focus.y, CAMERA_SPEED);
-    }
-}
-
-
-// SCALING //
-
-if (focus == objPlayer)
-{
-    if (scale &lt; 1)
-    {
-        scale += SCALE_GROW;
-    }
-    else
-    {
-        scale = 1;
-    }
-}
-
-// Set the view scale
-view_wview[0] = BASE_WIDTH * scale;
-view_hview[0] = BASE_HEIGHT * scale;
 </string>
           </argument>
         </arguments>

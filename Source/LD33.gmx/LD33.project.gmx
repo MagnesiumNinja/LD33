@@ -74,6 +74,7 @@
     </scripts>
     <scripts name="Effects">
       <script>scripts\shakeScreen.gml</script>
+      <script>scripts\updateCamera.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">

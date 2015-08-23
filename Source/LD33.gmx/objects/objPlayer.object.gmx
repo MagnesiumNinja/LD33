@@ -187,7 +187,6 @@ if (!dead)
         case PlayerStates.PHYSICAL:
         {
             dashing = false;
-            image_angle = 0;
         
             // MOVEMENT //
             
@@ -940,6 +939,7 @@ if (!dead)
                 state = PlayerStates.PHYSICAL;
                 
                 sprite_index = sprPlayer;
+                image_angle = 0;
                 hShadowPos = ShadowPos.NONE;
                 vShadowPos = ShadowPos.NONE;
             }
