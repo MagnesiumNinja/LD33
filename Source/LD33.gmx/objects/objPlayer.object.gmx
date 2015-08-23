@@ -506,12 +506,12 @@ if (!dead)
                     // Stopping before the end of a platform
                     if (vShadowPos == ShadowPos.TOP)
                     {
-                        if (hspd &lt; 0 &amp;&amp; !collision_point(bbox_left + hspd + sprite_width / 2 - 1, bbox_top - 1, objBlock, false, true))
+                        if (hspd &lt; 0 &amp;&amp; !collision_point(bbox_left + hspd + abs(sprite_width) / 2 - 1, bbox_top - 1, objBlock, false, true))
                         {
                             var i;
                             for (i = abs(hspd); i &gt; 0; i--)
                             {
-                                if (collision_point(bbox_left - i + sprite_width / 2, bbox_top - 1, objBlock, false, true))
+                                if (collision_point(bbox_left - i + abs(sprite_width) / 2, bbox_top - 1, objBlock, false, true))
                                 {
                                     x -= i;
                                     break;
@@ -521,12 +521,12 @@ if (!dead)
                             hspd = 0;
                         }
                         
-                        if (hspd &gt; 0 &amp;&amp; !collision_point(bbox_right + hspd - sprite_width / 2 + 1, bbox_top - 1, objBlock, false, true))
+                        if (hspd &gt; 0 &amp;&amp; !collision_point(bbox_right + hspd - abs(sprite_width) / 2 + 1, bbox_top - 1, objBlock, false, true))
                         {
                             var i;
                             for (i = abs(hspd); i &gt; 0; i--)
                             {
-                                if (collision_point(bbox_right + i - sprite_width / 2, bbox_top - 1, objBlock, false, true))
+                                if (collision_point(bbox_right + i - abs(sprite_width) / 2, bbox_top - 1, objBlock, false, true))
                                 {
                                     x += i;
                                     break;
@@ -538,12 +538,12 @@ if (!dead)
                     }
                     else
                     {
-                        if (hspd &lt; 0 &amp;&amp; !collision_point(bbox_left + hspd + sprite_width / 2 - 1, bbox_bottom + 1, objBlock, false, true))
+                        if (hspd &lt; 0 &amp;&amp; !collision_point(bbox_left + hspd + abs(sprite_width) / 2 - 1, bbox_bottom + 1, objBlock, false, true))
                         {
                             var i;
                             for (i = abs(hspd); i &gt; 0; i--)
                             {
-                                if (collision_point(bbox_left - i + sprite_width / 2, bbox_bottom + 1, objBlock, false, true))
+                                if (collision_point(bbox_left - i + abs(sprite_width) / 2, bbox_bottom + 1, objBlock, false, true))
                                 {
                                     x -= i;
                                     break;
@@ -553,12 +553,12 @@ if (!dead)
                             hspd = 0;
                         }
                         
-                        if (hspd &gt; 0 &amp;&amp; !collision_point(bbox_right + hspd - sprite_width / 2 + 1, bbox_bottom + 1, objBlock, false, true))
+                        if (hspd &gt; 0 &amp;&amp; !collision_point(bbox_right + hspd - abs(sprite_width) / 2 + 1, bbox_bottom + 1, objBlock, false, true))
                         {
                             var i;
                             for (i = abs(hspd); i &gt; 0; i--)
                             {
-                                if (collision_point(bbox_right + i - sprite_width / 2, bbox_bottom + 1, objBlock, false, true))
+                                if (collision_point(bbox_right + i - abs(sprite_width) / 2, bbox_bottom + 1, objBlock, false, true))
                                 {
                                     x += i;
                                     break;
@@ -573,43 +573,43 @@ if (!dead)
                     {
                         if (!frozen &amp;&amp; keyboard_check(global.KEY_UP) &amp;&amp; vShadowPos == ShadowPos.TOP)
                         {
-                            if (!place_meeting(x + sprite_width / 2, y - 1, objBlock))
+                            if (!place_meeting(x + abs(sprite_width) / 2, y - 1, objBlock))
                             {
                                 image_angle = 0;
-                                x += sprite_width / 2;
+                                x += abs(sprite_width) / 2;
                                 x = round(x / 32) * 32;
                                 
-                                y -= sprite_height / 2;
+                                y -= abs(sprite_height) / 2;
                                 y = round(y / 32) * 32 - 2;                        
                             }
-                            else if (!place_meeting(x - sprite_width / 2, y - 1, objBlock))
+                            else if (!place_meeting(x - abs(sprite_width) / 2, y - 1, objBlock))
                             {
                                 image_angle = 180;
-                                x -= sprite_width / 2;
+                                x -= abs(sprite_width) / 2;
                                 x = round(x / 32) * 32;
                                 
-                                y -= sprite_height / 2;
+                                y -= abs(sprite_height) / 2;
                                 y = round(y / 32) * 32 - 2;
                             }
                         }
                         else if (!frozen &amp;&amp; keyboard_check(global.KEY_DOWN) &amp;&amp; vShadowPos == ShadowPos.BOTTOM)
                         {
-                            if (!place_meeting(x + sprite_width / 2, y + 1, objBlock))
+                            if (!place_meeting(x + abs(sprite_width) / 2, y + 1, objBlock))
                             {
                                 image_angle = 0;
-                                x += sprite_width / 2;
+                                x += abs(sprite_width) / 2;
                                 x = round(x / 32) * 32;
                                 
-                                y += sprite_height / 2;
+                                y += abs(sprite_height) / 2;
                                 y = round(y / 32) * 32 + 2;
                             }
-                            else if (!place_meeting(x - sprite_width / 2, y + 1, objBlock))
+                            else if (!place_meeting(x - abs(sprite_width) / 2, y + 1, objBlock))
                             {
                                 image_angle = 180;
-                                x -= sprite_width / 2;
+                                x -= abs(sprite_width) / 2;
                                 x = round(x / 32) * 32;
                                 
-                                y += sprite_height / 2;
+                                y += abs(sprite_height) / 2;
                                 y = round(y / 32) * 32 + 2;
                             }
                         }
@@ -664,12 +664,12 @@ if (!dead)
                     // Stopping before the end of a platform
                     if (hShadowPos == ShadowPos.LEFT)
                     {
-                        if (vspd &lt; 0 &amp;&amp; !collision_point(bbox_left - 1, bbox_top + vspd + sprite_height / 2 - 1, objBlock, false, true))
+                        if (vspd &lt; 0 &amp;&amp; !collision_point(bbox_left - 1, bbox_top + vspd + abs(sprite_height) / 2 - 1, objBlock, false, true))
                         {
                             var i;
                             for (i = abs(vspd); i &gt; 0; i--)
                             {
-                                if (collision_point(bbox_left - 1, bbox_top - i + sprite_height / 2, objBlock, false, true))
+                                if (collision_point(bbox_left - 1, bbox_top - i + abs(sprite_height) / 2, objBlock, false, true))
                                 {
                                     y -= i;
                                 }
@@ -678,12 +678,12 @@ if (!dead)
                             vspd = 0;
                         }
                         
-                        if (vspd &gt; 0 &amp;&amp; !collision_point(bbox_left - 1, bbox_bottom + vspd - sprite_height / 2 + 1, objBlock, false, true))
+                        if (vspd &gt; 0 &amp;&amp; !collision_point(bbox_left - 1, bbox_bottom + vspd - abs(sprite_height) / 2 + 1, objBlock, false, true))
                         {
                             var i;
                             for (i = abs(vspd); i &gt; 0; i--)
                             {
-                                if (collision_point(bbox_left - 1, bbox_bottom + i - sprite_height / 2, objBlock, false, true))
+                                if (collision_point(bbox_left - 1, bbox_bottom + i - abs(sprite_height) / 2, objBlock, false, true))
                                 {
                                     y += i;
                                 }
@@ -694,12 +694,12 @@ if (!dead)
                     }
                     else
                     {
-                        if (vspd &lt; 0 &amp;&amp; !collision_point(bbox_right + 1, bbox_top + vspd + sprite_height / 2 - 1, objBlock, false, true))
+                        if (vspd &lt; 0 &amp;&amp; !collision_point(bbox_right + 1, bbox_top + vspd + abs(sprite_height) / 2 - 1, objBlock, false, true))
                         {
                             var i;
                             for (i = abs(vspd); i &gt; 0; i--)
                             {
-                                if (collision_point(bbox_right + 1, bbox_top - i + sprite_height / 2, objBlock, false, true))
+                                if (collision_point(bbox_right + 1, bbox_top - i + abs(sprite_height) / 2, objBlock, false, true))
                                 {
                                     y -= i;
                                 }
@@ -708,12 +708,12 @@ if (!dead)
                             vspd = 0;
                         }
                         
-                        if (vspd &gt; 0 &amp;&amp; !collision_point(bbox_right + 1, bbox_bottom + vspd - sprite_height / 2 + 1, objBlock, false, true))
+                        if (vspd &gt; 0 &amp;&amp; !collision_point(bbox_right + 1, bbox_bottom + vspd - abs(sprite_height) / 2 + 1, objBlock, false, true))
                         {
                             var i;
                             for (i = abs(vspd); i &gt; 0; i--)
                             {
-                                if (collision_point(bbox_right + 1, bbox_bottom + i - sprite_height / 2, objBlock, false, true))
+                                if (collision_point(bbox_right + 1, bbox_bottom + i - abs(sprite_height) / 2, objBlock, false, true))
                                 {
                                     y += i;
                                 }
@@ -728,43 +728,43 @@ if (!dead)
                     {
                         if (!frozen &amp;&amp; keyboard_check(global.KEY_LEFT) &amp;&amp; hShadowPos == ShadowPos.LEFT)
                         {
-                            if (!place_meeting(x - 1, y + sprite_height / 2, objBlock))
+                            if (!place_meeting(x - 1, y + abs(sprite_height) / 2, objBlock))
                             {
                                 image_angle = 270;
-                                x -= sprite_width / 2;
+                                x -= abs(sprite_width) / 2;
                                 x = round(x / 32) * 32 - 2;
                                 
-                                y += sprite_height / 2;
+                                y += abs(sprite_height) / 2;
                                 y = round(y / 32) * 32;
                             }
-                            else if (!place_meeting(x - 1, y - sprite_height / 2, objBlock))
+                            else if (!place_meeting(x - 1, y - abs(sprite_height) / 2, objBlock))
                             {
                                 image_angle = 90;
-                                x -= sprite_width / 2;
+                                x -= abs(sprite_width) / 2;
                                 x = round(x / 32) * 32 - 2;
                                 
-                                y -= sprite_height / 2;
+                                y -= abs(sprite_height) / 2;
                                 y = round(y / 32) * 32;
                             }
                         }
                         else if (!frozen &amp;&amp; keyboard_check(global.KEY_RIGHT) &amp;&amp; hShadowPos == ShadowPos.RIGHT)
                         {
-                            if (!place_meeting(x + 1, y + sprite_height / 2, objBlock))
+                            if (!place_meeting(x + 1, y + abs(sprite_height) / 2, objBlock))
                             {
                                 image_angle = 270;
-                                x += sprite_width / 2;
+                                x += abs(sprite_width) / 2;
                                 x = round(x / 32) * 32 + 2;
                                 
-                                y += sprite_height / 2;
+                                y += abs(sprite_height) / 2;
                                 y = round(y / 32) * 32;
                             }
-                            else if (!place_meeting(x + 1, y - sprite_height / 2, objBlock))
+                            else if (!place_meeting(x + 1, y - abs(sprite_height) / 2, objBlock))
                             {
                                 image_angle = 90;  
-                                x += sprite_width / 2;
+                                x += abs(sprite_width) / 2;
                                 x = round(x / 32) * 32 + 2;
                                 
-                                y -= sprite_height / 2;
+                                y -= abs(sprite_height) / 2;
                                 y = round(y / 32) * 32;
                             }
                         }
@@ -806,10 +806,10 @@ if (!dead)
                                 // Hitting a left wall
                                 if (!collision_point(bbox_left - 1, y, objBlock, false, true))
                                 {
-                                    if (collision_point(bbox_left - 1, y - sprite_height / 2, objBlock, false, true))
+                                    if (collision_point(bbox_left - 1, y - abs(sprite_height) / 2, objBlock, false, true))
                                     {
                                         var i;
-                                        for (i = 0; i &lt; sprite_width / 2; i++)
+                                        for (i = 0; i &lt; abs(sprite_width) / 2; i++)
                                         {
                                             if (collision_point(bbox_left - 1, y - i, objBlock, false, true))
                                             {
@@ -821,7 +821,7 @@ if (!dead)
                                     else
                                     {
                                         var i;
-                                        for (i = 0; i &lt; sprite_width / 2; i++)
+                                        for (i = 0; i &lt; abs(sprite_width) / 2; i++)
                                         {
                                             if (collision_point(bbox_left - 1, y + i, objBlock, false, true))
                                             {
@@ -837,10 +837,10 @@ if (!dead)
                                 // Hitting a right wall
                                 if (!collision_point(bbox_right + 1, y, objBlock, false, true))
                                 {
-                                    if (collision_point(bbox_right + 1, y - sprite_height / 2, objBlock, false, true))
+                                    if (collision_point(bbox_right + 1, y - abs(sprite_height) / 2, objBlock, false, true))
                                     {
                                         var i;
-                                        for (i = 0; i &lt; sprite_width / 2; i++)
+                                        for (i = 0; i &lt; abs(sprite_width) / 2; i++)
                                         {
                                             if (collision_point(bbox_right + 1, y - i, objBlock, false, true))
                                             {
@@ -852,7 +852,7 @@ if (!dead)
                                     else
                                     {
                                         var i;
-                                        for (i = 0; i &lt; sprite_width / 2; i++)
+                                        for (i = 0; i &lt; abs(sprite_width) / 2; i++)
                                         {
                                             if (collision_point(bbox_right + 1, y + i, objBlock, false, true))
                                             {
@@ -868,10 +868,10 @@ if (!dead)
                                 // Hitting an above wall
                                 if (!collision_point(x, bbox_top - 1, objBlock, false, true))
                                 {
-                                    if (collision_point(x - sprite_width / 2, bbox_top - 1, objBlock, false, true))
+                                    if (collision_point(x - abs(sprite_width) / 2, bbox_top - 1, objBlock, false, true))
                                     {
                                         var i;
-                                        for (i = 0; i &lt; sprite_width / 2; i++)
+                                        for (i = 0; i &lt; abs(sprite_width) / 2; i++)
                                         {
                                             if (collision_point(x - i, bbox_top - 1, objBlock, false, true))
                                             {
@@ -883,7 +883,7 @@ if (!dead)
                                     else
                                     {
                                         var i;
-                                        for (i = 0; i &lt; sprite_width / 2; i++)
+                                        for (i = 0; i &lt; abs(sprite_width) / 2; i++)
                                         {
                                             if (collision_point(x + i, bbox_top - 1, objBlock, false, true))
                                             {
@@ -899,10 +899,10 @@ if (!dead)
                                 // Hitting a below wall
                                 if (!collision_point(x, bbox_bottom + 1, objBlock, false, true))
                                 {
-                                    if (collision_point(x - sprite_width / 2, bbox_bottom + 1, objBlock, false, true))
+                                    if (collision_point(x - abs(sprite_width) / 2, bbox_bottom + 1, objBlock, false, true))
                                     {
                                         var i;
-                                        for (i = 0; i &lt; sprite_width / 2; i++)
+                                        for (i = 0; i &lt; abs(sprite_width) / 2; i++)
                                         {
                                             if (collision_point(x - i, bbox_bottom + 1, objBlock, false, true))
                                             {
@@ -914,7 +914,7 @@ if (!dead)
                                     else
                                     {
                                         var i;
-                                        for (i = 0; i &lt; sprite_width / 2; i++)
+                                        for (i = 0; i &lt; abs(sprite_width) / 2; i++)
                                         {
                                             if (collision_point(x + i, bbox_bottom + 1, objBlock, false, true))
                                             {
@@ -943,7 +943,7 @@ if (!dead)
                 // Retrieve dash angle
                 dashDir = point_direction(x, y, mouse_x, mouse_y);
                 
-                if (collision_line(x, y, x + lengthdir_x(sprite_width + DASH_SPEED, dashDir), y + lengthdir_y(sprite_height + DASH_SPEED, dashDir), objBlock, false, true))
+                if (collision_line(x, y, x + lengthdir_x(abs(sprite_width) + DASH_SPEED, dashDir), y + lengthdir_y(abs(sprite_height) + DASH_SPEED, dashDir), objBlock, false, true))
                 {
                     // Failed dash
                 }
@@ -1122,7 +1122,6 @@ vspd = 0;
     
     case PlayerStates.SHADOW:
     {
-        image_xscale = 1;
         if (abs(hspd) &gt; 0 || abs(vspd) &gt; 0)
         {
             image_speed = ANIMATION_MOVE_SPEED;
