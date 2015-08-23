@@ -44,6 +44,11 @@ enum ShadowPos
     BOTTOM,
     NONE
 }
+/////////////////////////
+// ANIMATION CONSTANTS //
+/////////////////////////
+ANIMATION_IDLE_SPEED = 0.1;
+
 
 //////////////////////////
 // FUNCTIONAL CONSTANTS //
@@ -820,8 +825,8 @@ switch(state)
 {
     case PlayerStates.PHYSICAL:
     {
+        image_speed = ANIMATION_IDLE_SPEED;
         draw_self();
-        
         break;
     }
     
