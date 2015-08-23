@@ -20,6 +20,9 @@
           <sprite>sprites\sprPlayerShadowMove</sprite>
           <sprite>sprites\sprPlayerShadowInnerCorner</sprite>
           <sprite>sprites\sprPlayerShadowDash</sprite>
+          <sprite>sprites\prtSmoke1</sprite>
+          <sprite>sprites\prtSmoke2</sprite>
+          <sprite>sprites\prtSmoke3</sprite>
         </sprites>
         <sprites name="Hitboxes">
           <sprite>sprites\sprHitbox</sprite>
@@ -96,6 +99,7 @@
         <object>objects\objPlayer</object>
         <object>objects\objPlayerDead</object>
         <object>objects\objHitbox</object>
+        <object>objects\objSmokeEffect</object>
       </objects>
       <objects name="Dangers">
         <object>objects\objDanger</object>

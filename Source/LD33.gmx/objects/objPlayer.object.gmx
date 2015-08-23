@@ -1057,6 +1057,10 @@ if (vspd &gt;= FALL_SHAKE_THRESHOLD)
     
     case PlayerStates.SHADOW:
     {
+        if (abs(hspd) &gt; 0 || abs(vspd) &gt; 0)
+        {
+            instance_create((bbox_left+bbox_right)/2, (bbox_bottom+bbox_top)/2, objSmokeEffect);
+        }
         image_speed = ANIMATION_IDLE_SPEED;
         draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_white, image_alpha);
         break;
