@@ -28,6 +28,8 @@
             <string>// CONSTANTS //
 
 DARK_LEVEL = 0.6;
+COLOUR_DARK_ADD = 0.6;
+COLOUR_LIGHT_ADD = 0.2;
 
 
 // VARIABLES //
@@ -102,7 +104,27 @@ surface_reset_target();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_surface(light, view_xview[0], view_yview[0]);
+            <string>// Light Colouring
+
+draw_set_blend_mode(bm_add);
+draw_set_alpha(COLOUR_DARK_ADD);
+
+var col = make_color_rgb(0, 0, 50);
+draw_set_color(col);
+
+draw_rectangle(view_xview[0], view_yview[0], view_xview[0] + view_wview[0], view_yview[0] + view_hview[0], false);
+
+with (objDanger)
+{
+    draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_orange, objLightController.COLOUR_LIGHT_ADD);
+}
+
+draw_set_alpha(1);
+draw_set_blend_mode(bm_normal);
+
+
+// Light and Dark
+draw_surface(light, view_xview[0], view_yview[0]);
 </string>
           </argument>
         </arguments>
