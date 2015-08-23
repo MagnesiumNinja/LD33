@@ -25,7 +25,52 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.CAMERA_OBJECT = noone;
+            <string>// CONSTANTS //
+
+VIEW_BUFFER = 256;
+
+
+// GLOBAL VARIABLES //
+
+global.CAMERA_OBJECT = noone;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// INSTANCE DEACTIVATION //
+
+instance_deactivate_all(true);
+
+instance_activate_object(objRoomController);
+instance_activate_object(objGameSettings);
+instance_activate_object(objBackground);
+instance_activate_object(objCamera);
+instance_activate_object(objPlayer);
+instance_activate_object(objCursor);
+instance_activate_object(objScreenTransition);
+instance_activate_object(objTextbox);
+
+
+instance_activate_region(view_xview[0] - VIEW_BUFFER, view_yview[0] - VIEW_BUFFER, view_wview[0] + VIEW_BUFFER * 2, view_hview[0] + VIEW_BUFFER * 2, true);
+
 </string>
           </argument>
         </arguments>
