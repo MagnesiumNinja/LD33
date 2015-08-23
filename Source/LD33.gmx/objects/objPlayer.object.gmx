@@ -48,7 +48,8 @@ enum ShadowPos
 // ANIMATION CONSTANTS //
 /////////////////////////
 ANIMATION_IDLE_SPEED = 0.1;
-
+ANIMATION_MOVE_SPEED = 0.15;
+ANIMATION_JUMP_THRESHOLD = 0.5;
 
 //////////////////////////
 // FUNCTIONAL CONSTANTS //
@@ -1067,6 +1068,21 @@ vspd = 0;
         {
             sprite_index = sprPlayerWallslide;
         }
+        else if (!onGround)
+        {
+            if (vspd &lt; -ANIMATION_JUMP_THRESHOLD)
+            {
+                sprite_index = sprPlayerJumpUp;
+            }
+            else if (vspd &gt; ANIMATION_JUMP_THRESHOLD)
+            {
+                sprite_index = sprPlayerJumpDown;
+            }
+            else
+            {
+                sprite_index = sprPlayerJumpCrest;
+            }
+        }
         else
         {
             image_speed = ANIMATION_IDLE_SPEED;
@@ -1080,6 +1096,7 @@ vspd = 0;
     {
         if (abs(hspd) &gt; 0 || abs(vspd) &gt; 0)
         {
+            image_speed = ANIMATION_MOVE_SPEED;
             instance_create((bbox_left+bbox_right)/2, (bbox_bottom+bbox_top)/2, objSmokeEffect);
         }
         else
