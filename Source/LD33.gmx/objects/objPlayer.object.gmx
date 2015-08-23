@@ -177,13 +177,6 @@ else
     fric = AIR_FRIC;
 }
 
-// DEATH //
-
-if (!dead &amp;&amp; place_meeting(x, y, objDanger))
-{
-    dead = true;
-}
-
 
 // PLAYER INPUT //
 
@@ -194,6 +187,7 @@ if (!dead)
         case PlayerStates.PHYSICAL:
         {
             dashing = false;
+            image_angle = 0;
         
             // MOVEMENT //
             
@@ -997,20 +991,18 @@ else
     case PlayerStates.PHYSICAL:
     {
         image_speed = ANIMATION_IDLE_SPEED;
-        draw_self();
+        draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_white, image_alpha);
         break;
     }
     
     case PlayerStates.SHADOW:
     {
-        draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_white, 1);
+        image_speed = ANIMATION_IDLE_SPEED;
+        draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_white, image_alpha);
         break;
     }
 }
 
-//draw_set_color(c_red);
-//draw_line(x, y, mouse_x, mouse_y);
-//draw_set_color(c_white);
 </string>
           </argument>
         </arguments>

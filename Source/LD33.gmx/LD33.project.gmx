@@ -11,12 +11,13 @@
     </sprites>
     <sprites name="Entities">
       <sprites name="Player">
-        <sprite>sprites\sprPlayer</sprite>
+        <sprites name="Physical">
+          <sprite>sprites\sprPlayer</sprite>
+        </sprites>
         <sprites name="Shadow">
-          <sprite>sprites\sprPlayerShadowDash</sprite>
           <sprite>sprites\sprPlayerShadow</sprite>
           <sprite>sprites\sprPlayerShadowInnerCorner</sprite>
-          <sprite>sprites\sprPlayerShadowOuterCorner</sprite>
+          <sprite>sprites\sprPlayerShadowDash</sprite>
         </sprites>
         <sprites name="Hitboxes">
           <sprite>sprites\sprHitbox</sprite>

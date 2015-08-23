@@ -2,7 +2,7 @@
 <object>
   <spriteName>sprHitbox</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>-101</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -47,6 +47,12 @@ if (objPlayer.state == PlayerStates.SHADOW)
 else
 {
     sprite_index = sprHitbox;
+}
+
+// Death
+if (place_meeting(x, y, objDanger))
+{
+    objPlayer.dead = true;
 }
 </string>
           </argument>
