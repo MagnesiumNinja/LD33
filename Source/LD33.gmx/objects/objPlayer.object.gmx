@@ -1042,6 +1042,7 @@ if (vspd &gt;= FALL_SHAKE_THRESHOLD)
 {
     case PlayerStates.PHYSICAL:
     {
+        image_angle = 0;
         if (wallsliding)
         {
             sprite_index = sprPlayerWallslide;
@@ -1061,8 +1062,20 @@ if (vspd &gt;= FALL_SHAKE_THRESHOLD)
         {
             instance_create((bbox_left+bbox_right)/2, (bbox_bottom+bbox_top)/2, objSmokeEffect);
         }
-        image_speed = ANIMATION_IDLE_SPEED;
-        draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_white, image_alpha);
+        else
+        {
+            image_speed = ANIMATION_IDLE_SPEED;
+        }
+        
+        if (dashing)
+        {
+            spriteDir = dashDir;
+        }
+        else
+        {
+            spriteDir = image_angle;
+        }
+        draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, spriteDir, c_white, image_alpha);
         break;
     }
 }
