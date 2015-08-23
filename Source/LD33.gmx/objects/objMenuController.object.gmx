@@ -35,7 +35,7 @@
     else
     {
         var st = instance_create(x, y, objScreenTransition);
-        st.rm = rmTest;
+        st.rm = rmGame;
     }
 }
 </string>
