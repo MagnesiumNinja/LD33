@@ -62,13 +62,14 @@ light = surface_create(view_wview[0], view_hview[0]);
     updateCamera();
 }
 
-
+/*
 surface_set_target(light);
 
 // DRAW DARKNESS //
 
 draw_set_color(c_black);
 draw_set_alpha(DARK_LEVEL);
+
 draw_rectangle(0, 0, view_wview[0], view_hview[0], false);
 
 draw_set_color(c_white);
@@ -92,7 +93,7 @@ d3d_transform_set_identity();
 draw_set_blend_mode(bm_normal);
 
 surface_reset_target();
-
+*/
 
 // RENDERING //
 
@@ -108,7 +109,8 @@ draw_rectangle(view_xview[0], view_yview[0], view_xview[0] + view_wview[0], view
 
 with (objDanger)
 {
-    draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_orange, objLightController.COLOUR_LIGHT_ADD);
+    //draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_orange, objLightController.COLOUR_LIGHT_ADD);
+    draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_white, 0.6);
 }
 
 draw_set_alpha(1);
