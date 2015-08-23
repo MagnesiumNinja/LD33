@@ -13,6 +13,16 @@
         This script sets the player's image and angle based on the shadow position.
 */
 
+var surfaceSprite;
+if (abs(hspd) > 0 || abs(vspd) > 0)
+{
+    surfaceSprite = sprPlayerShadowMove;
+}
+else
+{
+    surfaceSprite = sprPlayerShadow;
+}
+
 if (hShadowPos == ShadowPos.LEFT)
 {
     if (vShadowPos == ShadowPos.TOP)
@@ -27,7 +37,7 @@ if (hShadowPos == ShadowPos.LEFT)
     }
     else
     {
-        sprite_index = sprPlayerShadow;
+        sprite_index = surfaceSprite;
         image_angle = 0;
     }
 }
@@ -45,7 +55,7 @@ else if (hShadowPos == ShadowPos.RIGHT)
     }
     else
     {
-        sprite_index = sprPlayerShadow;
+        sprite_index = surfaceSprite;
         image_angle = 180;
     }
 }
@@ -53,12 +63,12 @@ else
 {
     if (vShadowPos == ShadowPos.TOP)
     {
-        sprite_index = sprPlayerShadow;
+        sprite_index = surfaceSprite;
         image_angle = 270;
     }
     else
     {
-        sprite_index = sprPlayerShadow;
+        sprite_index = surfaceSprite;
         image_angle = 90;
     }
 }
