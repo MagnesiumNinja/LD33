@@ -1042,7 +1042,15 @@ if (vspd &gt;= FALL_SHAKE_THRESHOLD)
 {
     case PlayerStates.PHYSICAL:
     {
-        image_speed = ANIMATION_IDLE_SPEED;
+        if (wallsliding)
+        {
+            sprite_index = sprPlayerWallslide;
+        }
+        else
+        {
+            image_speed = ANIMATION_IDLE_SPEED;
+            sprite_index = sprPlayer;
+        }
         draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_white, image_alpha);
         break;
     }
