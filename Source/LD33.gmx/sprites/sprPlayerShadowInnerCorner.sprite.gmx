@@ -6,7 +6,7 @@
   <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
-  <bboxmode>0</bboxmode>
+  <bboxmode>1</bboxmode>
   <bbox_left>0</bbox_left>
   <bbox_right>63</bbox_right>
   <bbox_top>0</bbox_top>
@@ -21,5 +21,8 @@
   <height>64</height>
   <frames>
     <frame index="0">images\sprPlayerShadowInnerCorner_0.png</frame>
+    <frame index="1">images\sprPlayerShadowInnerCorner_1.png</frame>
+    <frame index="2">images\sprPlayerShadowInnerCorner_2.png</frame>
+    <frame index="3">images\sprPlayerShadowInnerCorner_3.png</frame>
   </frames>
 </sprite>

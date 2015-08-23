@@ -17,6 +17,7 @@
         </sprites>
         <sprites name="Shadow">
           <sprite>sprites\sprPlayerShadow</sprite>
+          <sprite>sprites\sprPlayerShadowMove</sprite>
           <sprite>sprites\sprPlayerShadowInnerCorner</sprite>
           <sprite>sprites\sprPlayerShadowDash</sprite>
         </sprites>
