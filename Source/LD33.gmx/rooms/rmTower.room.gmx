@@ -16,8 +16,8 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1616</w>
-    <h>876</h>
+    <w>1588</w>
+    <h>867</h>
     <showGrid>-1</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>532</xoffset>
-    <yoffset>19</yoffset>
+    <xoffset>4187</xoffset>
+    <yoffset>293</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -165,7 +165,7 @@
     <instance objName="objBlockNoShadow" x="11680" y="8000" name="inst_25D57903" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayer" x="12160" y="7424" name="inst_3379CD50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlock" x="12896" y="6592" name="inst_3DA7DBCA" locked="0" code="" scaleX="1" scaleY="21" colour="4294967295" rotation="0"/>
-    <instance objName="objTitleCardBlock" x="12352" y="6784" name="inst_DE7CF058" locked="0" code="addTitleCard(&quot;Overwatch Tower&quot;, 2);&#xA;" scaleX="1" scaleY="21" colour="4294967295" rotation="0"/>
+    <instance objName="objTitleCardBlock" x="12352" y="6784" name="inst_DE7CF058" locked="0" code="addTitleCard(&quot;Overwatch Citadel&quot;, 2);&#xA;" scaleX="1" scaleY="21" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="12480" y="7456" name="inst_0BC644DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="12512" y="7456" name="inst_B65DA550" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="12544" y="7456" name="inst_5ABAFB99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -947,8 +947,6 @@
     <instance objName="objBlock" x="13728" y="5888" name="inst_09EAA5C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="13088" y="5952" name="inst_59230FCF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="13056" y="5952" name="inst_721A3FCD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="13088" y="5984" name="inst_E0B6AAB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="13056" y="5984" name="inst_6587A5E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightFull" x="13472" y="6080" name="inst_5B6B65B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightFull" x="13504" y="6048" name="inst_56C1F606" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightFull" x="13504" y="6080" name="inst_29592F72" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1410,7 +1408,7 @@
     <instance objName="objEnemyAdvanced" x="13824" y="3840" name="inst_30CD9692" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objEnemyAdvanced" x="14048" y="4128" name="inst_3E10A975" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="13472" y="3584" name="inst_E63D4EE3" locked="0" code="saveNum = 23;&#xA;" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSaveBlock" x="13600" y="2816" name="inst_F116FF6C" locked="0" code="" scaleX="1" scaleY="24" colour="4294967295" rotation="0"/>
+    <instance objName="objSaveBlock" x="13664" y="2816" name="inst_F116FF6C" locked="0" code="" scaleX="1" scaleY="24" colour="4294967295" rotation="0"/>
     <instance objName="objBlockNoShadow" x="13408" y="3584" name="inst_06483FFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlock" x="13952" y="0" name="inst_B95ECF3B" locked="0" code="" scaleX="1" scaleY="26" colour="4294967295" rotation="0"/>
     <instance objName="objLightSpotlightLarge" x="13984" y="1792" name="inst_1C62E5C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1503,6 +1501,18 @@
     <instance objName="objBlockNoShadow" x="13952" y="1760" name="inst_1FE7CCE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGameEndBlock" x="13952" y="2144" name="inst_8F91FA08" locked="0" code="" scaleX="64" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlockerKill" x="12864" y="832" name="inst_BD0F4B1F" locked="0" code="saveNum = 24;&#xA;" scaleX="32" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objDialogueBlock" x="12480" y="6944" name="inst_1BB61A68" locked="0" code="addTextbox(&quot;Shifter&quot;, &quot;The Overwatch Citadel. This is the seat of the city's power...&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;Beyond it lies the gates, blocked by a spotlight far larger than I can cross.&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;My only hope for salvation lies at the top of that tower.&quot;, true, c_white);&#xA;" scaleX="1" scaleY="16" colour="4294967295" rotation="0"/>
+    <instance objName="objDialogueFreeze" x="12480" y="6944" name="inst_B07B164B" locked="0" code="" scaleX="1" scaleY="16" colour="4294967295" rotation="0"/>
+    <instance objName="objDialogueBlock" x="13088" y="7136" name="inst_9D3C1B65" locked="0" code="addTextbox(&quot;Shifter&quot;, &quot;There are so many of them...&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;Is it even possible that any of my people have made it this far?&quot;, true, c_white);&#xA;&#xA;" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="objDialogueBlock" x="13376" y="6496" name="inst_4191E917" locked="0" code="addTextbox(&quot;???&quot;, &quot;I just heard back from the west gate. Entire district is clear of Shifters.&quot;, false, c_white);&#xA;addTextbox(&quot;???&quot;, &quot;That fast? Amazing work those men are doing. We'll be clear of the vermin before the night is out.&quot;, false, c_white);&#xA;addTextbox(&quot;???&quot;, &quot;Thankfully. My children've been complaining about sounds from the attic all year.&quot;, false, c_white);&#xA;" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
+    <instance objName="objDialogueBlock" x="13056" y="5984" name="inst_5D7E4DB0" locked="0" code="addTextbox(&quot;Shifter&quot;, &quot;This damage seems fresh. Perhaps I am not the first to arrive.&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;There is still hope for us.&quot;, true, c_white);&#xA;addTextbox(&quot;&quot;, &quot;Right Click during a dash to perform a Dash Cancel.&quot;, false, c_yellow);&#xA;" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="objDialogueBlock" x="13376" y="4608" name="inst_93730874" locked="0" code="addTextbox(&quot;Shifter&quot;, &quot;I am nearing the top. Soon, I will see what remains of my future.&quot;, true, c_white);&#xA;" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="objDialogueBlock" x="13728" y="3968" name="inst_0D3E83F0" locked="0" code="addTextbox(&quot;Hunter&quot;, &quot;...Been up all night. What's the point of guarding this place anyway?&quot;, false, c_white);&#xA;addTextbox(&quot;Hunter&quot;, &quot;Everyone knows the Shifters are done for. They've had it coming for years.&quot;, false, c_white);&#xA;" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
+    <instance objName="objDialogueBlock" x="13728" y="3264" name="inst_C2F16A6E" locked="0" code="addTextbox(&quot;Shifter&quot;, &quot;One final climb...&quot;, true, c_white);&#xA;" scaleX="1" scaleY="10" colour="4294967295" rotation="0"/>
+    <instance objName="objDialogueBlock" x="13600" y="1216" name="inst_FD2DC56D" locked="0" code="addTextbox(&quot;Shifter&quot;, &quot;I can see the spotlight below. It appears as though they have placed one here as well.&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;A little more height and I may be able to pass it...&quot;, true, c_white);&#xA;" scaleX="1" scaleY="17" colour="4294967295" rotation="0"/>
+    <instance objName="objDialogueFreeze" x="13056" y="5984" name="inst_A205E23F" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="objDialogueBlock" x="13920" y="608" name="inst_51A44915" locked="0" code="addTextbox(&quot;Shifter&quot;, &quot;I can see all of the city from this place.&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;My home is in ruins... But perhaps it was never truly my home.&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;I was simply a temporary occupant. My people do not run this world.&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;I suppose that makes us a plague, above all else. Something to be extinguished.&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;The humans have made their statement. Now, I must see if any place remains to call home.&quot;, true, c_white);&#xA;&#xA;" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
+    <instance objName="objDialogueFreeze" x="13920" y="608" name="inst_45D22770" locked="0" code="" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

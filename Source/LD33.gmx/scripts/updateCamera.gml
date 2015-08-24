@@ -7,7 +7,7 @@ yPrev = view_yview[0];
 
 // POSITIONING //
 
-if (instance_exists(objPlayer))
+if (instance_exists(objPlayer) && focus == objPlayer)
 {
     xOff = MAX_DISTANCE * (objPlayer.hspd / objPlayer.MAX_H);
     yOff = MAX_DISTANCE * (objPlayer.vspd / objPlayer.MAX_V);

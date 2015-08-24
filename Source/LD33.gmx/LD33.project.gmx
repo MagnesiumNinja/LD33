@@ -155,8 +155,10 @@
       <object>objects\objCursor</object>
       <object>objects\objBackground</object>
       <object>objects\objScreenTransition</object>
+      <object>objects\objScreenTransitionEnd</object>
       <object>objects\objAreaTitleCard</object>
       <object>objects\objTextbox</object>
+      <object>objects\objSaveIndicator</object>
     </objects>
     <objects name="Collisions">
       <object>objects\objGround</object>
