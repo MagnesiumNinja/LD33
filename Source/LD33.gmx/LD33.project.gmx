@@ -18,6 +18,7 @@
       <sprite>sprites\sprLightDiagonalFlip</sprite>
       <sprite>sprites\sprEnemyStopper</sprite>
       <sprite>sprites\sprEnemySimple</sprite>
+      <sprite>sprites\sprEnemyMove</sprite>
     </sprites>
     <sprites name="Entities">
       <sprites name="Player">
