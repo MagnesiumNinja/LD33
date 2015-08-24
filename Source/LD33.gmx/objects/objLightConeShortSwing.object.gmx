@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-500</depth>
   <persistent>0</persistent>
-  <parentName>self</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -102,7 +102,7 @@ else
 image_angle = 270 + angle;
 
 
-if (place_meeting(x, y, objHitbox) &amp;&amp; !objPlayer.dead)
+if (distance_to_object(objPlayer) &lt; global.DDIS &amp;&amp; place_meeting(x, y, objHitbox) &amp;&amp; !objPlayer.dead)
 {
     objPlayer.dead = true;
 }

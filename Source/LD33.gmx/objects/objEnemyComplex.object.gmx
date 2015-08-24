@@ -59,7 +59,7 @@ dirSwitch = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (place_meeting(x, y, objHitbox) &amp;&amp; !objPlayer.dead)
+            <string>if (distance_to_object(objPlayer) &lt; global.DDIS &amp;&amp; place_meeting(x, y, objHitbox) &amp;&amp; !objPlayer.dead)
 {
     objPlayer.dead = true;   
 }

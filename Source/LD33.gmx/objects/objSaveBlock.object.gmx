@@ -70,6 +70,7 @@ else
     
         global.SAVED_TO++;
         saveGame(0);
+        instance_create(x, y, objSaveIndicator);
     
         instance_destroy();
     }

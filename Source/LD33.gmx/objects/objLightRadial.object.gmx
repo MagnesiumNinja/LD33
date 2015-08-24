@@ -48,9 +48,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (collision_circle(x, y, radius, objHitbox, true, true) &amp;&amp; !objPlayer.dead)
+            <string>if (distance_to_object(objPlayer) &lt; global.DDIS)
 {
-    objPlayer.dead = true;   
+    if (collision_circle(x, y, radius, objHitbox, true, true) &amp;&amp; !objPlayer.dead)
+    {
+        objPlayer.dead = true;   
+    }
 }
 </string>
           </argument>

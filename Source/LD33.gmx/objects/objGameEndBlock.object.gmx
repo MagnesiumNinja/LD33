@@ -27,6 +27,11 @@
             <kind>1</kind>
             <string>if (place_meeting(x, y, objPlayer))
 {
+    with (objCamera)
+    {
+        focus = noone;
+    }
+
     var st = instance_create(x, y, objScreenTransition);
     st.rm = rmMenu;
 }

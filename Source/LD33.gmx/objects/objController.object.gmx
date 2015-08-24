@@ -33,6 +33,7 @@ VIEW_BUFFER = 256;
 // GLOBAL VARIABLES //
 
 global.CAMERA_OBJECT = noone;
+global.DDIS = view_wview[0];
 </string>
           </argument>
         </arguments>
@@ -57,27 +58,7 @@ global.CAMERA_OBJECT = noone;
             <kind>1</kind>
             <string>// INSTANCE DEACTIVATION //
 
-instance_deactivate_all(true);
-
-instance_activate_object(objRoomController);
-instance_activate_object(objLightController);
-instance_activate_object(objGameSettings);
-instance_activate_object(objBackground);
-instance_activate_object(objCamera);
-instance_activate_object(objPlayer);
-instance_activate_object(objHitbox);
-instance_activate_object(objCursor);
-instance_activate_object(objScreenTransition);
-instance_activate_object(objTextbox);
-
-instance_activate_object(objLightConeSwing);
-instance_activate_object(objLightOscillate);
-instance_activate_object(objLightConeShortSwing);
-instance_activate_object(objLightSpotlight);
-instance_activate_object(objEnemySimple);
-instance_activate_object(objEnemyComplex);
-instance_activate_object(objEnemyAdvanced);
-instance_activate_object(objEnemyStopper);
+instance_deactivate_object(objBlock);
 
 
 instance_activate_region(view_xview[0] - VIEW_BUFFER, view_yview[0] - VIEW_BUFFER, view_wview[0] + VIEW_BUFFER * 2, view_hview[0] + VIEW_BUFFER * 2, true);
