@@ -237,6 +237,7 @@ if (!dead)
                 {
                     state = PlayerStates.SHADOW;
                     hShadowPos = ShadowPos.LEFT;
+                    instance_create(x, y, objShiftToShadowEffect);
                     image_yscale = -1;
                     hspd = 0;
                     vspd = 0;
@@ -245,6 +246,7 @@ if (!dead)
                 {
                     state = PlayerStates.SHADOW;
                     hShadowPos = ShadowPos.RIGHT;
+                    instance_create(x, y, objShiftToShadowEffect);
                     image_yscale = 1;
                     hspd = 0;
                     vspd = 0;
@@ -254,6 +256,7 @@ if (!dead)
                 {
                     state = PlayerStates.SHADOW;
                     vShadowPos = ShadowPos.TOP;
+                    instance_create(x, y, objShiftToShadowEffect);
                     image_yscale = image_xscale;
                     hspd = 0;
                     vspd = 0;  
@@ -262,6 +265,7 @@ if (!dead)
                 {
                     state = PlayerStates.SHADOW;
                     vShadowPos = ShadowPos.BOTTOM; 
+                    instance_create(x, y, objShiftToShadowEffect);
                     image_yscale = image_xscale;
                     hspd = 0;
                     vspd = 0;    
@@ -281,6 +285,7 @@ if (!dead)
                 {
                     state = PlayerStates.SHADOW;
                     hShadowPos = ShadowPos.LEFT;
+                    instance_create(x, y, objShiftToShadowEffect);
                     image_yscale = -1;
                     hspd = 0;
                     vspd = 0;
@@ -291,6 +296,7 @@ if (!dead)
                 {
                     state = PlayerStates.SHADOW;
                     hShadowPos = ShadowPos.RIGHT;
+                    instance_create(x, y, objShiftToShadowEffect);
                     image_yscale = 1;
                     hspd = 0;
                     vspd = 0;
@@ -302,6 +308,7 @@ if (!dead)
                 {
                     state = PlayerStates.SHADOW;
                     vShadowPos = ShadowPos.TOP;
+                    instance_create(x, y, objShiftToShadowEffect);
                     image_yscale = image_xscale;
                     hspd = 0;
                     vspd = 0;
@@ -312,6 +319,7 @@ if (!dead)
                 {
                     state = PlayerStates.SHADOW;
                     vShadowPos = ShadowPos.BOTTOM;
+                    instance_create(x, y, objShiftToShadowEffect);
                     image_yscale = image_xscale; 
                     hspd = 0;
                     vspd = 0;
@@ -783,6 +791,7 @@ if (!dead)
                     dashing = false;   
                     jumpThru = true;
                     state = PlayerStates.PHYSICAL;
+                    instance_create(x, y, objShiftToPhysicalEffect);
                 
                     sprite_index = sprPlayer;
                     hShadowPos = ShadowPos.NONE;
@@ -964,7 +973,7 @@ if (!dead)
             if (!frozen &amp;&amp; mouse_check_button_pressed(global.KEY_SWAP))
             {
                 state = PlayerStates.PHYSICAL;
-                
+                instance_create(x, y, objShiftToPhysicalEffect);
                 sprite_index = sprPlayer;
                 image_xscale = image_yscale;
                 hShadowPos = ShadowPos.NONE;
@@ -992,9 +1001,8 @@ else
         hspd = 0;
         vspd = 0;
         
+        visible = false;
         instance_create(x, y, objPlayerDead);
-        
-        effect_create_above(ef_star, x, y, 2, c_yellow);
     }
 }
 </string>
