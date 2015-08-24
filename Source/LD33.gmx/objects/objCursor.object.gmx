@@ -30,7 +30,8 @@ if (instance_exists(objPlayer))
 {
     if (objPlayer.state == PlayerStates.SHADOW)
     {
-        draw_set_color(c_dkgray);
+        draw_set_color(c_orange);
+        draw_set_alpha(0.15);
         
         if (collision_line(objPlayer.x, objPlayer.y, mouse_x, mouse_y, objBlock, false, true))
         {
@@ -42,6 +43,7 @@ if (instance_exists(objPlayer))
                 if (collision_point(objPlayer.x + lengthdir_x(i, dir), objPlayer.y + lengthdir_y(i, dir), objBlock, false, true))
                 {   
                     draw_line_width(objPlayer.x, objPlayer.y, objPlayer.x + lengthdir_x(i, dir), objPlayer.y + lengthdir_y(i, dir), 2);
+                    draw_set_alpha(1);
                     draw_sprite(sprDashEnd, 0, objPlayer.x + lengthdir_x(i, dir), objPlayer.y + lengthdir_y(i, dir));
                     break;
                 }
@@ -54,6 +56,7 @@ if (instance_exists(objPlayer))
         
         
         draw_set_color(c_white);
+        draw_set_alpha(1);
     }
 }
 
