@@ -183,6 +183,7 @@
       <object>objects\objAreaTitleCard</object>
       <object>objects\objTextbox</object>
       <object>objects\objSaveIndicator</object>
+      <object>objects\objTextboxBars</object>
     </objects>
     <objects name="Collisions">
       <object>objects\objGround</object>

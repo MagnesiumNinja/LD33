@@ -16,8 +16,8 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1596</w>
-    <h>870</h>
+    <w>1588</w>
+    <h>867</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>2</page>
-    <xoffset>-66</xoffset>
-    <yoffset>346</yoffset>
+    <xoffset>4840</xoffset>
+    <yoffset>5943</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -5470,6 +5470,10 @@
     <tile bgName="tsBlackwoodFlatsLit" x="8192" y="7456" w="32" h="32" xo="64" yo="32" id="10007108" name="inst_EBBFC3D8" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlatsLit" x="8064" y="7456" w="32" h="32" xo="32" yo="32" id="10007109" name="inst_8A3C9258" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlatsLit" x="7904" y="7456" w="32" h="32" xo="96" yo="32" id="10007110" name="inst_F6D8E2B7" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsBG" x="5088" y="6112" w="32" h="96" xo="64" yo="32" id="10007274" name="inst_0325BBC7" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsBG" x="5088" y="6208" w="32" h="96" xo="64" yo="32" id="10007275" name="inst_2E762A5E" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsBG" x="5088" y="6304" w="32" h="96" xo="64" yo="32" id="10007276" name="inst_1F53C5A6" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsBG" x="5088" y="6400" w="32" h="96" xo="64" yo="32" id="10007277" name="inst_821484E1" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
