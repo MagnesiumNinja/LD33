@@ -33,6 +33,7 @@ WAIT_TIME = 90;
 
 CIRCLE_RADIUS = 64;
 
+image_speed = 0.2;
 
 // VARIABLES //
 
@@ -105,7 +106,9 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
+            <string>image_xscale = dir;
+
+draw_self();
 
 draw_set_blend_mode(bm_add);
 
