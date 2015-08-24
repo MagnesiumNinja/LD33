@@ -31,6 +31,8 @@ MOVE_SPEED = 2;
 
 WAIT_TIME = 90;
 
+CIRCLE_RADIUS = 64;
+
 
 // VARIABLES //
 
@@ -114,6 +116,10 @@ draw_circle(x, y, radius, false);
 
 draw_set_alpha(1);
 draw_set_blend_mode(bm_normal);
+
+draw_set_color(c_navy);
+draw_circle(x, y, CIRCLE_RADIUS * (waitTime / WAIT_TIME), true);
+draw_set_color(c_white);
 </string>
           </argument>
         </arguments>

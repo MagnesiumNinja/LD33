@@ -336,7 +336,7 @@ if (!dead)
                 vspd = 0;
                 doubleJumps = NUM_DOUBLE_JUMPS;
                 
-                if (!frozen &amp;&amp; keyboard_check_pressed(global.KEY_UP))
+                if (!frozen &amp;&amp; state == PlayerStates.PHYSICAL &amp;&amp; keyboard_check_pressed(global.KEY_UP))
                 {
                     canHoldJump = true;
                     vspd = JUMP_SPEED;

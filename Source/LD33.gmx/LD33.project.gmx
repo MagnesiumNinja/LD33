@@ -100,6 +100,7 @@
     </backgrounds>
     <backgrounds name="OverwatchCitadel">
       <background>background\tsOverwatchCitadel</background>
+      <background>background\tsOverwatchCitadelLarge</background>
       <background>background\tsOverwatchCitadelBackground</background>
       <background>background\tsOverwatchCitadelLit</background>
       <background>background\tsOverwatchCitadelWallSeam</background>

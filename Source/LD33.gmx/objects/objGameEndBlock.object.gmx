@@ -32,8 +32,10 @@
         focus = noone;
     }
 
-    var st = instance_create(x, y, objScreenTransition);
+    var st = instance_create(x, y, objScreenTransitionEnd);
     st.rm = rmMenu;
+    
+    instance_destroy();
 }
 </string>
           </argument>
