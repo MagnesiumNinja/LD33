@@ -78,6 +78,7 @@
   <backgrounds name="background">
     <backgrounds name="BlackwoodFlats">
       <background>background\tsBlackwoodFlats</background>
+      <background>background\tsBlackwoodFlatsLit</background>
       <background>background\tsBlackwoodFlatsBG</background>
       <background>background\tsBlackwoodFlatsWindow</background>
       <background>background\tsBlackwoodFlatsWallSeam</background>
