@@ -160,6 +160,7 @@
     <room>rooms\rmMenu</room>
     <room>rooms\rmApartments</room>
     <room>rooms\rmSewers</room>
+    <room>rooms\rmTower</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
