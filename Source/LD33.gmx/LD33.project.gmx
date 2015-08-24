@@ -75,7 +75,9 @@
       <sprite>sprites\sprSaveBlocker</sprite>
     </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\tsBlackwoodFlats</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Movement">
