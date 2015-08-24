@@ -3113,6 +3113,11 @@
     <tile bgName="tsBlackwoodFlats" x="8448" y="7424" w="96" h="32" xo="32" yo="64" id="10004020" name="inst_AB75D4AC" depth="950" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlats" x="8544" y="7424" w="96" h="32" xo="32" yo="64" id="10004021" name="inst_99179F0F" depth="950" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlats" x="8640" y="7424" w="96" h="32" xo="32" yo="64" id="10004022" name="inst_B1187CD3" depth="950" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsBG" x="5088" y="6112" w="32" h="96" xo="64" yo="32" id="10007358" name="inst_D3463DD9" depth="950" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsBG" x="5088" y="6208" w="32" h="96" xo="64" yo="32" id="10007359" name="inst_AA34D3B4" depth="950" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsBG" x="5088" y="6304" w="32" h="96" xo="64" yo="32" id="10007360" name="inst_19CD4418" depth="950" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsBG" x="5088" y="6400" w="32" h="96" xo="64" yo="32" id="10007361" name="inst_FF80B36C" depth="950" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsBG" x="5088" y="6496" w="32" h="96" xo="64" yo="32" id="10007362" name="inst_1FB995D0" depth="950" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlatsDoor" x="1328" y="6784" w="32" h="96" xo="0" yo="0" id="10001499" name="inst_4D4F28B7" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlatsDoor" x="1936" y="6784" w="32" h="96" xo="0" yo="0" id="10001500" name="inst_217F62B0" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlats" x="768" y="6880" w="32" h="32" xo="64" yo="0" id="10000002" name="inst_1F9C13B0" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -5470,10 +5475,86 @@
     <tile bgName="tsBlackwoodFlatsLit" x="8192" y="7456" w="32" h="32" xo="64" yo="32" id="10007108" name="inst_EBBFC3D8" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlatsLit" x="8064" y="7456" w="32" h="32" xo="32" yo="32" id="10007109" name="inst_8A3C9258" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlatsLit" x="7904" y="7456" w="32" h="32" xo="96" yo="32" id="10007110" name="inst_F6D8E2B7" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsBlackwoodFlatsBG" x="5088" y="6112" w="32" h="96" xo="64" yo="32" id="10007274" name="inst_0325BBC7" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsBlackwoodFlatsBG" x="5088" y="6208" w="32" h="96" xo="64" yo="32" id="10007275" name="inst_2E762A5E" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsBlackwoodFlatsBG" x="5088" y="6304" w="32" h="96" xo="64" yo="32" id="10007276" name="inst_1F53C5A6" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsBlackwoodFlatsBG" x="5088" y="6400" w="32" h="96" xo="64" yo="32" id="10007277" name="inst_821484E1" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="7264" y="6944" w="32" h="32" xo="64" yo="0" id="10007278" name="inst_BF4F4A10" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="7232" y="6944" w="32" h="32" xo="64" yo="0" id="10007279" name="inst_ED32FBA8" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="7200" y="6944" w="32" h="32" xo="64" yo="0" id="10007280" name="inst_9D6B5778" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="7168" y="6944" w="32" h="32" xo="64" yo="0" id="10007281" name="inst_AABD32C0" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="7104" y="6944" w="32" h="32" xo="64" yo="0" id="10007282" name="inst_918634BE" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="7072" y="6944" w="32" h="32" xo="64" yo="0" id="10007283" name="inst_90E5E2F3" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="7040" y="6944" w="32" h="32" xo="64" yo="0" id="10007284" name="inst_933E85C1" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="7008" y="6944" w="32" h="32" xo="64" yo="0" id="10007285" name="inst_70F10D66" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6976" y="6944" w="32" h="32" xo="64" yo="0" id="10007286" name="inst_BB4DFE6D" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="7136" y="6944" w="32" h="32" xo="64" yo="0" id="10007287" name="inst_1B8E39B2" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6944" y="6944" w="32" h="32" xo="64" yo="0" id="10007288" name="inst_3674D26D" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6912" y="6944" w="32" h="32" xo="64" yo="0" id="10007289" name="inst_0A17B54A" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6880" y="6944" w="32" h="32" xo="64" yo="0" id="10007290" name="inst_71CCDDB6" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6848" y="6944" w="32" h="32" xo="64" yo="0" id="10007291" name="inst_44AFFA5A" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6816" y="6944" w="32" h="32" xo="64" yo="0" id="10007292" name="inst_59985DCB" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6784" y="6944" w="32" h="32" xo="64" yo="0" id="10007293" name="inst_45753F6F" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6752" y="6944" w="32" h="32" xo="64" yo="0" id="10007294" name="inst_E5F7B00E" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6720" y="6944" w="32" h="32" xo="64" yo="0" id="10007295" name="inst_89271EB9" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6688" y="6944" w="32" h="32" xo="64" yo="0" id="10007296" name="inst_72BFC543" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6656" y="6944" w="32" h="32" xo="64" yo="0" id="10007297" name="inst_63A4A192" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6624" y="6944" w="32" h="32" xo="64" yo="0" id="10007298" name="inst_7ABE285A" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6592" y="6944" w="32" h="32" xo="64" yo="0" id="10007299" name="inst_3487AA6E" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6560" y="6944" w="32" h="32" xo="64" yo="0" id="10007300" name="inst_04746F03" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6528" y="6944" w="32" h="32" xo="64" yo="0" id="10007301" name="inst_23AF5084" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6496" y="6944" w="32" h="32" xo="64" yo="0" id="10007302" name="inst_4168D5EF" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6464" y="6944" w="32" h="32" xo="64" yo="0" id="10007303" name="inst_617B4342" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6432" y="6944" w="32" h="32" xo="64" yo="0" id="10007304" name="inst_F7AFBFDE" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6400" y="6944" w="32" h="32" xo="64" yo="0" id="10007305" name="inst_34687DB4" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6368" y="6944" w="32" h="32" xo="64" yo="0" id="10007306" name="inst_CA762C12" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6336" y="6944" w="32" h="32" xo="64" yo="0" id="10007307" name="inst_E4B969ED" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6304" y="6944" w="32" h="32" xo="64" yo="0" id="10007308" name="inst_BE1E8EE2" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6272" y="6944" w="32" h="32" xo="64" yo="0" id="10007309" name="inst_F0812CBF" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6240" y="6944" w="32" h="32" xo="64" yo="0" id="10007310" name="inst_9876C3E1" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6176" y="6944" w="32" h="32" xo="64" yo="0" id="10007311" name="inst_C428D07D" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6144" y="6944" w="32" h="32" xo="64" yo="0" id="10007312" name="inst_6EFEAC39" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6112" y="6944" w="32" h="32" xo="64" yo="0" id="10007313" name="inst_220CBBB1" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6080" y="6944" w="32" h="32" xo="64" yo="0" id="10007314" name="inst_141E94BB" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6048" y="6944" w="32" h="32" xo="64" yo="0" id="10007315" name="inst_A36362F0" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6016" y="6944" w="32" h="32" xo="64" yo="0" id="10007316" name="inst_3E31921B" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5984" y="6944" w="32" h="32" xo="64" yo="0" id="10007317" name="inst_8B4BAB42" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="6208" y="6944" w="32" h="32" xo="64" yo="0" id="10007318" name="inst_53DFC2BD" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5120" y="6944" w="32" h="32" xo="64" yo="0" id="10007319" name="inst_8AED6C38" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5152" y="6944" w="32" h="32" xo="64" yo="0" id="10007320" name="inst_4C6A8E41" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5184" y="6944" w="32" h="32" xo="64" yo="0" id="10007321" name="inst_03D323B1" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5216" y="6944" w="32" h="32" xo="64" yo="0" id="10007322" name="inst_CA788698" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5248" y="6944" w="32" h="32" xo="64" yo="0" id="10007323" name="inst_71A52B3B" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5280" y="6944" w="32" h="32" xo="64" yo="0" id="10007324" name="inst_A9587444" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5312" y="6944" w="32" h="32" xo="64" yo="0" id="10007325" name="inst_E9BF46D5" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5344" y="6944" w="32" h="32" xo="64" yo="0" id="10007326" name="inst_89913640" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5376" y="6944" w="32" h="32" xo="64" yo="0" id="10007327" name="inst_973B2E26" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5408" y="6944" w="32" h="32" xo="64" yo="0" id="10007328" name="inst_FA0F4B12" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5440" y="6944" w="32" h="32" xo="64" yo="0" id="10007329" name="inst_979DC824" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5472" y="6944" w="32" h="32" xo="64" yo="0" id="10007330" name="inst_4265725A" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5504" y="6944" w="32" h="32" xo="64" yo="0" id="10007331" name="inst_6129113A" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5536" y="6944" w="32" h="32" xo="64" yo="0" id="10007332" name="inst_516A4E0F" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5568" y="6944" w="32" h="32" xo="64" yo="0" id="10007333" name="inst_3748F2B0" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5600" y="6944" w="32" h="32" xo="64" yo="0" id="10007334" name="inst_50252830" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5632" y="6944" w="32" h="32" xo="64" yo="0" id="10007335" name="inst_EF9CFABC" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5664" y="6944" w="32" h="32" xo="64" yo="0" id="10007336" name="inst_E0FE72AF" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5696" y="6944" w="32" h="32" xo="64" yo="0" id="10007337" name="inst_85B9C6B0" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5728" y="6944" w="32" h="32" xo="64" yo="0" id="10007338" name="inst_8BFE4154" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5760" y="6944" w="32" h="32" xo="64" yo="0" id="10007339" name="inst_8CA42EAB" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5792" y="6944" w="32" h="32" xo="64" yo="0" id="10007340" name="inst_5FECAD8A" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5824" y="6944" w="32" h="32" xo="64" yo="0" id="10007341" name="inst_76CC34E3" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5856" y="6944" w="32" h="32" xo="64" yo="0" id="10007342" name="inst_25EA5326" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5888" y="6944" w="32" h="32" xo="64" yo="0" id="10007343" name="inst_73A1F752" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5920" y="6944" w="32" h="32" xo="64" yo="0" id="10007344" name="inst_5D2768BF" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="5952" y="6944" w="32" h="32" xo="64" yo="0" id="10007345" name="inst_51EA777B" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="7776" y="7424" w="32" h="32" xo="64" yo="0" id="10007346" name="inst_F206BCA3" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="7808" y="7424" w="32" h="32" xo="64" yo="0" id="10007347" name="inst_D5350E2F" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="7840" y="7424" w="32" h="32" xo="64" yo="0" id="10007348" name="inst_B48AE364" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="7872" y="7424" w="32" h="32" xo="64" yo="0" id="10007349" name="inst_30504FE9" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="7904" y="7424" w="32" h="32" xo="64" yo="0" id="10007350" name="inst_F22B5683" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="8064" y="7424" w="32" h="32" xo="64" yo="0" id="10007351" name="inst_F3F68113" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="8096" y="7424" w="32" h="32" xo="64" yo="0" id="10007352" name="inst_5DBBA6C4" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="8128" y="7424" w="32" h="32" xo="64" yo="0" id="10007353" name="inst_4F9F18F4" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="8160" y="7424" w="32" h="32" xo="64" yo="0" id="10007354" name="inst_FCE12884" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="8192" y="7424" w="32" h="32" xo="64" yo="0" id="10007355" name="inst_3D961A81" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="7936" y="7456" w="32" h="32" xo="128" yo="64" id="10007356" name="inst_686C39CA" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsLit" x="8032" y="7456" w="32" h="32" xo="0" yo="64" id="10007357" name="inst_33EB41FB" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
