@@ -13,6 +13,9 @@
     <sound>sound\sndPlayerJump</sound>
     <sound>sound\sndPlayerDoubleJump</sound>
     <sound>sound\sndPlayerDash</sound>
+    <sound>sound\sndType1</sound>
+    <sound>sound\sndType2</sound>
+    <sound>sound\sndType3</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Dangers">

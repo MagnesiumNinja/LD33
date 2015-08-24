@@ -36,6 +36,10 @@ ROTATE_SPEED = 1;
 
 CIRCLE_RADIUS = 64;
 
+MOVE_FRAMES = 4;
+IDLE_FRAMES = 2;
+IMAGE_SPEED = 0.2;
+
 
 // VARIABLES //
 
@@ -45,6 +49,8 @@ dirSwitch = false;
 
 angle = 0;
 swing = -1;
+
+frame = 0;
 </string>
           </argument>
         </arguments>
@@ -83,6 +89,7 @@ else
         dirSwitch = false;
         dir = -dir;
         image_xscale = -image_xscale;
+        frame = 0;
     }
     
     x += MOVE_SPEED * dir;
@@ -90,6 +97,7 @@ else
     if (collision_rectangle(x - 32, y - 32, x + 32, y + 32, objEnemyStopper, false, true))
     {
         waitTime = WAIT_TIME;
+        frame = 0;
         dirSwitch = true;
     }
 }
@@ -148,7 +156,33 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(sprEnemySimple, 0, x, y, image_xscale, image_yscale, 0, c_white, 1);
+            <string>if (waitTime == 0)
+{
+    draw_sprite_ext(sprEnemyMove, floor(frame), x, y, image_xscale, image_yscale, image_angle, c_white, 1);
+    
+    if (MOVE_FRAMES - frame &gt;= IMAGE_SPEED)
+    {
+        frame += IMAGE_SPEED;
+    }
+    else
+    {
+        frame = (IMAGE_SPEED - (MOVE_FRAMES - frame));
+    }
+}
+else
+{
+    draw_sprite_ext(sprEnemySimple, floor(frame), x, y, image_xscale, image_yscale, image_angle, c_white, 1);
+
+    if (IDLE_FRAMES - frame &gt;= IMAGE_SPEED)
+    {
+        frame += IMAGE_SPEED;
+    }
+    else
+    {
+        frame = (IMAGE_SPEED - (IDLE_FRAMES - frame));
+    }
+}
+
 
 draw_set_blend_mode(bm_add);
 

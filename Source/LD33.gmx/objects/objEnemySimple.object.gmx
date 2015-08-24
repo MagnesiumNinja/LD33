@@ -40,6 +40,7 @@ image_speed = 0.2;
 radius = 32;
 waitTime = 0;
 dir = 1;
+dirChange = false;
 </string>
           </argument>
         </arguments>
@@ -76,12 +77,18 @@ if (waitTime &gt; 0)
 }
 else
 {
+    if (dirChange)
+    {
+        dirChange = false;
+        dir = -dir;
+    }
+
     x += MOVE_SPEED * dir;
 
     if (place_meeting(x + dir, y, objEnemyStopper))
     {
         waitTime = WAIT_TIME;
-        dir = -dir;
+        dirChange = true;
     }
 }
 </string>
