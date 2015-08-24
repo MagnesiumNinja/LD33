@@ -16,9 +16,9 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1616</w>
-    <h>876</h>
-    <showGrid>-1</showGrid>
+    <w>1596</w>
+    <h>870</h>
+    <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
     <showBackgrounds>-1</showBackgrounds>
@@ -26,9 +26,9 @@
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
-    <page>2</page>
-    <xoffset>2498</xoffset>
-    <yoffset>1424</yoffset>
+    <page>0</page>
+    <xoffset>3976</xoffset>
+    <yoffset>2997</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -99,7 +99,7 @@
     <instance objName="objBlock" x="7680" y="8160" name="inst_D76A014D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="7776" y="8160" name="inst_596695AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlock" x="7744" y="8192" name="inst_E0423BD9" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="objSaveBlocker" x="7936" y="7840" name="inst_2CED83AE" locked="0" code="saveNum = 9;&#xA;" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSaveBlocker" x="7936" y="7840" name="inst_2CED83AE" locked="0" code="saveNum = 8;&#xA;" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDialogueBlock" x="7520" y="8192" name="inst_7E75AAB4" locked="0" code="addTextbox(&quot;Shifter&quot;, &quot;Unpleasant, to say the least. However, I should be safe below ground.&quot;, true, c_white);&#xA;addTextbox(&quot;Hunter&quot;, &quot;Spread out! We've spotted Shifters fleeing into the sewers! Don't let any get away!&quot;, false, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;...Or perhaps not.&quot;, true, c_white);&#xA;" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="objTitleCardBlock" x="7840" y="8192" name="inst_6FDAA47B" locked="0" code="addTitleCard(&quot;The Grand Sewers&quot;, 1);&#xA;" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="7648" y="8160" name="inst_5432B534" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

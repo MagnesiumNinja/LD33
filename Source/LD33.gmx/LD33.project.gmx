@@ -4,7 +4,16 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sndHudClick</sound>
+    <sound>sound\sndNewArea</sound>
+    <sound>sound\sndPlayerChange</sound>
+    <sound>sound\sndPlayerLand</sound>
+    <sound>sound\sndPlayerDie</sound>
+    <sound>sound\sndPlayerJump</sound>
+    <sound>sound\sndPlayerDoubleJump</sound>
+    <sound>sound\sndPlayerDash</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Dangers">
       <sprite>sprites\sprLightFull</sprite>

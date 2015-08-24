@@ -61,6 +61,7 @@ selection = 0;
             if (global.SAVED_ROOM &gt;= 0)
             {
                 objMenuController.selected = true;
+                audio_play_sound(sndHudClick, 50, false);
                 
                 var st = instance_create(x, y, objScreenTransition);
                 st.rm = global.SAVED_ROOM;
@@ -72,6 +73,7 @@ selection = 0;
         case 1: // New Game
         {
             objMenuController.selected = true;
+                audio_play_sound(sndHudClick, 50, false);
     
             if (saveFileExists(0))
             {
@@ -96,6 +98,7 @@ selection = 0;
         case 2: // Quit
         {
             objMenuController.selected = true;
+            audio_play_sound(sndHudClick, 50, false);
             game_end();
             
             break;
@@ -144,6 +147,34 @@ draw_text(x, y, text);
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
+
+
+if (mouse_x &gt;= bbox_left &amp;&amp; mouse_x &lt;= bbox_right &amp;&amp; 
+    mouse_y &gt;= bbox_top &amp;&amp; mouse_y &lt;= bbox_bottom &amp;&amp;
+    !objMenuController.selected)
+{
+    if (selection == 1 &amp;&amp; global.SAVED_ROOM &gt;= 0)
+    {
+        with (objCursor)
+        {
+            draw_set_alpha(1);
+            draw_set_font(fntText);
+            draw_set_color(c_black);
+            draw_set_valign(fa_bottom);
+            draw_set_halign(fa_right);
+            
+            draw_text(view_xview[0] + view_wview[0] - 16 + 2, view_yview[0] + view_hview[0] - 16 + 2, "This will erase your save!");
+            
+            draw_set_color(c_white);
+            
+            draw_text(view_xview[0] + view_wview[0] - 16, view_yview[0] + view_hview[0] - 16, "This will erase your save!");
+            
+            draw_set_halign(fa_center);
+            draw_set_valign(fa_top);
+        }
+    }
+}
+
 </string>
           </argument>
         </arguments>
