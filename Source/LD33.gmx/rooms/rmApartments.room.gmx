@@ -152,7 +152,7 @@
     <instance objName="objBlock" x="1952" y="6656" name="inst_ED8155FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="1920" y="6880" name="inst_69D8FF15" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="1952" y="6880" name="inst_9002EE0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objDialogueBlock" x="928" y="6688" name="inst_70FE8E28" locked="0" code="addTextbox(&quot;???&quot;, &quot;Get the lanterns! They can't survive in harsh light!&quot;, false, c_white);&#xA;addTextbox(&quot;???&quot;, &quot;Check every building! Look for covered windows! The Shifters hole up in the darkness!&quot;, false, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;...&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;It has finally come to this...&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;...The hunt begins.&quot;, true, c_white);&#xA;addTextbox(&quot;&quot;, &quot;Use WASD to move, jump, and double jump.&quot;, false, c_yellow);&#xA;" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
+    <instance objName="objDialogueBlock" x="928" y="6688" name="inst_70FE8E28" locked="0" code="addTextbox(&quot;Unknown&quot;, &quot;Get the lanterns! They can't survive in harsh light!&quot;, false, c_white);&#xA;addTextbox(&quot;Unknown&quot;, &quot;Check every building! Look for covered windows! The Shifters hole up in the darkness!&quot;, false, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;...&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;It has finally come to this...&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;...The hunt begins.&quot;, true, c_white);&#xA;addTextbox(&quot;&quot;, &quot;Use WASD to move, jump, and double jump.&quot;, false, c_yellow);&#xA;" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="1984" y="6880" name="inst_2C8979D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="2016" y="6880" name="inst_5BB9509B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="2048" y="6880" name="inst_C46011ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -373,7 +373,7 @@
     <instance objName="objLightRadial" x="2976" y="7136" name="inst_E8DCF064" locked="0" code="radius = 96;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlock" x="3264" y="6976" name="inst_747708B8" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="3712" y="6688" name="inst_5785E979" locked="0" code="saveNum = 1;&#xA;" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
-    <instance objName="objDialogueBlock" x="3392" y="6976" name="inst_E7BF4D7E" locked="0" code="addTextbox(&quot;&quot;, &quot;Right Click while against a solid surface to change into Shadow Form.&quot;, false, c_yellow);&#xA;addTextbox(&quot;&quot;, &quot;While in Shadow Form, you can only move along surfaces.&quot;, false, c_yellow);&#xA;" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
+    <instance objName="objDialogueBlock" x="3392" y="6976" name="inst_E7BF4D7E" locked="0" code="addTextbox(&quot;&quot;, &quot;Right Click while against a solid surface to change into Shadow Form.&quot;, false, c_yellow);&#xA;addTextbox(&quot;&quot;, &quot;While in Shadow Form, you can only move along surfaces.&quot;, false, c_yellow);" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="2784" y="6944" name="inst_6BF18A08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="2720" y="6944" name="inst_A7082011" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="2688" y="6944" name="inst_81ED5D47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -428,7 +428,7 @@
     <instance objName="objBlock" x="1984" y="7168" name="inst_638C7189" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlock" x="2208" y="6976" name="inst_A66C3103" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="2304" y="6976" name="inst_3AB02BC2" locked="0" code="saveNum = 2;&#xA;" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
-    <instance objName="objDialogueBlock" x="2016" y="6976" name="inst_B77D7494" locked="0" code="addTextbox(&quot;???&quot;, &quot;We got one! The bloody monster went up in smoke!&quot;, false, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;I had heard rumours of the hunt. I had hoped they would remain rumours.&quot;, true, c_white);&#xA;" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
+    <instance objName="objDialogueBlock" x="2016" y="6976" name="inst_B77D7494" locked="0" code="addTextbox(&quot;Hunter&quot;, &quot;We got one! The bloody monster went up in smoke!&quot;, false, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;I had heard rumours of the hunt. I had hoped they would remain rumours.&quot;, true, c_white);&#xA;" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="objDialogueBlock" x="2496" y="6976" name="inst_1E854531" locked="0" code="addTextbox(&quot;&quot;, &quot;Right Click at any time while in Shadow Form to swap back.&quot;, false, c_yellow);&#xA;" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="1952" y="6944" name="inst_DF8CDFA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="1920" y="6944" name="inst_0728379C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -841,14 +841,6 @@
     <instance objName="objBlock" x="4544" y="7168" name="inst_CCC06AF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="4544" y="7200" name="inst_156379C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightFull" x="4096" y="7296" name="inst_59FAD7B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLightFull" x="4064" y="7328" name="inst_2C4DB455" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLightFull" x="4032" y="7360" name="inst_13CE5BF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLightFull" x="4000" y="7392" name="inst_32ADDCD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLightFull" x="3968" y="7424" name="inst_69003543" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLightFull" x="3936" y="7424" name="inst_DA4E96A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLightFull" x="3968" y="7392" name="inst_6238077F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLightFull" x="4000" y="7360" name="inst_F5B1BEE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLightFull" x="4032" y="7328" name="inst_11BD6CE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightFull" x="4064" y="7296" name="inst_F4176C74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightFull" x="4256" y="7232" name="inst_711F4A37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightFull" x="4288" y="7232" name="inst_4B5BBA87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -871,11 +863,6 @@
     <instance objName="objLightFull" x="4480" y="7424" name="inst_E0508329" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightFull" x="4480" y="7424" name="inst_70579F35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightFull" x="4512" y="7424" name="inst_F6085B16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLightDiagonal" x="4032" y="7296" name="inst_A21E83D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLightDiagonal" x="4000" y="7328" name="inst_F7BB5E67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLightDiagonal" x="3968" y="7360" name="inst_A6F9D5C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLightDiagonal" x="3936" y="7392" name="inst_B15555AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLightDiagonal" x="3904" y="7424" name="inst_8E4BA5B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightDiagonal" x="4384" y="7232" name="inst_DED6D285" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightDiagonal" x="4416" y="7264" name="inst_0C8EBB39" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightDiagonal" x="4448" y="7296" name="inst_9D0F203C" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -883,11 +870,6 @@
     <instance objName="objLightDiagonal" x="4512" y="7360" name="inst_9CB0E2B2" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightDiagonal" x="4544" y="7392" name="inst_2CD33762" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightDiagonal" x="4576" y="7424" name="inst_E6D4E706" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLightDiagonalFlip" x="4000" y="7424" name="inst_B21AF88F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLightDiagonalFlip" x="4032" y="7392" name="inst_74FE5381" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLightDiagonalFlip" x="4064" y="7360" name="inst_F213F4B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLightDiagonalFlip" x="4096" y="7328" name="inst_77C268B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLightDiagonalFlip" x="4128" y="7296" name="inst_CC41E04F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightDiagonalFlip" x="4256" y="7232" name="inst_061CBAEA" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightDiagonalFlip" x="4288" y="7264" name="inst_ABB4B794" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightDiagonalFlip" x="4320" y="7296" name="inst_96EBEA1B" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -897,7 +879,7 @@
     <instance objName="objLightDiagonalFlip" x="4448" y="7424" name="inst_8CF96680" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlock" x="4800" y="7264" name="inst_DA96827E" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="4672" y="7264" name="inst_B6488331" locked="0" code="saveNum = 5;&#xA;" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
-    <instance objName="objDialogueBlock" x="2880" y="7264" name="inst_66123FB8" locked="0" code="addTextbox(&quot;Shifter&quot;, &quot;The city feasts on my brothers tonight...&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;...I must find a way out before I share their fate.&quot;, true, c_white);&#xA;" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
+    <instance objName="objDialogueBlock" x="2880" y="7264" name="inst_66123FB8" locked="0" code="addTextbox(&quot;Shifter&quot;, &quot;The city feasts on my people tonight...&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;...I must find a way out before I share their fate.&quot;, true, c_white);&#xA;" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="4832" y="7040" name="inst_86741BC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="4864" y="7040" name="inst_AEB955F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="4896" y="7040" name="inst_EB357498" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1474,9 +1456,9 @@
     <instance objName="objLightRadial" x="7936" y="6560" name="inst_31166BA0" locked="0" code="radius = 192;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightRadial" x="8224" y="6912" name="inst_4265B97D" locked="0" code="radius = 224;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightConeFlicker" x="8000" y="7072" name="inst_DAD10FD4" locked="0" code="TIME_ON = 120;&#xA;TIME_OFF = 60;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objDialogueBlock" x="4928" y="7072" name="inst_B4513459" locked="0" code="addTextbox(&quot;???&quot;, &quot;Are the gates blocked off like I asked?&quot;, false, c_white);&#xA;addTextbox(&quot;???&quot;, &quot;We set up spotlights in front of every exit! There's no escape for those beasts.&quot;, false, c_white);&#xA;addTextbox(&quot;???&quot;, &quot;Excellent. Start searching the buildings along this street...&quot;, false, c_white);&#xA;addTextbox(&quot;???&quot;, &quot;...The last group wasn't thorough enough. There could still be Shifters inside.&quot;, false, c_white);&#xA;&#xA;" scaleX="1" scaleY="12" colour="4294967295" rotation="0"/>
-    <instance objName="objDialogueBlock" x="5152" y="6592" name="inst_FADC1121" locked="0" code="addTextbox(&quot;Shifter&quot;, &quot;With the city gates blocked off, I have no way of escaping.&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;All the same, I have no other alternative. I will simply have to try my luck.&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;I cannot help but wonder how many of my fallen brothers had the same thought.&quot;, true, c_white);&#xA;" scaleX="1" scaleY="12" colour="4294967295" rotation="0"/>
-    <instance objName="objDialogueBlock" x="7488" y="6112" name="inst_CA9A41C1" locked="0" code="addTextbox(&quot;Shifter&quot;, &quot;The walls are covered with spotlights...&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;The hunters have grown crafty. I must find another route to the city's perimeter.&quot;, true, c_white);&#xA;" scaleX="1" scaleY="12" colour="4294967295" rotation="0"/>
+    <instance objName="objDialogueBlock" x="4928" y="7072" name="inst_B4513459" locked="0" code="addTextbox(&quot;Hunter&quot;, &quot;Are the gates blocked off like I asked?&quot;, false, c_white);&#xA;addTextbox(&quot;Guard&quot;, &quot;We set up spotlights in front of every exit! There's no escape for those beasts.&quot;, false, c_white);&#xA;addTextbox(&quot;Hunter&quot;, &quot;Excellent. Start searching the buildings along this street...&quot;, false, c_white);&#xA;addTextbox(&quot;Hunter&quot;, &quot;...The last group wasn't thorough enough. There could still be Shifters inside.&quot;, false, c_white);&#xA;&#xA;" scaleX="1" scaleY="12" colour="4294967295" rotation="0"/>
+    <instance objName="objDialogueBlock" x="5152" y="6592" name="inst_FADC1121" locked="0" code="addTextbox(&quot;Shifter&quot;, &quot;With the city gates blocked off, I have no way of escaping.&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;All the same, I have no other alternative. I will simply have to try my luck.&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;I cannot help but wonder how many of us had the same thought.&quot;, true, c_white);&#xA;" scaleX="1" scaleY="12" colour="4294967295" rotation="0"/>
+    <instance objName="objDialogueBlock" x="7488" y="6112" name="inst_CA9A41C1" locked="0" code="addTextbox(&quot;Shifter&quot;, &quot;The walls are covered with spotlights...&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;The hunters have grown crafty. I must find another route to the city's perimeter.&quot;, true, c_white);" scaleX="1" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="objDialogueFreeze" x="7488" y="6112" name="inst_4AC46F42" locked="0" code="" scaleX="1" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="objLightRadial" x="2464" y="7008" name="inst_D95E8C1A" locked="0" code="radius = 96;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightRadial" x="1408" y="6976" name="inst_01783C18" locked="0" code="radius = 32;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1631,11 +1613,34 @@
     <instance objName="objBlockNoShadow" x="8064" y="7776" name="inst_CA6FA982" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockNoShadow" x="8064" y="7808" name="inst_423F3BD1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockNoShadow" x="8064" y="7840" name="inst_3051AC50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objDialogueBlock" x="1536" y="7264" name="inst_C3BE2073" locked="0" code="addTextbox(&quot;&quot;, &quot;When in Shadow Form, you cannot touch lit surfaces.&quot;, false, c_yellow);&#xA;" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
+    <instance objName="objDialogueBlock" x="1536" y="7264" name="inst_C3BE2073" locked="0" code="addTextbox(&quot;&quot;, &quot;When in Shadow Form, you cannot touch lit surfaces.&quot;, false, c_yellow);" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="objDialogueFreeze" x="1536" y="7264" name="inst_11BE40EC" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="objDialogueBlock" x="3136" y="6976" name="inst_108D063A" locked="0" code="addTextbox(&quot;&quot;, &quot;Left Click to dash between surfaces.&quot;, false, c_yellow);&#xA;" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="objSwitchArea" x="7936" y="7760" name="inst_684CFB8C" locked="0" code="rm = rmSewers;&#xA;xPos = 8000;&#xA;yPos = 8288;&#xA;" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDialogueBlock" x="4064" y="7264" name="inst_41BBE4BA" locked="0" code="addTextbox(&quot;&quot;, &quot;Press R to restart.&quot;, false, c_yellow);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightFull" x="4128" y="7296" name="inst_4BC14B83" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightFull" x="4096" y="7328" name="inst_220AAC05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightFull" x="4128" y="7328" name="inst_4B31040C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightFull" x="4160" y="7328" name="inst_1CC2213F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightFull" x="4128" y="7360" name="inst_D8C56325" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightFull" x="4160" y="7360" name="inst_1FEE762B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightFull" x="4192" y="7360" name="inst_5D52CA92" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightFull" x="4160" y="7392" name="inst_CC4FCF05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightFull" x="4192" y="7392" name="inst_30CE9659" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightFull" x="4224" y="7392" name="inst_904A4F47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightFull" x="4192" y="7424" name="inst_C0CD9182" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightFull" x="4224" y="7424" name="inst_0A884243" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightFull" x="4256" y="7424" name="inst_DA6D3EB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightDiagonalFlip" x="4096" y="7328" name="inst_023515C8" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightDiagonalFlip" x="4064" y="7296" name="inst_EBA8F83F" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightDiagonalFlip" x="4128" y="7360" name="inst_089D3766" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightDiagonalFlip" x="4160" y="7392" name="inst_F3E690A1" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightDiagonalFlip" x="4192" y="7424" name="inst_52FD1D31" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightDiagonal" x="4192" y="7296" name="inst_364ADCDD" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightDiagonal" x="4224" y="7328" name="inst_84909130" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightDiagonal" x="4256" y="7360" name="inst_CBA5B3C4" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightDiagonal" x="4288" y="7392" name="inst_E8D7E092" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightDiagonal" x="4320" y="7424" name="inst_82497D22" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
