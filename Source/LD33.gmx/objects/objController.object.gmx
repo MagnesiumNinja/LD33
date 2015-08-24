@@ -73,6 +73,7 @@ instance_activate_object(objTextbox);
 instance_activate_object(objLightConeSwing);
 instance_activate_object(objLightOscillate);
 instance_activate_object(objEnemySimple);
+instance_activate_object(objEnemyComplex);
 instance_activate_object(objEnemyStopper);
 
 

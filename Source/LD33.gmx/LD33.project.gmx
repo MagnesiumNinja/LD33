@@ -11,6 +11,9 @@
       <sprite>sprites\sprLightRadial</sprite>
       <sprite>sprites\sprLightDiagonal</sprite>
       <sprite>sprites\sprLightCone</sprite>
+      <sprite>sprites\sprLightConeShort</sprite>
+      <sprite>sprites\sprLightConeLarge</sprite>
+      <sprite>sprites\sprEnemyComplex</sprite>
       <sprite>sprites\sprLightAlarm</sprite>
       <sprite>sprites\sprLightDiagonalFlip</sprite>
       <sprite>sprites\sprEnemyStopper</sprite>
@@ -114,15 +117,21 @@
     <objects name="Dangers">
       <object>objects\objDanger</object>
       <object>objects\objLightFull</object>
+      <object>objects\objInvisibleBarrier</object>
       <object>objects\objLightDiagonal</object>
       <object>objects\objLightDiagonalFlip</object>
       <object>objects\objLightRadial</object>
       <object>objects\objLightOscillate</object>
       <object>objects\objLightConeFlicker</object>
       <object>objects\objLightConeSwing</object>
+      <object>objects\objLightConeShortSwing</object>
+      <object>objects\objLightSpotlight</object>
+      <object>objects\objLightSpotlightLarge</object>
       <object>objects\objLightAlarm</object>
       <object>objects\objEnemyStopper</object>
       <object>objects\objEnemySimple</object>
+      <object>objects\objEnemyComplex</object>
+      <object>objects\objEnemyAdvanced</object>
     </objects>
     <objects name="Entities">
       <object>objects\objEntity</object>
@@ -154,6 +163,7 @@
       <object>objects\objDialogueFreeze</object>
       <object>objects\objTitleCardBlock</object>
       <object>objects\objSaveBlocker</object>
+      <object>objects\objGameEndBlock</object>
       <object>objects\objSwitchArea</object>
     </objects>
   </objects>
