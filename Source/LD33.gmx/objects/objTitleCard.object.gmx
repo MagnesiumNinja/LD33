@@ -3,9 +3,9 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-999</depth>
-  <persistent>-1</persistent>
-  <parentName>objScreenTransition</parentName>
+  <depth>-1000</depth>
+  <persistent>0</persistent>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -27,29 +27,16 @@
             <kind>1</kind>
             <string>// CONSTANTS //
 
-FADE_IN_RATE = 24;
-FADE_OUT_RATE = 8;
-WAIT_TIME = 180;
-WAIT_TIME2 = 120;
+FADE_IN_RATE = 15;
+FADE_OUT_RATE = 20;
+WAIT_TIME = 120;
 
 
 // VARIABLES //
 
-rm = -1;
-waitTime = WAIT_TIME;
-state = 0;
-
 alpha = 0;
-
-if (instance_exists(objPlayer))
-{
-    objPlayer.frozen = true;
-}
-
-with (objCursor)
-{
-    instance_destroy();
-}
+waitTime = WAIT_TIME;
+stage = 0;
 </string>
           </argument>
         </arguments>
@@ -72,60 +59,31 @@ with (objCursor)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (state == 0)
+            <string>if (stage == 0)
 {
-    // FADE OUT
     if (alpha &lt; 0.99)
     {
         alpha += smoothMove(alpha, 1, FADE_IN_RATE);
     }
     else
     {
-        makeTextbox("Shifter", "In the end, perhaps I was foolish for believing I could coexist.", true, c_white);
-        makeTextbox("Shifter", "Our differences were far to great to overcome.", true, c_white);
-        makeTextbox("Shifter", "In their eyes, we were monsters. Who can say if they were right or wrong?", true, c_white);
-        makeTextbox("Shifter", "There is no argument to be made. I must move on if I hope to survive.", true, c_white);
-        makeTextbox("Shifter", "I must find a place where I can live alone, without fear of humans...", true, c_white);
-        makeTextbox("Shifter", "...If such a place still exists.", true, c_white);
-        state++;
+        stage++;
     }
 }
-else if (state == 1)
+else if (stage == 1)
 {
-    // WAIT
-    if (instance_number(objTextbox) == 0)
+    if (waitTime &gt; 0)
     {
-        if (waitTime &gt; 0)
-        {
-            waitTime--;
-        }
-        else
-        {
-            instance_create(x, y, objTitleCard);
-            waitTime = WAIT_TIME2;
-            state++;
-        }
+        waitTime--;
     }
-}
-else if (state == 2)
-{
-    if (!instance_exists(objTitleCard))
+    else
     {
-        if (waitTime &gt; 0)
-        {
-            waitTime--;
-        }
-        else
-        {
-            room_goto(rm);
-            state++;
-        }
+        stage++;
     }
 }
 else
 {
-    // FADE IN
-    if (alpha &gt; 0.01)
+    if (alpha &gt; 0.1)
     {
         alpha += smoothMove(alpha, 0, FADE_OUT_RATE);
     }
@@ -156,14 +114,24 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_color(c_black);
-draw_set_alpha(alpha);
+            <string>draw_set_alpha(alpha);
 
-draw_rectangle(view_xview[0], view_yview[0], view_xview[0] + view_wview[0], view_yview[0] + view_hview[0], false);
+draw_set_font(fntTitleCard);
+draw_set_halign(fa_center);
 
-draw_set_color(c_white);
+draw_text(view_xview[0] + view_wview[0] / 2, view_yview[0] + TITLE_OFF, "The End");
+
+draw_set_font(fntText);
+
+draw_text(view_xview[0] + view_wview[0] / 2, view_yview[0] + TEXT_OFF, "Magnesium Ninja Studios");
+
+draw_set_font(fntName);
+draw_text(view_xview[0] + view_wview[0] / 2, view_yview[0] + TEXT_OFF + TEXT_BUFFER, "Chris Klassen");
+draw_text(view_xview[0] + view_wview[0] / 2, view_yview[0] + TEXT_OFF + TEXT_BUFFER * 2, "Justin Wang");
+
+
+draw_set_halign(fa_left);
 draw_set_alpha(1);
-
 </string>
           </argument>
         </arguments>
