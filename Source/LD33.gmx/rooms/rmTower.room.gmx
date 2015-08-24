@@ -16,19 +16,19 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1580</w>
-    <h>864</h>
+    <w>1548</w>
+    <h>852</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
-    <showTiles>-1</showTiles>
+    <showTiles>0</showTiles>
     <showBackgrounds>-1</showBackgrounds>
     <showForegrounds>-1</showForegrounds>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
-    <page>2</page>
-    <xoffset>1455</xoffset>
-    <yoffset>1183</yoffset>
+    <page>0</page>
+    <xoffset>1016</xoffset>
+    <yoffset>31</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -1021,7 +1021,7 @@
     <instance objName="objLightOscillate" x="12912" y="5280" name="inst_D424A687" locked="0" code="growing = !growing;&#xA;MAX_RADIUS = 160;&#xA;radius = MAX_RADIUS&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightSpotlight" x="13056" y="4832" name="inst_84B4E67B" locked="0" code="BASE_ANGLE = 180;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlock" x="13216" y="4384" name="inst_2E78B6CC" locked="0" code="" scaleX="1" scaleY="11" colour="4294967295" rotation="0"/>
-    <instance objName="objSaveBlocker" x="13056" y="4032" name="inst_5FE7F3D9" locked="0" code="saveNum = 21;&#xA;" scaleX="1" scaleY="22" colour="4294967295" rotation="0"/>
+    <instance objName="objSaveBlocker" x="13056" y="4224" name="inst_5FE7F3D9" locked="0" code="saveNum = 21;&#xA;" scaleX="1" scaleY="9" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="13472" y="4736" name="inst_94B3EC79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="13504" y="4736" name="inst_B072FEDB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="13536" y="4736" name="inst_8CC1BC35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1517,6 +1517,8 @@
     <instance objName="objSaveBlockerKill" x="9920" y="3968" name="inst_0CCED321" locked="0" code="saveNum = 23;&#xA;" scaleX="109" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightSpotlightLarge" x="13408" y="4000" name="inst_CF703157" locked="0" code="MAX_ANGLE_OFF = 10;&#xA;ROTATE_SPEED = 0.1;&#xA;BASE_ANGLE = 180;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightSpotlightLarge" x="11232" y="6880" name="inst_00F4BCF6" locked="0" code="MAX_ANGLE_OFF = 10;&#xA;ROTATE_SPEED = 0.1;&#xA;BASE_ANGLE = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSaveBlocker" x="13056" y="4512" name="inst_4254A798" locked="0" code="saveNum = 21;&#xA;" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
+    <instance objName="objSaveBlocker" x="13056" y="4000" name="inst_CBD17B37" locked="0" code="saveNum = 21;&#xA;" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tsGrandSewersBG" x="11552" y="7488" w="96" h="32" xo="32" yo="64" id="10010072" name="inst_DEC2B303" depth="950" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
