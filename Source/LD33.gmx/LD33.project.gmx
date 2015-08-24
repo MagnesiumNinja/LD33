@@ -35,6 +35,11 @@
           <sprite>sprites\prtSmoke2</sprite>
           <sprite>sprites\prtSmoke3</sprite>
         </sprites>
+        <sprites name="Special">
+          <sprite>sprites\sprPlayerDead</sprite>
+          <sprite>sprites\sprPlayerShiftToPhysical</sprite>
+          <sprite>sprites\sprPlayerShiftToShadow</sprite>
+        </sprites>
         <sprites name="Hitboxes">
           <sprite>sprites\sprHitbox</sprite>
           <sprite>sprites\sprHitboxShadow</sprite>
@@ -132,6 +137,8 @@
         <object>objects\objPlayerDead</object>
         <object>objects\objHitbox</object>
         <object>objects\objSmokeEffect</object>
+        <object>objects\objShiftToPhysicalEffect</object>
+        <object>objects\objShiftToShadowEffect</object>
       </objects>
     </objects>
     <objects name="HUD">
