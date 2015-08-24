@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprites name="Dangers">
       <sprite>sprites\sprWallLight</sprite>
+      <sprite>sprites\sprWallLightOff</sprite>
       <sprite>sprites\sprLightFull</sprite>
       <sprite>sprites\sprLightRadial</sprite>
       <sprite>sprites\sprLightDiagonal</sprite>
@@ -94,6 +95,7 @@
       <background>background\tsBlackwoodFlatsWindow</background>
       <background>background\tsBlackwoodFlatsWallSeam</background>
       <background>background\tsBlackwoodFlatsDoor</background>
+      <background>background\tsStreetlamp</background>
     </backgrounds>
     <backgrounds name="GrandSewers">
       <background>background\tsGrandSewers</background>

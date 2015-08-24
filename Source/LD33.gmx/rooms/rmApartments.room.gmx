@@ -3,8 +3,8 @@
   <caption></caption>
   <width>16000</width>
   <height>9984</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>4</vsnap>
+  <hsnap>4</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -1455,7 +1455,7 @@
     <instance objName="objLightRadial" x="8224" y="5792" name="inst_1410A032" locked="0" code="radius = 420;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightRadial" x="7776" y="6528" name="inst_31166BA0" locked="0" code="radius = 96;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightRadial" x="8224" y="6784" name="inst_4265B97D" locked="0" code="radius = 320;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLightConeFlicker" x="8000" y="7072" name="inst_DAD10FD4" locked="0" code="TIME_ON = 120;&#xA;TIME_OFF = 60;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightConeFlicker" x="8000" y="7072" name="inst_DAD10FD4" locked="0" code="TIME_ON = 120;&#xA;TIME_OFF = 60;&#xA;isWallLight = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDialogueBlock" x="4928" y="7072" name="inst_B4513459" locked="0" code="addTextbox(&quot;Hunter&quot;, &quot;Are the gates blocked off like I asked?&quot;, false, c_white);&#xA;addTextbox(&quot;Guard&quot;, &quot;We set up spotlights in front of every exit! There's no escape for those beasts.&quot;, false, c_white);&#xA;addTextbox(&quot;Hunter&quot;, &quot;Excellent. Start searching the buildings along this street...&quot;, false, c_white);&#xA;addTextbox(&quot;Hunter&quot;, &quot;...The last group wasn't thorough enough. There could still be Shifters inside.&quot;, false, c_white);&#xA;&#xA;" scaleX="1" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="objDialogueBlock" x="5152" y="6592" name="inst_FADC1121" locked="0" code="addTextbox(&quot;Shifter&quot;, &quot;With the city gates blocked off, I have no way of escaping.&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;All the same, I have no other alternative. I will simply have to try my luck.&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;I cannot help but wonder how many of us had the same thought.&quot;, true, c_white);&#xA;" scaleX="1" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="objDialogueBlock" x="7488" y="6112" name="inst_CA9A41C1" locked="0" code="addTextbox(&quot;Shifter&quot;, &quot;The walls are covered with spotlights...&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;The hunters have grown crafty. I must find another route to the city's perimeter.&quot;, true, c_white);" scaleX="1" scaleY="12" colour="4294967295" rotation="0"/>
@@ -3239,6 +3239,7 @@
     <tile bgName="tsBlackwoodFlatsDoor" x="1328" y="6784" w="32" h="96" xo="0" yo="0" id="10001499" name="inst_4D4F28B7" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlatsDoor" x="1936" y="6784" w="32" h="96" xo="0" yo="0" id="10001500" name="inst_217F62B0" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsSewerGrate" x="7936" y="7488" w="128" h="32" xo="0" yo="0" id="10010170" name="inst_D9E410C7" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsStreetlamp" x="7988" y="7052" w="160" h="384" xo="0" yo="0" id="10012634" name="inst_41329E9C" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1.10000002384186"/>
     <tile bgName="tsBlackwoodFlats" x="768" y="6880" w="32" h="32" xo="64" yo="0" id="10000002" name="inst_1F9C13B0" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlats" x="800" y="6880" w="32" h="32" xo="64" yo="0" id="10000003" name="inst_BF1CFBD3" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlats" x="832" y="6880" w="32" h="32" xo="64" yo="0" id="10000004" name="inst_279F5280" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
