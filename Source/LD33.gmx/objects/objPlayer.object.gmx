@@ -952,7 +952,7 @@ if (!dead)
                 // Retrieve dash angle
                 dashDir = point_direction(x, y, mouse_x, mouse_y);
                 
-                if (collision_line(x, y, x + lengthdir_x(abs(sprite_width) + DASH_SPEED, dashDir), y + lengthdir_y(abs(sprite_height) + DASH_SPEED, dashDir), objBlock, false, true))
+                if (compareAngles(dashDir, image_angle) &gt; 90 || collision_line(x, y, x + lengthdir_x(abs(sprite_width) + DASH_SPEED, dashDir), y + lengthdir_y(abs(sprite_height) + DASH_SPEED, dashDir), objBlock, false, true))
                 {
                     // Failed dash
                 }

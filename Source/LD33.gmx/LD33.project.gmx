@@ -107,6 +107,7 @@
       <script>scripts\approach.gml</script>
       <script>scripts\checkBelow.gml</script>
       <script>scripts\smoothMove.gml</script>
+      <script>scripts\compareAngles.gml</script>
       <script>scripts\setShadowState.gml</script>
     </scripts>
     <scripts name="Drawing">
