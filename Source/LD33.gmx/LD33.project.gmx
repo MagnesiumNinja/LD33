@@ -20,6 +20,7 @@
       <sprites name="Player">
         <sprites name="Physical">
           <sprite>sprites\sprPlayer</sprite>
+          <sprite>sprites\sprPlayerRun</sprite>
           <sprite>sprites\sprPlayerJumpUp</sprite>
           <sprite>sprites\sprPlayerJumpCrest</sprite>
           <sprite>sprites\sprPlayerJumpDown</sprite>

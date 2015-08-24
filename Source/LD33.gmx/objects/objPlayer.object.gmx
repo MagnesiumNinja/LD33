@@ -1119,8 +1119,16 @@ vspd = 0;
         }
         else
         {
-            image_speed = ANIMATION_IDLE_SPEED;
-            sprite_index = sprPlayer;
+            if (abs(hspd) &gt; 0)
+            {
+                image_speed = ANIMATION_MOVE_SPEED;
+                sprite_index = sprPlayerRun;
+            }
+            else
+            {
+                image_speed = ANIMATION_IDLE_SPEED;
+                sprite_index = sprPlayer;
+            }
         }
         draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_white, image_alpha);
         break;
