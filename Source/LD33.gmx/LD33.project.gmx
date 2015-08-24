@@ -103,6 +103,7 @@
       <background>background\tsOverwatchCitadelBackground</background>
       <background>background\tsOverwatchCitadelLit</background>
       <background>background\tsOverwatchCitadelWallSeam</background>
+      <background>background\tsOverwatchCitadelBalcony</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
