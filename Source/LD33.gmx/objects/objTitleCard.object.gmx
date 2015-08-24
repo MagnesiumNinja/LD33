@@ -27,9 +27,14 @@
             <kind>1</kind>
             <string>// CONSTANTS //
 
-FADE_IN_RATE = 15;
-FADE_OUT_RATE = 20;
+FADE_IN_RATE = 30;
+FADE_OUT_RATE = 35;
 WAIT_TIME = 120;
+
+TITLE_OFF = 192;
+TEXT_OFF = 480;
+TEXT_BUFFER = 48;
+NAME_BUFFER = 32;
 
 
 // VARIABLES //
@@ -127,7 +132,7 @@ draw_text(view_xview[0] + view_wview[0] / 2, view_yview[0] + TEXT_OFF, "Magnesiu
 
 draw_set_font(fntName);
 draw_text(view_xview[0] + view_wview[0] / 2, view_yview[0] + TEXT_OFF + TEXT_BUFFER, "Chris Klassen");
-draw_text(view_xview[0] + view_wview[0] / 2, view_yview[0] + TEXT_OFF + TEXT_BUFFER * 2, "Justin Wang");
+draw_text(view_xview[0] + view_wview[0] / 2, view_yview[0] + TEXT_OFF + NAME_BUFFER + TEXT_BUFFER, "Justin Wang");
 
 
 draw_set_halign(fa_left);

@@ -158,7 +158,7 @@ else
             <kind>1</kind>
             <string>if (waitTime == 0)
 {
-    draw_sprite_ext(sprEnemyMove, floor(frame), x, y, image_xscale, image_yscale, image_angle, c_white, 1);
+    draw_sprite_ext(sprEnemyMove, floor(frame), x, y, image_xscale, image_yscale, 0, c_white, 1);
     
     if (MOVE_FRAMES - frame &gt;= IMAGE_SPEED)
     {
@@ -171,7 +171,7 @@ else
 }
 else
 {
-    draw_sprite_ext(sprEnemySimple, floor(frame), x, y, image_xscale, image_yscale, image_angle, c_white, 1);
+    draw_sprite_ext(sprEnemySimple, floor(frame), x, y, image_xscale, image_yscale, 0, c_white, 1);
 
     if (IDLE_FRAMES - frame &gt;= IMAGE_SPEED)
     {
@@ -194,7 +194,7 @@ draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, ima
 draw_set_alpha(1);
 draw_set_blend_mode(bm_normal);
 
-draw_set_color(c_navy);
+draw_set_color(c_fuchsia);
 draw_circle(x, y, CIRCLE_RADIUS * (waitTime / WAIT_TIME), true);
 draw_set_color(c_white);
 </string>
