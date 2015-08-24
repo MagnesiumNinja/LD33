@@ -77,6 +77,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\tsBlackwoodFlats</background>
+    <background>background\tsBlackwoodFlatsBG</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
