@@ -17,7 +17,7 @@
   <makerSettings>
     <isSet>-1</isSet>
     <w>870</w>
-    <h>857</h>
+    <h>854</h>
     <showGrid>-1</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>1</page>
-    <xoffset>3889</xoffset>
-    <yoffset>2613</yoffset>
+    <xoffset>7695</xoffset>
+    <yoffset>5693</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -1527,7 +1527,7 @@
     <instance objName="objBlock" x="8928" y="5408" name="inst_62D35A70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="8544" y="5408" name="inst_AD8AF6D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="8672" y="5408" name="inst_46269CB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLightRadial" x="8000" y="5984" name="inst_1410A032" locked="0" code="radius = 256;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightRadial" x="8000" y="5984" name="inst_1410A032" locked="0" code="radius = 224;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightRadial" x="7936" y="6560" name="inst_31166BA0" locked="0" code="radius = 192;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightRadial" x="8224" y="6912" name="inst_4265B97D" locked="0" code="radius = 224;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightConeFlicker" x="8000" y="7072" name="inst_DAD10FD4" locked="0" code="TIME_ON = 120;&#xA;TIME_OFF = 60;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

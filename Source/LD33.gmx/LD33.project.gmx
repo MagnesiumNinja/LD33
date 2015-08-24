@@ -163,6 +163,7 @@
       <object>objects\objDialogueFreeze</object>
       <object>objects\objTitleCardBlock</object>
       <object>objects\objSaveBlocker</object>
+      <object>objects\objSaveBlockerKill</object>
       <object>objects\objGameEndBlock</object>
       <object>objects\objSwitchArea</object>
     </objects>

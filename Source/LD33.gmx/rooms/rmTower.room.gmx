@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>7129</xoffset>
-    <yoffset>480</yoffset>
+    <xoffset>532</xoffset>
+    <yoffset>19</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -981,7 +981,7 @@
     <instance objName="objLightDiagonalFlip" x="13728" y="5920" name="inst_88C87E51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlock" x="13024" y="5952" name="inst_B848DE61" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="13120" y="6112" name="inst_32464AF2" locked="0" code="saveNum = 20;&#xA;" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvisibleBarrier" x="11232" y="6464" name="inst_69BAA9E9" locked="0" code="" scaleX="57" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objInvisibleBarrier" x="11232" y="6304" name="inst_69BAA9E9" locked="0" code="" scaleX="57" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightOscillate" x="13056" y="5696" name="inst_B878EAB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="13056" y="5920" name="inst_EB21B64A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="13056" y="5888" name="inst_4FEF2484" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1413,8 +1413,6 @@
     <instance objName="objSaveBlock" x="13600" y="2816" name="inst_F116FF6C" locked="0" code="" scaleX="1" scaleY="24" colour="4294967295" rotation="0"/>
     <instance objName="objBlockNoShadow" x="13408" y="3584" name="inst_06483FFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlock" x="13952" y="0" name="inst_B95ECF3B" locked="0" code="" scaleX="1" scaleY="26" colour="4294967295" rotation="0"/>
-    <instance objName="objSaveBlocker" x="13728" y="832" name="inst_F353A9FE" locked="0" code="saveNum = 24;&#xA;" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSaveBlocker" x="13728" y="352" name="inst_19C72CD1" locked="0" code="saveNum = 24;&#xA;" scaleX="1" scaleY="15" colour="4294967295" rotation="0"/>
     <instance objName="objLightSpotlightLarge" x="13984" y="1792" name="inst_1C62E5C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightFull" x="13600" y="3840" name="inst_D62DEE59" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightFull" x="13632" y="3840" name="inst_B4C6743C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1504,6 +1502,7 @@
     <instance objName="objBlockNoShadow" x="13952" y="1728" name="inst_AED7DF71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockNoShadow" x="13952" y="1760" name="inst_1FE7CCE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGameEndBlock" x="13952" y="2144" name="inst_8F91FA08" locked="0" code="" scaleX="64" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSaveBlockerKill" x="12864" y="832" name="inst_BD0F4B1F" locked="0" code="saveNum = 24;&#xA;" scaleX="32" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
