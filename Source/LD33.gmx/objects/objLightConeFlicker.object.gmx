@@ -35,6 +35,7 @@ TIME_OFF = 60;
 on = true;
 timer = TIME_ON;
 image_angle = 270;
+isWallLight = true;
 </string>
           </argument>
         </arguments>
@@ -110,11 +111,19 @@ if (on &amp;&amp; distance_to_object(objPlayer) &lt; global.DDIS &amp;&amp; plac
             <kind>1</kind>
             <string>if (on)
 {
+    if (isWallLight)
+    {
+        draw_sprite(sprWallLight, 0, x, y);
+    }
     draw_set_blend_mode(bm_add);
     
     draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_white, objLightController.COLOUR_LIGHT_ADD);
      
     draw_set_blend_mode(bm_normal);
+}
+else if (isWallLight)
+{
+    draw_sprite(sprWallLightOff, 0, x, y);
 }
 </string>
           </argument>
