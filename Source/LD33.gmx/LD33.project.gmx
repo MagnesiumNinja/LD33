@@ -73,6 +73,7 @@
       <sprite>sprites\sprDashEnd</sprite>
       <sprite>sprites\sprCamera</sprite>
       <sprite>sprites\sprMenuButton</sprite>
+      <sprite>sprites\sprTitle</sprite>
     </sprites>
     <sprites name="Backgrounds">
       <sprite>sprites\bgSky</sprite>
