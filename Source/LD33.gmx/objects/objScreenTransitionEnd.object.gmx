@@ -117,8 +117,8 @@ else if (state == 2)
         }
         else
         {
-            room_goto(rm);
             state++;
+            room_goto(rm);
         }
     }
 }
@@ -133,6 +133,12 @@ else
     {
         instance_destroy();
     }
+}
+
+if (state &gt; 0 &amp;&amp; state &lt; 3)
+{
+    objPlayer.hspd = 0;
+    objPlayer.vspd = 0;
 }
 </string>
           </argument>
