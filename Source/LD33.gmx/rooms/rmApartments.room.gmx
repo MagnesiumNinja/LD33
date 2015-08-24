@@ -16,8 +16,8 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1588</w>
-    <h>867</h>
+    <w>1616</w>
+    <h>876</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -3113,6 +3113,10 @@
     <tile bgName="tsBlackwoodFlats" x="8448" y="7424" w="96" h="32" xo="32" yo="64" id="10004020" name="inst_AB75D4AC" depth="950" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlats" x="8544" y="7424" w="96" h="32" xo="32" yo="64" id="10004021" name="inst_99179F0F" depth="950" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlats" x="8640" y="7424" w="96" h="32" xo="32" yo="64" id="10004022" name="inst_B1187CD3" depth="950" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsBG" x="5088" y="6112" w="32" h="96" xo="64" yo="32" id="10007278" name="inst_D861CD67" depth="950" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsBG" x="5088" y="6208" w="32" h="96" xo="64" yo="32" id="10007279" name="inst_7C61818B" depth="950" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsBG" x="5088" y="6304" w="32" h="96" xo="64" yo="32" id="10007280" name="inst_405E8AA9" depth="950" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsBlackwoodFlatsBG" x="5088" y="6400" w="32" h="96" xo="64" yo="32" id="10007281" name="inst_B37F71CC" depth="950" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlatsDoor" x="1328" y="6784" w="32" h="96" xo="0" yo="0" id="10001499" name="inst_4D4F28B7" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlatsDoor" x="1936" y="6784" w="32" h="96" xo="0" yo="0" id="10001500" name="inst_217F62B0" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlats" x="768" y="6880" w="32" h="32" xo="64" yo="0" id="10000002" name="inst_1F9C13B0" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -5470,10 +5474,6 @@
     <tile bgName="tsBlackwoodFlatsLit" x="8192" y="7456" w="32" h="32" xo="64" yo="32" id="10007108" name="inst_EBBFC3D8" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlatsLit" x="8064" y="7456" w="32" h="32" xo="32" yo="32" id="10007109" name="inst_8A3C9258" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlatsLit" x="7904" y="7456" w="32" h="32" xo="96" yo="32" id="10007110" name="inst_F6D8E2B7" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsBlackwoodFlatsBG" x="5088" y="6112" w="32" h="96" xo="64" yo="32" id="10007274" name="inst_0325BBC7" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsBlackwoodFlatsBG" x="5088" y="6208" w="32" h="96" xo="64" yo="32" id="10007275" name="inst_2E762A5E" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsBlackwoodFlatsBG" x="5088" y="6304" w="32" h="96" xo="64" yo="32" id="10007276" name="inst_1F53C5A6" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsBlackwoodFlatsBG" x="5088" y="6400" w="32" h="96" xo="64" yo="32" id="10007277" name="inst_821484E1" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
