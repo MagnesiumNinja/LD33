@@ -16,8 +16,8 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1604</w>
-    <h>873</h>
+    <w>1588</w>
+    <h>867</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>2</page>
-    <xoffset>438</xoffset>
-    <yoffset>12</yoffset>
+    <xoffset>3922</xoffset>
+    <yoffset>2086</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -1771,11 +1771,6 @@
     <tile bgName="tsOverwatchCitadelBackground" x="14432" y="6240" w="32" h="96" xo="64" yo="32" id="10011184" name="inst_EB41345B" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="14400" y="6240" w="32" h="96" xo="64" yo="32" id="10011185" name="inst_3A4382B5" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="14368" y="6240" w="32" h="96" xo="64" yo="32" id="10011186" name="inst_C3ADACED" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="14336" y="6240" w="32" h="96" xo="64" yo="32" id="10011187" name="inst_4F719593" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="14304" y="6240" w="32" h="96" xo="64" yo="32" id="10011188" name="inst_497B1943" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="14272" y="6240" w="32" h="96" xo="64" yo="32" id="10011189" name="inst_39A2DCA4" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="14240" y="6240" w="32" h="96" xo="64" yo="32" id="10011190" name="inst_7D943A58" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="14208" y="6240" w="32" h="96" xo="64" yo="32" id="10011191" name="inst_B95502CC" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="14176" y="6240" w="32" h="96" xo="64" yo="32" id="10011192" name="inst_175FCC4C" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="14144" y="6240" w="32" h="96" xo="64" yo="32" id="10011193" name="inst_749C7CBB" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="14112" y="6240" w="32" h="96" xo="64" yo="32" id="10011194" name="inst_7FFD9961" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1788,11 +1783,6 @@
     <tile bgName="tsOverwatchCitadelBackground" x="13888" y="6240" w="32" h="96" xo="64" yo="32" id="10011201" name="inst_8B3CC48F" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13856" y="6240" w="32" h="96" xo="64" yo="32" id="10011202" name="inst_168A3183" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13824" y="6240" w="32" h="96" xo="64" yo="32" id="10011203" name="inst_CD5FA1A6" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13792" y="6240" w="32" h="96" xo="64" yo="32" id="10011204" name="inst_0834F20B" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13760" y="6240" w="32" h="96" xo="64" yo="32" id="10011205" name="inst_A5249AE6" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13728" y="6240" w="32" h="96" xo="64" yo="32" id="10011206" name="inst_BC987EB5" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13696" y="6240" w="32" h="96" xo="64" yo="32" id="10011207" name="inst_ABC7ED91" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13664" y="6240" w="32" h="96" xo="64" yo="32" id="10011208" name="inst_B074069D" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13632" y="6240" w="32" h="96" xo="64" yo="32" id="10011209" name="inst_4B59DC82" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13600" y="6240" w="32" h="96" xo="64" yo="32" id="10011210" name="inst_C3A5B341" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13568" y="6240" w="32" h="96" xo="64" yo="32" id="10011211" name="inst_3C053BE9" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1974,11 +1964,6 @@
     <tile bgName="tsOverwatchCitadelBackground" x="13600" y="3712" w="32" h="96" xo="64" yo="32" id="10011392" name="inst_DEE1A966" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13632" y="3712" w="32" h="96" xo="64" yo="32" id="10011393" name="inst_616C16C8" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13664" y="3712" w="32" h="96" xo="64" yo="32" id="10011394" name="inst_F14ED78D" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13696" y="3712" w="32" h="96" xo="64" yo="32" id="10011395" name="inst_446AE061" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13728" y="3712" w="32" h="96" xo="64" yo="32" id="10011396" name="inst_19569BDC" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13760" y="3712" w="32" h="96" xo="64" yo="32" id="10011397" name="inst_C88DDE4F" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13792" y="3712" w="32" h="96" xo="64" yo="32" id="10011398" name="inst_49C0F6AD" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13824" y="3712" w="32" h="96" xo="64" yo="32" id="10011399" name="inst_DFEE788F" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13856" y="3712" w="32" h="96" xo="64" yo="32" id="10011400" name="inst_48CEF2E8" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13888" y="3712" w="32" h="96" xo="64" yo="32" id="10011401" name="inst_678D2017" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13920" y="3712" w="32" h="96" xo="64" yo="32" id="10011402" name="inst_5FB10C16" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -2361,11 +2346,6 @@
     <tile bgName="tsOverwatchCitadelBackground" x="13600" y="3680" w="32" h="32" xo="64" yo="0" id="10011781" name="inst_F802BE7A" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13632" y="3680" w="32" h="32" xo="64" yo="0" id="10011782" name="inst_2978676E" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13664" y="3680" w="32" h="32" xo="64" yo="0" id="10011783" name="inst_70B85EA4" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13696" y="3680" w="32" h="32" xo="64" yo="0" id="10011784" name="inst_A7511C03" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13728" y="3680" w="32" h="32" xo="64" yo="0" id="10011785" name="inst_939E2B85" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13760" y="3680" w="32" h="32" xo="64" yo="0" id="10011786" name="inst_4618C245" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13792" y="3680" w="32" h="32" xo="64" yo="0" id="10011787" name="inst_12EB1174" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13824" y="3680" w="32" h="32" xo="64" yo="0" id="10011788" name="inst_F494A613" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13856" y="3680" w="32" h="32" xo="64" yo="0" id="10011789" name="inst_6780263A" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13888" y="3680" w="32" h="32" xo="64" yo="0" id="10011790" name="inst_7275847A" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13920" y="3680" w="32" h="32" xo="64" yo="0" id="10011791" name="inst_BABE3B31" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -2475,12 +2455,6 @@
     <tile bgName="tsOverwatchCitadelBackground" x="13504" y="5920" w="32" h="32" xo="64" yo="0" id="10011895" name="inst_6D916B90" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13536" y="5920" w="32" h="32" xo="64" yo="0" id="10011896" name="inst_9579A7A6" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13568" y="5920" w="32" h="32" xo="64" yo="0" id="10011897" name="inst_601A2928" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13600" y="5920" w="32" h="32" xo="64" yo="0" id="10011898" name="inst_58A6A764" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13632" y="5920" w="32" h="32" xo="64" yo="0" id="10011899" name="inst_2669B45A" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13664" y="5920" w="32" h="32" xo="64" yo="0" id="10011900" name="inst_A3F63D62" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13696" y="5920" w="32" h="32" xo="64" yo="0" id="10011901" name="inst_3190FFFE" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13728" y="5920" w="32" h="32" xo="64" yo="0" id="10011902" name="inst_D2C7F83B" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13760" y="5920" w="32" h="32" xo="64" yo="0" id="10011903" name="inst_1E07E9DF" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13792" y="5920" w="32" h="32" xo="64" yo="0" id="10011904" name="inst_5AA8D534" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13824" y="5920" w="32" h="32" xo="64" yo="0" id="10011905" name="inst_03E087F6" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13856" y="5920" w="32" h="32" xo="64" yo="0" id="10011906" name="inst_8D0AC717" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -2525,11 +2499,6 @@
     <tile bgName="tsOverwatchCitadelBackground" x="13568" y="6208" w="32" h="32" xo="64" yo="0" id="10011945" name="inst_BAAADA8E" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13600" y="6208" w="32" h="32" xo="64" yo="0" id="10011946" name="inst_96D7395D" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13632" y="6208" w="32" h="32" xo="64" yo="0" id="10011947" name="inst_CF7EB1E1" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13664" y="6208" w="32" h="32" xo="64" yo="0" id="10011948" name="inst_A0D37B3C" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13696" y="6208" w="32" h="32" xo="64" yo="0" id="10011949" name="inst_DCE0107E" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13728" y="6208" w="32" h="32" xo="64" yo="0" id="10011950" name="inst_F283452B" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13760" y="6208" w="32" h="32" xo="64" yo="0" id="10011951" name="inst_D9DB18E9" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="13792" y="6208" w="32" h="32" xo="64" yo="0" id="10011952" name="inst_A2A22C68" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13824" y="6208" w="32" h="32" xo="64" yo="0" id="10011953" name="inst_36738AB9" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13856" y="6208" w="32" h="32" xo="64" yo="0" id="10011954" name="inst_174DE124" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13888" y="6208" w="32" h="32" xo="64" yo="0" id="10011955" name="inst_219D4029" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -2542,11 +2511,6 @@
     <tile bgName="tsOverwatchCitadelBackground" x="14112" y="6208" w="32" h="32" xo="64" yo="0" id="10011962" name="inst_396375FE" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="14144" y="6208" w="32" h="32" xo="64" yo="0" id="10011963" name="inst_857D758B" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="14176" y="6208" w="32" h="32" xo="64" yo="0" id="10011964" name="inst_435F2DA5" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="14208" y="6208" w="32" h="32" xo="64" yo="0" id="10011965" name="inst_368C56E9" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="14240" y="6208" w="32" h="32" xo="64" yo="0" id="10011966" name="inst_175E507B" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="14272" y="6208" w="32" h="32" xo="64" yo="0" id="10011967" name="inst_B4628EC0" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="14304" y="6208" w="32" h="32" xo="64" yo="0" id="10011968" name="inst_3CC97243" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsOverwatchCitadelBackground" x="14336" y="6208" w="32" h="32" xo="64" yo="0" id="10011969" name="inst_0850945B" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="14368" y="6208" w="32" h="32" xo="64" yo="0" id="10011970" name="inst_CBA6B198" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="14400" y="6208" w="32" h="32" xo="64" yo="0" id="10011971" name="inst_5743C4CD" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="14432" y="6208" w="32" h="32" xo="64" yo="0" id="10011972" name="inst_7520EF9A" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -2833,6 +2797,57 @@
     <tile bgName="tsOverwatchCitadelBackground" x="13088" y="6016" w="32" h="32" xo="64" yo="64" id="10012262" name="inst_7A3013EC" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13088" y="5984" w="32" h="32" xo="64" yo="64" id="10012263" name="inst_13E0A67D" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBackground" x="13088" y="5952" w="32" h="32" xo="64" yo="64" id="10012264" name="inst_F5ADA343" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13664" y="6208" w="32" h="32" xo="0" yo="0" id="10012576" name="inst_B2CF0436" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="14208" y="6208" w="32" h="32" xo="0" yo="0" id="10012577" name="inst_39BA6335" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13664" y="6240" w="32" h="32" xo="0" yo="32" id="10012578" name="inst_93674157" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="14208" y="6240" w="32" h="32" xo="0" yo="32" id="10012579" name="inst_D922992F" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13696" y="6240" w="32" h="32" xo="32" yo="32" id="10012580" name="inst_8F0517AD" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13728" y="6240" w="32" h="32" xo="32" yo="32" id="10012581" name="inst_A81C7666" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13760" y="6240" w="32" h="32" xo="32" yo="32" id="10012582" name="inst_059B6327" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="14240" y="6240" w="32" h="32" xo="32" yo="32" id="10012583" name="inst_9302860F" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="14272" y="6240" w="32" h="32" xo="32" yo="32" id="10012584" name="inst_A22806C2" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="14304" y="6240" w="32" h="32" xo="32" yo="32" id="10012585" name="inst_D6FF6927" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13792" y="6240" w="32" h="32" xo="64" yo="32" id="10012586" name="inst_097B779B" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="14336" y="6240" w="32" h="32" xo="64" yo="32" id="10012587" name="inst_7CE8E5B5" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13696" y="6208" w="32" h="32" xo="32" yo="0" id="10012588" name="inst_ED5FB1A0" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13728" y="6208" w="32" h="32" xo="32" yo="0" id="10012589" name="inst_90DEE104" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13760" y="6208" w="32" h="32" xo="32" yo="0" id="10012590" name="inst_F0857D7F" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="14240" y="6208" w="32" h="32" xo="32" yo="0" id="10012591" name="inst_49A5540A" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="14272" y="6208" w="32" h="32" xo="32" yo="0" id="10012592" name="inst_439729E2" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="14304" y="6208" w="32" h="32" xo="32" yo="0" id="10012593" name="inst_026F4094" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13792" y="6208" w="32" h="32" xo="64" yo="0" id="10012594" name="inst_EFCDF5F3" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="14336" y="6208" w="32" h="32" xo="64" yo="0" id="10012595" name="inst_D126E2CB" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13600" y="5920" w="32" h="32" xo="0" yo="32" id="10012596" name="inst_2058C341" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13760" y="5920" w="32" h="32" xo="64" yo="32" id="10012597" name="inst_234DEA62" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13632" y="5920" w="32" h="32" xo="32" yo="32" id="10012598" name="inst_9F7728E0" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13664" y="5920" w="32" h="32" xo="32" yo="32" id="10012599" name="inst_86D4B7A9" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13696" y="5920" w="32" h="32" xo="32" yo="32" id="10012600" name="inst_5A2BC57A" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13728" y="5920" w="32" h="32" xo="32" yo="32" id="10012601" name="inst_F9A4AE02" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelBackground" x="13664" y="6272" w="32" h="64" xo="64" yo="32" id="10012602" name="inst_0D96A0D0" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelBackground" x="13696" y="6272" w="32" h="64" xo="64" yo="32" id="10012603" name="inst_B8EB4E5A" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelBackground" x="13728" y="6272" w="32" h="64" xo="64" yo="32" id="10012604" name="inst_4C41167B" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelBackground" x="13760" y="6272" w="32" h="64" xo="64" yo="32" id="10012605" name="inst_9DDCF8F6" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelBackground" x="13792" y="6272" w="32" h="64" xo="64" yo="32" id="10012606" name="inst_BA354969" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelBackground" x="14208" y="6272" w="32" h="64" xo="64" yo="32" id="10012607" name="inst_A1BAB1C8" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelBackground" x="14240" y="6272" w="32" h="64" xo="64" yo="32" id="10012608" name="inst_9C647672" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelBackground" x="14272" y="6272" w="32" h="64" xo="64" yo="32" id="10012609" name="inst_8E857006" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelBackground" x="14304" y="6272" w="32" h="64" xo="64" yo="32" id="10012610" name="inst_944AB036" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelBackground" x="14336" y="6272" w="32" h="64" xo="64" yo="32" id="10012611" name="inst_EE8B6F59" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelBackground" x="13696" y="3744" w="32" h="64" xo="64" yo="32" id="10012612" name="inst_3680034E" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelBackground" x="13728" y="3744" w="32" h="64" xo="64" yo="32" id="10012613" name="inst_73BDEFAD" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelBackground" x="13760" y="3744" w="32" h="64" xo="64" yo="32" id="10012614" name="inst_02EA0347" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelBackground" x="13792" y="3744" w="32" h="64" xo="64" yo="32" id="10012615" name="inst_259F2FC0" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelBackground" x="13824" y="3744" w="32" h="64" xo="64" yo="32" id="10012616" name="inst_EE758306" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13696" y="3712" w="32" h="32" xo="0" yo="32" id="10012617" name="inst_F8EF0414" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13824" y="3712" w="32" h="32" xo="64" yo="32" id="10012618" name="inst_834FED88" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13696" y="3680" w="32" h="32" xo="0" yo="0" id="10012619" name="inst_EA43482B" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13824" y="3680" w="32" h="32" xo="64" yo="0" id="10012620" name="inst_16F0AF53" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13728" y="3680" w="32" h="32" xo="32" yo="0" id="10012621" name="inst_DD523E5A" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13760" y="3680" w="32" h="32" xo="32" yo="0" id="10012622" name="inst_E5DB61C8" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13792" y="3680" w="32" h="32" xo="32" yo="0" id="10012623" name="inst_29CFCE34" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13728" y="3712" w="32" h="32" xo="32" yo="32" id="10012624" name="inst_DBC7FF0D" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13760" y="3712" w="32" h="32" xo="32" yo="32" id="10012625" name="inst_37CF3A1E" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelWallSeam" x="13792" y="3712" w="32" h="32" xo="32" yo="32" id="10012626" name="inst_5D9220F5" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlatsLit" x="11200" y="7424" w="32" h="32" xo="96" yo="64" id="10004114" name="inst_839A696C" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlatsLit" x="11200" y="7392" w="32" h="32" xo="96" yo="64" id="10004115" name="inst_B69CF546" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlatsLit" x="11200" y="7360" w="32" h="32" xo="96" yo="64" id="10004116" name="inst_DA769BFD" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -5207,6 +5222,10 @@
     <tile bgName="tsOverwatchCitadelBalcony" x="14368" y="3552" w="32" h="32" xo="32" yo="0" id="10012572" name="inst_06CA550A" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBalcony" x="14400" y="3552" w="32" h="32" xo="32" yo="0" id="10012573" name="inst_8E1AE316" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelBalcony" x="14112" y="3552" w="32" h="32" xo="32" yo="0" id="10012574" name="inst_C13ED209" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelBrokenCorners" x="13088" y="6080" w="32" h="32" xo="0" yo="0" id="10012627" name="inst_ED7086D0" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelBrokenCorners" x="13088" y="5952" w="32" h="32" xo="0" yo="32" id="10012628" name="inst_BCDC61C1" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadel" x="13056" y="6080" w="32" h="32" xo="64" yo="0" id="10012629" name="inst_A3AC9DF7" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadel" x="13056" y="5952" w="32" h="32" xo="32" yo="128" id="10012630" name="inst_64AF877C" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
