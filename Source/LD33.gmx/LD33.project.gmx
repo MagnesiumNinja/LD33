@@ -79,6 +79,7 @@
     <backgrounds name="Ground">
       <background>background\tsGround</background>
       <background>background\tsGroundBig</background>
+      <background>background\tsGroundMedium</background>
     </backgrounds>
     <backgrounds name="BlackwoodFlats">
       <background>background\tsBlackwoodFlats</background>
