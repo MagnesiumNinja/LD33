@@ -16,8 +16,8 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1588</w>
-    <h>867</h>
+    <w>1580</w>
+    <h>864</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>2</page>
-    <xoffset>3922</xoffset>
-    <yoffset>2086</yoffset>
+    <xoffset>1455</xoffset>
+    <yoffset>1183</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -2848,6 +2848,8 @@
     <tile bgName="tsOverwatchCitadelWallSeam" x="13728" y="3712" w="32" h="32" xo="32" yo="32" id="10012624" name="inst_DBC7FF0D" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelWallSeam" x="13760" y="3712" w="32" h="32" xo="32" yo="32" id="10012625" name="inst_37CF3A1E" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsOverwatchCitadelWallSeam" x="13792" y="3712" w="32" h="32" xo="32" yo="32" id="10012626" name="inst_5D9220F5" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelDoorframe" x="13056" y="7136" w="32" h="128" xo="0" yo="0" id="10012631" name="inst_0EC77085" depth="930" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsOverwatchCitadelDoorframe" x="13408" y="4608" w="32" h="128" xo="0" yo="0" id="10012633" name="inst_110BECC7" depth="930" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlatsLit" x="11200" y="7424" w="32" h="32" xo="96" yo="64" id="10004114" name="inst_839A696C" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlatsLit" x="11200" y="7392" w="32" h="32" xo="96" yo="64" id="10004115" name="inst_B69CF546" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlatsLit" x="11200" y="7360" w="32" h="32" xo="96" yo="64" id="10004116" name="inst_DA769BFD" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

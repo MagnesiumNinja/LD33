@@ -31,10 +31,49 @@ DARK_LEVEL = 0.6;
 COLOUR_DARK_ADD = 0.3;
 COLOUR_LIGHT_ADD = 0.6;
 
+BLUE_WASH = make_color_rgb(0, 0, 50);
+GREEN_WASH = make_color_rgb(0, 20, 0);
+RED_WASH = make_color_rgb(20, 0, 0);
+
 
 // VARIABLES //
 
 light = surface_create(view_wview[0], view_hview[0]);
+washColour = BLUE_WASH;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (room == rmApartments)
+{
+    washColour = BLUE_WASH;
+}
+else if (room == rmSewers)
+{
+    washColour = GREEN_WASH;
+}
+else
+{
+    washColour = RED_WASH;
+}
 </string>
           </argument>
         </arguments>
@@ -70,7 +109,7 @@ light = surface_create(view_wview[0], view_hview[0]);
 draw_set_blend_mode(bm_add);
 draw_set_alpha(COLOUR_DARK_ADD);
 
-var col = make_color_rgb(0, 0, 50);
+var col = washColour;
 draw_set_color(col);
 
 // Colour filter

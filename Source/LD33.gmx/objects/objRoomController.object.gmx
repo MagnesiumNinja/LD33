@@ -160,8 +160,10 @@ else
             <string>draw_set_font(fntName);
 draw_set_colour(c_white);
 
+/*
 draw_text(view_xview[0] + 16, view_yview[0] + 16, "FPS: " + string(fps));
 draw_text(view_xview[0] + 16, view_yview[0] + 32, "Instances: " + string(instance_number(all)));
+*/
 </string>
           </argument>
         </arguments>
