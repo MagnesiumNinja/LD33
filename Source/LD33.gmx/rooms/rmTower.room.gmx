@@ -16,8 +16,8 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1588</w>
-    <h>867</h>
+    <w>1016</w>
+    <h>600</h>
     <showGrid>-1</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>4187</xoffset>
-    <yoffset>293</yoffset>
+    <xoffset>452</xoffset>
+    <yoffset>-85</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -1500,7 +1500,7 @@
     <instance objName="objBlockNoShadow" x="13952" y="1728" name="inst_AED7DF71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockNoShadow" x="13952" y="1760" name="inst_1FE7CCE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGameEndBlock" x="13952" y="2144" name="inst_8F91FA08" locked="0" code="" scaleX="64" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSaveBlockerKill" x="12864" y="832" name="inst_BD0F4B1F" locked="0" code="saveNum = 24;&#xA;" scaleX="32" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSaveBlockerKill" x="11328" y="1792" name="inst_BD0F4B1F" locked="0" code="saveNum = 24;&#xA;" scaleX="67" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDialogueBlock" x="12480" y="6944" name="inst_1BB61A68" locked="0" code="addTextbox(&quot;Shifter&quot;, &quot;The Overwatch Citadel. This is the seat of the city's power...&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;Beyond it lies the gates, blocked by a spotlight far larger than I can cross.&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;My only hope for salvation lies at the top of that tower.&quot;, true, c_white);&#xA;" scaleX="1" scaleY="16" colour="4294967295" rotation="0"/>
     <instance objName="objDialogueFreeze" x="12480" y="6944" name="inst_B07B164B" locked="0" code="" scaleX="1" scaleY="16" colour="4294967295" rotation="0"/>
     <instance objName="objDialogueBlock" x="13088" y="7136" name="inst_9D3C1B65" locked="0" code="addTextbox(&quot;Shifter&quot;, &quot;There are so many of them...&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;Is it even possible that any of my people have made it this far?&quot;, true, c_white);&#xA;&#xA;" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>

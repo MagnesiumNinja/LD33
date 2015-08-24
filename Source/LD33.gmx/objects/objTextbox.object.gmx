@@ -35,9 +35,9 @@ FADE_IN_RATE = 7;
 FADE_RATE = 12;
 
 X_EDGE_BUFFER = 32;
-Y_EDGE_BUFFER = 32;
+Y_EDGE_BUFFER = 48;
 
-Y_NAME_OFFSET = 32;
+Y_NAME_OFFSET = 40;
 
 MAX_ALPHA = 0.8;
 
@@ -191,6 +191,7 @@ num = -1;
     else
     {
         draw_set_color(colour);
+        draw_set_valign(fa_top);
         
         draw_set_color(c_black);
         draw_text_ext(view_xview[0] + view_wview[0] / 2 - offset + SHADOW_OFFSET, view_yview[0] + Y_EDGE_BUFFER + SHADOW_OFFSET, partText, -1, view_wview[0] - X_EDGE_BUFFER / 2);
