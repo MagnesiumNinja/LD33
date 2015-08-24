@@ -4,7 +4,19 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sndHudClick</sound>
+    <sound>sound\sndNewArea</sound>
+    <sound>sound\sndPlayerChange</sound>
+    <sound>sound\sndPlayerLand</sound>
+    <sound>sound\sndPlayerDie</sound>
+    <sound>sound\sndPlayerJump</sound>
+    <sound>sound\sndPlayerDoubleJump</sound>
+    <sound>sound\sndPlayerDash</sound>
+    <sound>sound\sndType1</sound>
+    <sound>sound\sndType2</sound>
+    <sound>sound\sndType3</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Dangers">
       <sprite>sprites\sprWallLight</sprite>
@@ -63,7 +75,6 @@
       <sprite>sprites\sprDashEnd</sprite>
       <sprite>sprites\sprCamera</sprite>
       <sprite>sprites\sprMenuButton</sprite>
-      <sprite>sprites\sprTitle</sprite>
     </sprites>
     <sprites name="Backgrounds">
       <sprite>sprites\bgSky</sprite>
@@ -113,6 +124,7 @@
       <background>background\tsOverwatchCitadelBrokenCorners</background>
       <background>background\tsOverwatchCitadelDoorframe</background>
     </backgrounds>
+    <background>background\tsMenu</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -200,6 +212,7 @@
       <object>objects\objSaveIndicator</object>
       <object>objects\objTextboxBars</object>
       <object>objects\objMenuButton</object>
+      <object>objects\objTitleCard</object>
       <object>objects\objPause</object>
     </objects>
     <objects name="Collisions">

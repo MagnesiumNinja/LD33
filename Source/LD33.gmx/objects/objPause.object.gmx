@@ -43,6 +43,7 @@ deactivated = false;
 freezeSurface = surface_create(view_wview[0], view_hview[0]);
 
 
+audio_play_sound(sndHudClick, 50, false);
 </string>
           </argument>
         </arguments>
@@ -78,11 +79,13 @@ freezeSurface = surface_create(view_wview[0], view_hview[0]);
     if (keyboard_check_pressed(vk_escape) &amp;&amp; !instance_exists(objScreenTransition))
     {
         instance_activate_all();
+        audio_play_sound(sndHudClick, 50, false);
         instance_destroy();
     }
     
     if (keyboard_check_pressed(vk_backspace) &amp;&amp; !instance_exists(objScreenTransition))
     {
+        audio_play_sound(sndHudClick, 50, false);
         var st = instance_create(x, y, objScreenTransition);
         st.rm = rmMenu;
     }

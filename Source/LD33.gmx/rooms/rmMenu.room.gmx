@@ -26,9 +26,9 @@
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>4</page>
-    <xoffset>31</xoffset>
-    <yoffset>-173</yoffset>
+    <page>2</page>
+    <xoffset>-119</xoffset>
+    <yoffset>-41</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -57,7 +57,9 @@
     <instance objName="objCursor" x="192" y="32" name="inst_0D75DB27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBackground" x="96" y="0" name="inst_7D50DE0B" locked="0" code="addBackground(bgSky, 0, 0, 0, 0);&#xA;addBackground(bgMoon, 0, 0, 0, 0);&#xA;addBackground(bgCloudsFarthest, 0, 0, 0, 0);&#xA;addBackground(bgCloudsFar, 0, 0, 0, 0);&#xA;addBackground(bgCloudsClosest, 0, 0, 0, 0);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles/>
+  <tiles>
+    <tile bgName="tsMenu" x="0" y="0" w="1366" h="768" xo="0" yo="0" id="10012634" name="inst_49BD8A66" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+  </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>

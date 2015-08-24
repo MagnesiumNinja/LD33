@@ -29,7 +29,8 @@
 
 FADE_IN_RATE = 24;
 FADE_OUT_RATE = 8;
-WAIT_TIME = 120;
+WAIT_TIME = 180;
+WAIT_TIME2 = 120;
 
 
 // VARIABLES //
@@ -100,8 +101,24 @@ else if (state == 1)
         }
         else
         {
-            room_goto(rm);
+            instance_create(x, y, objTitleCard);
+            waitTime = WAIT_TIME2;
             state++;
+        }
+    }
+}
+else if (state == 2)
+{
+    if (!instance_exists(objTitleCard))
+    {
+        if (waitTime &gt; 0)
+        {
+            waitTime--;
+        }
+        else
+        {
+            state++;
+            room_goto(rm);
         }
     }
 }
@@ -116,6 +133,12 @@ else
     {
         instance_destroy();
     }
+}
+
+if (state &gt; 0 &amp;&amp; state &lt; 3)
+{
+    objPlayer.hspd = 0;
+    objPlayer.vspd = 0;
 }
 </string>
           </argument>

@@ -40,6 +40,7 @@ image_speed = 0.2;
 radius = 32;
 waitTime = 0;
 dir = 1;
+dirChange = false;
 </string>
           </argument>
         </arguments>
@@ -76,12 +77,18 @@ if (waitTime &gt; 0)
 }
 else
 {
+    if (dirChange)
+    {
+        dirChange = false;
+        dir = -dir;
+    }
+
     x += MOVE_SPEED * dir;
 
     if (place_meeting(x + dir, y, objEnemyStopper))
     {
         waitTime = WAIT_TIME;
-        dir = -dir;
+        dirChange = true;
     }
 }
 </string>
@@ -129,7 +136,7 @@ draw_circle(x, y, radius, false);
 draw_set_alpha(1);
 draw_set_blend_mode(bm_normal);
 
-draw_set_color(c_navy);
+draw_set_color(c_fuchsia);
 draw_circle(x, y, CIRCLE_RADIUS * (waitTime / WAIT_TIME), true);
 draw_set_color(c_white);
 </string>

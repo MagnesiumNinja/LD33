@@ -45,6 +45,8 @@ alpha = 0;
 state = 0;
 waitTime = WAIT_TIME;
 start = false;
+
+audio_play_sound(sndNewArea, 50, false);
 </string>
           </argument>
         </arguments>

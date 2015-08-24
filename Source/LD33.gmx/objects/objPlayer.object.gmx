@@ -165,7 +165,9 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// ACCELERATION AND FRICTION //
+            <string>audio_listener_position(x, y, 0);
+
+// ACCELERATION AND FRICTION //
 
 var accel, fric;
 
@@ -241,6 +243,8 @@ if (!dead)
                     image_yscale = -1;
                     hspd = 0;
                     vspd = 0;
+                    
+                    audio_play_sound(sndPlayerChange, 50, false);
                 }    
                 else if (place_meeting(x + 1, y, objBlock))
                 {
@@ -250,6 +254,7 @@ if (!dead)
                     image_yscale = 1;
                     hspd = 0;
                     vspd = 0;
+                    audio_play_sound(sndPlayerChange, 50, false);
                 }
                 
                 if (place_meeting(x, y - 1, objBlock))
@@ -260,6 +265,7 @@ if (!dead)
                     image_yscale = image_xscale;
                     hspd = 0;
                     vspd = 0;  
+                    audio_play_sound(sndPlayerChange, 50, false);
                 }
                 else if (place_meeting(x, y + 1, objBlock))
                 {
@@ -268,7 +274,8 @@ if (!dead)
                     instance_create(x, y, objShiftToShadowEffect);
                     image_yscale = image_xscale;
                     hspd = 0;
-                    vspd = 0;    
+                    vspd = 0;  
+                    audio_play_sound(sndPlayerChange, 50, false);  
                 }
                 else
                 {
@@ -289,6 +296,7 @@ if (!dead)
                     image_yscale = -1;
                     hspd = 0;
                     vspd = 0;
+                    audio_play_sound(sndPlayerChange, 50, false);
                     
                     swapBuffer = 0;
                 }    
@@ -300,6 +308,7 @@ if (!dead)
                     image_yscale = 1;
                     hspd = 0;
                     vspd = 0;
+                    audio_play_sound(sndPlayerChange, 50, false);
                     
                     swapBuffer = 0;
                 }
@@ -312,6 +321,7 @@ if (!dead)
                     image_yscale = image_xscale;
                     hspd = 0;
                     vspd = 0;
+                    audio_play_sound(sndPlayerChange, 50, false);
                     
                     swapBuffer = 0;
                 }
@@ -323,6 +333,7 @@ if (!dead)
                     image_yscale = image_xscale; 
                     hspd = 0;
                     vspd = 0;
+                    audio_play_sound(sndPlayerChange, 50, false);
                     
                     swapBuffer = 0;  
                 }
@@ -337,7 +348,8 @@ if (!dead)
                 doubleJumps = NUM_DOUBLE_JUMPS;
                 
                 if (!frozen &amp;&amp; state == PlayerStates.PHYSICAL &amp;&amp; keyboard_check_pressed(global.KEY_UP))
-                {
+                {                
+                    audio_play_sound(sndPlayerJump, 50, false);
                     canHoldJump = true;
                     vspd = JUMP_SPEED;
                 }
@@ -390,6 +402,7 @@ if (!dead)
                 // Double jump
                 if (!frozen &amp;&amp; keyboard_check_pressed(global.KEY_UP) &amp;&amp; doubleJumps &gt; 0)
                 {
+                    audio_play_sound(sndPlayerDoubleJump, 50, false);
                     doubleJumps--;
                     
                     canHoldJump = true;
@@ -399,6 +412,7 @@ if (!dead)
                 // Wall Jump
                 if (!frozen &amp;&amp; canWallJump &amp;&amp; keyboard_check_pressed(global.KEY_UP))
                 {
+                    audio_play_sound(sndPlayerDoubleJump, 50, false);
                     callWallJump = false;
                     canHoldJump = true;
                     
@@ -949,6 +963,8 @@ if (!dead)
             // Dashing
             if (!frozen &amp;&amp; mouse_check_button_pressed(global.KEY_DASH) &amp;&amp; !dashing)
             {
+                audio_play_sound(sndPlayerDash, 50, false);
+                    
                 // Retrieve dash angle
                 dashDir = point_direction(x, y, mouse_x, mouse_y);
                 
@@ -974,6 +990,7 @@ if (!dead)
             {
                 state = PlayerStates.PHYSICAL;
                 instance_create(x, y, objShiftToPhysicalEffect);
+                audio_play_sound(sndPlayerChange, 50, false);
                 sprite_index = sprPlayer;
                 image_xscale = image_yscale;
                 hShadowPos = ShadowPos.NONE;
@@ -997,6 +1014,7 @@ else
     if (!deadDone)
     {
         deadDone = true;
+        audio_play_sound(sndPlayerDie, 50, false);
         
         hspd = 0;
         vspd = 0;
@@ -1032,6 +1050,11 @@ else
 if (vspd &gt;= FALL_SHAKE_THRESHOLD)
 {
     shakeScreen(4, 0.15);
+}
+
+if (vspd &gt;= 0)
+{
+    audio_play_sound(sndPlayerLand, 50, false);
 }
 
 vspd = 0;

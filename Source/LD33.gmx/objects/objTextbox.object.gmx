@@ -42,6 +42,8 @@ Y_NAME_OFFSET = 40;
 MAX_ALPHA = 0.8;
 
 SHADOW_OFFSET = 2;
+TYPE_FREQ = 7;
+MAX_TYPE_OFF = 2;
 
 
 // VARIABLES //
@@ -60,6 +62,12 @@ pos = 0;
 offset = 0;
 
 num = -1;
+
+sound[0] = sndType1;
+sound[1] = sndType2;
+sound[2] = sndType3;
+numSounds = 3;
+typeFreq = TYPE_FREQ;
 </string>
           </argument>
         </arguments>
@@ -226,6 +234,21 @@ num = -1;
         else
         {
             pos += SCROLL_RATE;
+        }
+        
+        if (string_length(partText) &lt; string_length(text))
+        {
+            if (typeFreq &gt; 0)
+            {
+                typeFreq--;
+            }
+            else
+            {
+                typeFreq = TYPE_FREQ - irandom(MAX_TYPE_OFF);
+                
+                var snd = irandom(2);
+                audio_play_sound(sound[snd], 50, false);
+            }
         }
     }
     
