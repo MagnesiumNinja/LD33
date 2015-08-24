@@ -132,7 +132,7 @@ draw_set_color(c_white);
 draw_text(view_xview[0] + view_wview[0] - X_EDGE_BUFFER - offset , view_yview[0] + view_hview[0] - Y_EDGE_BUFFER, partText);
 
 draw_set_halign(fa_left);
-draw_set_valign(fa_right);
+draw_set_valign(fa_top);
 
     
 // Increment the text
