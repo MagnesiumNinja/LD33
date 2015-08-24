@@ -84,9 +84,20 @@
       <background>background\tsBlackwoodFlats</background>
       <background>background\tsBlackwoodFlatsLit</background>
       <background>background\tsBlackwoodFlatsBG</background>
+      <background>background\tsBlackwoodFlatsBGLarge</background>
+      <background>background\tsBlackwoodFlatsLarge</background>
       <background>background\tsBlackwoodFlatsWindow</background>
       <background>background\tsBlackwoodFlatsWallSeam</background>
       <background>background\tsBlackwoodFlatsDoor</background>
+    </backgrounds>
+    <backgrounds name="GrandSewers">
+      <background>background\tsGrandSewers</background>
+      <background>background\tsGrandSewersLit</background>
+      <background>background\tsGrandSewersBG</background>
+    </backgrounds>
+    <backgrounds name="OverwatchCitadel">
+      <background>background\tsOverwatchCitadel</background>
+      <background>background\tsOverwatchCitadelLit</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -172,6 +183,7 @@
       <object>objects\objAreaTitleCard</object>
       <object>objects\objTextbox</object>
       <object>objects\objSaveIndicator</object>
+      <object>objects\objTextboxBars</object>
     </objects>
     <objects name="Collisions">
       <object>objects\objGround</object>
