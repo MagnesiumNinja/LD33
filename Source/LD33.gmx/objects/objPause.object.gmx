@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-9999</depth>
+  <depth>-9899</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,28 +25,24 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// CAMERA AND CURSOR //
+            <string>// CONSTANTS //
 
-camera = instance_create(objPlayer.x, objPlayer.y, objCamera);
-camera.focus = objPlayer;
+OVERLAY_ALPHA = 0.7;
+TEXT_X = 64;
+TEXT_Y = view_hview[0] / 2 + 128;
+TEXT_OFF = 48;
+PAUSE_Y = 128;
 
-cursor = instance_create(mouse_x, mouse_y, objCursor);
 
-instance_create(x, y, objLightController);
+// VARIABLES //
+
+freezeDrawn = false;
+deactivated = false;
+
+// The surface to draw the freeze frame to
+freezeSurface = surface_create(view_wview[0], view_hview[0]);
 
 
-// SCREEN SHAKE //
-
-global.SCREEN_SHAKE = false;
-global.DEFAULT_SHAKE_VALUE = 4;
-
-default_x = view_xport[0]; //Find what the view was originally
-default_y = view_yport[0]; //Find what the view was originally
-
-shakes = global.DEFAULT_SHAKE_VALUE; //The shake intensity (maximum-pixel-shake-per-side)
-incr = 2; //The amount of intensity increment when the quake starts and stops.
-factor = 0; //Current Intensity.
-shakeTimer = -1;
 </string>
           </argument>
         </arguments>
@@ -69,71 +65,27 @@ shakeTimer = -1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// ROOM RESTARTING //
-
-if (keyboard_check_pressed(global.KEY_RESTART) &amp;&amp; !instance_exists(objScreenTransition) &amp;&amp; !instance_exists(objPause))
+            <string>if (freezeDrawn)
 {
-    var st = instance_create(x, y, objScreenTransition);
-    st.rm = room;
-}
-
-if (!objPlayer.frozen &amp;&amp; keyboard_check_pressed(vk_escape) &amp;&amp; !instance_exists(objPause) &amp;&amp; !instance_exists(objScreenTransition))
-{
-    instance_create(x, y, objPause);
-}
-
-
-// SCREEN SHAKE //
-
-if (global.CAMERA_OBJECT &gt;= 0)
-{
-    global.CAMERA_X = (global.CAMERA_OBJECT.x - view_wview[0] / 2);
-    global.CAMERA_Y = (global.CAMERA_OBJECT.y - view_hview[0] / 2);
-}
-
-if (global.SCREEN_SHAKE == true) 
-{
-    // If we are shaking
-    if (factor &lt; shakes) 
+    if (!deactivated)
     {
-        factor += incr;
-    } 
-    else 
-    {
-        factor = shakes;
+        deactivated = true;
+        
+        instance_deactivate_all(true);
+        instance_activate_object(objCursor);
     }
-}
-else 
-{
-    // Stop the shaking
-    if (factor &gt; 0) 
+    
+    if (keyboard_check_pressed(vk_escape) &amp;&amp; !instance_exists(objScreenTransition))
     {
-        factor -= incr;
+        instance_activate_all();
+        instance_destroy();
     }
-    else 
+    
+    if (keyboard_check_pressed(vk_backspace) &amp;&amp; !instance_exists(objScreenTransition))
     {
-        factor = 0;
+        var st = instance_create(x, y, objScreenTransition);
+        st.rm = rmMenu;
     }
-}
-
-if (factor &gt; 0) 
-{ 
-    view_object[0] = noone;
-    view_xview[0] = clamp(global.CAMERA_X - factor + random(factor * 2), 0, room_width - view_wview[0]);
-    view_yview[0] = clamp(global.CAMERA_Y - factor + random(factor * 2), 0, room_height - view_hview[0]);
-} 
-else 
-{
-    view_object[0] = global.CAMERA_OBJECT;
-}
-
-if (shakeTimer &gt; 0) 
-{
-    shakeTimer--;
-} 
-else 
-{
-    global.SCREEN_SHAKE = false;
 }
 </string>
           </argument>
@@ -157,11 +109,50 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(fntName);
-draw_set_colour(c_white);
-
-draw_text(view_xview[0] + 16, view_yview[0] + 16, "FPS: " + string(fps));
-draw_text(view_xview[0] + 16, view_yview[0] + 32, "Instances: " + string(instance_number(all)));
+            <string>// Draw the screen to the surface
+if (!freezeDrawn)
+{   
+    surface_set_target(freezeSurface);
+    
+    draw_surface(application_surface, 0, 0);
+    
+    surface_reset_target();
+  
+    freezeDrawn = true;
+}
+else
+{
+    // Draw the surface
+    if (surface_exists(freezeSurface))
+    {
+        draw_surface(freezeSurface, view_xview[0], view_yview[0]);
+    }
+    
+    // Draw the overlay
+    draw_set_color(c_black);
+    draw_set_alpha(OVERLAY_ALPHA);
+    
+    draw_rectangle(view_xview[0], view_yview[0], view_xview[0] + view_wview[0], view_yview[0] + view_hview[0], false);
+    
+    draw_set_alpha(1);
+    draw_set_color(c_white);
+    
+    // Draw text
+    draw_set_valign(fa_center);
+    draw_set_halign(fa_center);
+    draw_set_font(fntTitleCard);
+    
+    draw_text(view_xview[0] + view_wview[0] / 2, view_yview[0] + PAUSE_Y, "Paused");
+    
+    draw_set_valign(fa_top);
+    
+    draw_set_font(fntText);
+    
+    draw_text(view_xview[0] + view_wview[0] / 2, view_yview[0] + TEXT_Y, "Press ESCAPE to return to the game");
+    draw_text(view_xview[0] + view_wview[0] / 2, view_yview[0] + TEXT_Y + TEXT_OFF, "Press BACKSPACE to quit to the menu");
+    
+    draw_set_halign(fa_left);
+}
 </string>
           </argument>
         </arguments>

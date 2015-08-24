@@ -59,6 +59,7 @@
       <sprite>sprites\sprCursor</sprite>
       <sprite>sprites\sprDashEnd</sprite>
       <sprite>sprites\sprCamera</sprite>
+      <sprite>sprites\sprMenuButton</sprite>
     </sprites>
     <sprites name="Backgrounds">
       <sprite>sprites\bgSky</sprite>
@@ -79,6 +80,7 @@
     <backgrounds name="Ground">
       <background>background\tsGround</background>
       <background>background\tsGroundBig</background>
+      <background>background\tsGroundMedium</background>
     </backgrounds>
     <backgrounds name="BlackwoodFlats">
       <background>background\tsBlackwoodFlats</background>
@@ -108,6 +110,7 @@
       <script>scripts\approach.gml</script>
       <script>scripts\checkBelow.gml</script>
       <script>scripts\smoothMove.gml</script>
+      <script>scripts\compareAngles.gml</script>
       <script>scripts\setShadowState.gml</script>
     </scripts>
     <scripts name="Drawing">
@@ -186,6 +189,8 @@
       <object>objects\objTextbox</object>
       <object>objects\objSaveIndicator</object>
       <object>objects\objTextboxBars</object>
+      <object>objects\objMenuButton</object>
+      <object>objects\objPause</object>
     </objects>
     <objects name="Collisions">
       <object>objects\objGround</object>
