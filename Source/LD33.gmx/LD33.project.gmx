@@ -76,8 +76,12 @@
     </sprites>
   </sprites>
   <backgrounds name="background">
-    <background>background\tsBlackwoodFlats</background>
-    <background>background\tsBlackwoodFlatsBG</background>
+    <backgrounds name="BlackwoodFlats">
+      <background>background\tsBlackwoodFlats</background>
+      <background>background\tsBlackwoodFlatsBG</background>
+      <background>background\tsBlackwoodFlatsWallSeam</background>
+      <background>background\tsBlackwoodFlatsDoor</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
