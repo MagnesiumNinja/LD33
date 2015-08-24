@@ -16,8 +16,8 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1616</w>
-    <h>876</h>
+    <w>1596</w>
+    <h>870</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -26,9 +26,9 @@
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
-    <page>2</page>
-    <xoffset>7322</xoffset>
-    <yoffset>7410</yoffset>
+    <page>0</page>
+    <xoffset>7</xoffset>
+    <yoffset>10115</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -3238,6 +3238,7 @@
     <tile bgName="tsGrandSewersBG" x="8032" y="8544" w="32" h="96" xo="64" yo="32" id="10009065" name="inst_64448E40" depth="950" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlatsDoor" x="1328" y="6784" w="32" h="96" xo="0" yo="0" id="10001499" name="inst_4D4F28B7" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlatsDoor" x="1936" y="6784" w="32" h="96" xo="0" yo="0" id="10001500" name="inst_217F62B0" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsSewerGrate" x="7936" y="7488" w="128" h="32" xo="0" yo="0" id="10010170" name="inst_D9E410C7" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlats" x="768" y="6880" w="32" h="32" xo="64" yo="0" id="10000002" name="inst_1F9C13B0" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlats" x="800" y="6880" w="32" h="32" xo="64" yo="0" id="10000003" name="inst_BF1CFBD3" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlats" x="832" y="6880" w="32" h="32" xo="64" yo="0" id="10000004" name="inst_279F5280" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

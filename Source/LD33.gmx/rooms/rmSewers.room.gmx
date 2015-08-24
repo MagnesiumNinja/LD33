@@ -16,8 +16,8 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1580</w>
-    <h>864</h>
+    <w>1572</w>
+    <h>861</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>2</page>
-    <xoffset>14231</xoffset>
-    <yoffset>9003</yoffset>
+    <xoffset>2461</xoffset>
+    <yoffset>2676</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -2069,6 +2069,7 @@
     <tile bgName="tsGrandSewersBG" x="11648" y="8640" w="32" h="32" xo="64" yo="64" id="10009939" name="inst_8021367F" depth="950" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsGrandSewersBG" x="11648" y="8672" w="32" h="32" xo="64" yo="64" id="10009940" name="inst_737C38C9" depth="950" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsGrandSewersBG" x="11520" y="8672" w="32" h="32" xo="64" yo="64" id="10009941" name="inst_8C47BC14" depth="950" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsSewerGrate" x="11552" y="7488" w="128" h="32" xo="0" yo="0" id="10010169" name="inst_65C1D20B" depth="940" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlatsLit" x="11200" y="7424" w="32" h="32" xo="96" yo="64" id="10004035" name="inst_1522FC19" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlatsLit" x="11200" y="7392" w="32" h="32" xo="96" yo="64" id="10004036" name="inst_B3349AAC" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlatsLit" x="11200" y="7360" w="32" h="32" xo="96" yo="64" id="10004037" name="inst_38472140" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

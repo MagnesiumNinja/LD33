@@ -8,6 +8,53 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// CONSTANTS //
+
+MENU_START_X = view_wview[0] - 256;
+MENU_START_Y = view_hview[0] / 2;
+MENU_OFFSET = 96;
+
+
+// VARIABLES //
+
+buttons[0] = "Load Game";
+buttons[1] = "New Game";
+buttons[2] = "Quit";
+
+numButtons = 3;
+
+selected = false;
+
+
+var i;
+for (i = 0; i &lt; numButtons; i++)
+{
+    var b = instance_create(MENU_START_X, MENU_START_Y + MENU_OFFSET * i, objMenuButton);
+    b.text = buttons[i];
+    b.selection = i;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -25,20 +72,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (keyboard_check_pressed(vk_anykey))
-{
-    if (global.SAVED_ROOM &gt;= 0)
-    {
-        var st = instance_create(x, y, objScreenTransition);
-        st.rm = global.SAVED_ROOM;
-    }
-    else
-    {
-        var st = instance_create(x, y, objScreenTransition);
-        st.rm = rmApartments;
-    }
-}
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>

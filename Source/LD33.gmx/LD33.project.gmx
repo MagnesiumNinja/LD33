@@ -59,6 +59,7 @@
       <sprite>sprites\sprCursor</sprite>
       <sprite>sprites\sprDashEnd</sprite>
       <sprite>sprites\sprCamera</sprite>
+      <sprite>sprites\sprMenuButton</sprite>
     </sprites>
     <sprites name="Backgrounds">
       <sprite>sprites\bgSky</sprite>
@@ -187,6 +188,8 @@
       <object>objects\objTextbox</object>
       <object>objects\objSaveIndicator</object>
       <object>objects\objTextboxBars</object>
+      <object>objects\objMenuButton</object>
+      <object>objects\objPause</object>
     </objects>
     <objects name="Collisions">
       <object>objects\objGround</object>
