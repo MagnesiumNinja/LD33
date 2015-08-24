@@ -131,7 +131,9 @@ if (radius != 0 &amp;&amp; distance_to_object(objPlayer) &lt; global.DDIS)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_blend_mode(bm_add);
+            <string>draw_sprite(sprWallLight, 0, x, y);
+
+draw_set_blend_mode(bm_add);
 
 // Draw highlight    
 draw_set_alpha(objLightController.COLOUR_LIGHT_ADD);

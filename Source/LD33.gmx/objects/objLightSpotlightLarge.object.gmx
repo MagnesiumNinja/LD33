@@ -112,7 +112,9 @@ if (distance_to_object(objPlayer) &lt; global.DDIS &amp;&amp; place_meeting(x, y
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_blend_mode(bm_add);
+            <string>draw_sprite(sprWallLight, 0, x, y);
+
+draw_set_blend_mode(bm_add);
 
 draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_white, objLightController.COLOUR_LIGHT_ADD);
  

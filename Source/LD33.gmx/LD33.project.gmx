@@ -19,6 +19,7 @@
   </sounds>
   <sprites name="sprites">
     <sprites name="Dangers">
+      <sprite>sprites\sprWallLight</sprite>
       <sprite>sprites\sprLightFull</sprite>
       <sprite>sprites\sprLightRadial</sprite>
       <sprite>sprites\sprLightDiagonal</sprite>
