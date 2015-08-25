@@ -5,6 +5,7 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
+    <sound>sound\sndMusic</sound>
     <sound>sound\sndHudClick</sound>
     <sound>sound\sndNewArea</sound>
     <sound>sound\sndPlayerChange</sound>

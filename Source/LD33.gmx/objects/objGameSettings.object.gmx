@@ -46,6 +46,8 @@ global.SAVED_Y = -1;
 
 global.SAVED_TO = -1;
 
+
+audio_play_sound(sndMusic, 100, true);
 </string>
           </argument>
         </arguments>
