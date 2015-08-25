@@ -85,6 +85,7 @@ hover = false;
                 global.SAVED_X = -1;
                 global.SAVED_Y = -1;
                 global.SAVED_TO = -1;
+                global.DEATHS = 0;
                 global.SAVED_AREA = -1;
                 
                 saveGame(0);

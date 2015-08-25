@@ -1015,6 +1015,7 @@ else
     {
         deadDone = true;
         audio_play_sound(sndPlayerDie, 50, false);
+        global.DEATHS++;
         
         hspd = 0;
         vspd = 0;
