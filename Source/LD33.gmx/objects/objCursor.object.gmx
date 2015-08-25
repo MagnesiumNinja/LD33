@@ -33,23 +33,28 @@ if (instance_exists(objPlayer))
         draw_set_color(c_orange);
         draw_set_alpha(0.15);
         
+        var dir = point_direction(objPlayer.x, objPlayer.y, mouse_x, mouse_y);
+
+        
         if (collision_line(objPlayer.x, objPlayer.y, mouse_x, mouse_y, objBlock, false, true))
         {
-            var dir = point_direction(objPlayer.x, objPlayer.y, mouse_x, mouse_y);
-        
-            var i;
-            for (i = 0; i &lt; point_distance(objPlayer.x, objPlayer.y, mouse_x, mouse_y); i++)
+            
+            if (compareAngles(dir, objPlayer.image_angle) &lt;= 90)
             {
-                if (collision_point(objPlayer.x + lengthdir_x(i, dir), objPlayer.y + lengthdir_y(i, dir), objBlock, false, true))
-                {   
-                    draw_line_width(objPlayer.x, objPlayer.y, objPlayer.x + lengthdir_x(i, dir), objPlayer.y + lengthdir_y(i, dir), 2);
-                    draw_set_alpha(1);
-                    draw_sprite(sprDashEnd, 0, objPlayer.x + lengthdir_x(i, dir), objPlayer.y + lengthdir_y(i, dir));
-                    break;
+                var i;
+                for (i = 0; i &lt; point_distance(objPlayer.x, objPlayer.y, mouse_x, mouse_y); i++)
+                {
+                    if (collision_point(objPlayer.x + lengthdir_x(i, dir), objPlayer.y + lengthdir_y(i, dir), objBlock, false, true))
+                    {   
+                        draw_line_width(objPlayer.x, objPlayer.y, objPlayer.x + lengthdir_x(i, dir), objPlayer.y + lengthdir_y(i, dir), 2);
+                        draw_set_alpha(1);
+                        draw_sprite(sprDashEnd, 0, objPlayer.x + lengthdir_x(i, dir), objPlayer.y + lengthdir_y(i, dir));
+                        break;
+                    }
                 }
             }
         }
-        else
+        else if (compareAngles(dir, objPlayer.image_angle) &lt;= 90)
         {
             draw_line_width(objPlayer.x, objPlayer.y, mouse_x, mouse_y, 2);
         }

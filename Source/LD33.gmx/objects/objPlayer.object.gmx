@@ -963,7 +963,6 @@ if (!dead)
             // Dashing
             if (!frozen &amp;&amp; mouse_check_button_pressed(global.KEY_DASH) &amp;&amp; !dashing)
             {
-                audio_play_sound(sndPlayerDash, 50, false);
                     
                 // Retrieve dash angle
                 dashDir = point_direction(x, y, mouse_x, mouse_y);
@@ -974,6 +973,7 @@ if (!dead)
                 }
                 else
                 {
+                    audio_play_sound(sndPlayerDash, 50, false);
                     dashing = true;
                     jumpThru = false;
                     
