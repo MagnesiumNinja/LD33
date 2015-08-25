@@ -73,7 +73,6 @@
     <sprites name="HUD">
       <sprite>sprites\sprCursor</sprite>
       <sprite>sprites\sprDashEnd</sprite>
-      <sprite>sprites\sprCamera</sprite>
       <sprite>sprites\sprMenuButton</sprite>
     </sprites>
     <sprites name="Backgrounds">
@@ -205,6 +204,7 @@
       <object>objects\objCamera</object>
       <object>objects\objCursor</object>
       <object>objects\objBackground</object>
+      <object>objects\objMenuBackground</object>
       <object>objects\objScreenTransition</object>
       <object>objects\objScreenTransitionEnd</object>
       <object>objects\objAreaTitleCard</object>

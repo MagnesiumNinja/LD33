@@ -16,8 +16,8 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1616</w>
-    <h>876</h>
+    <w>1008</w>
+    <h>600</h>
     <showGrid>-1</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -26,7 +26,7 @@
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>2</page>
+    <page>0</page>
     <xoffset>-119</xoffset>
     <yoffset>-41</yoffset>
   </makerSettings>
@@ -55,7 +55,7 @@
     <instance objName="objController" x="32" y="0" name="inst_21E2D5FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMenuController" x="64" y="0" name="inst_B133660D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCursor" x="192" y="32" name="inst_0D75DB27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBackground" x="96" y="0" name="inst_7D50DE0B" locked="0" code="addBackground(bgSky, 0, 0, 0, 0);&#xA;addBackground(bgMoon, 0, 0, 0, 0);&#xA;addBackground(bgCloudsFarthest, 0, 0, 0, 0);&#xA;addBackground(bgCloudsFar, 0, 0, 0, 0);&#xA;addBackground(bgCloudsClosest, 0, 0, 0, 0);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMenuBackground" x="96" y="0" name="inst_97E60F0C" locked="0" code="addBackground(bgSky, 180, 0, 0, 0);&#xA;addBackground(bgMoon, 180, 0, 0, 0);&#xA;addBackground(bgCloudsFarthest, 180, 0, 0, 0);&#xA;addBackground(bgCloudsFar, 180, 0, 0, 0);&#xA;addBackground(bgCloudsClosest, 180, 0, 0, 0);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tsMenu" x="0" y="0" w="1366" h="768" xo="0" yo="0" id="10012634" name="inst_49BD8A66" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
