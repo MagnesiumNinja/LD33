@@ -16,8 +16,8 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1596</w>
-    <h>870</h>
+    <w>1616</w>
+    <h>876</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>3976</xoffset>
-    <yoffset>2997</yoffset>
+    <xoffset>22220</xoffset>
+    <yoffset>14671</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -862,10 +862,10 @@
     <instance objName="objBlock" x="9472" y="9152" name="inst_A2C71450" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objEnemyStopper" x="8928" y="9728" name="inst_CB5F1239" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objEnemyStopper" x="10048" y="9728" name="inst_9EE4A214" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objEnemySimple" x="8992" y="9728" name="inst_F2D5264A" locked="0" code="MOVE_SPEED = 4;&#xA;radius = 64;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objEnemySimple" x="9568" y="9728" name="inst_005B1B43" locked="0" code="MOVE_SPEED = 4;&#xA;radius = 64;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objEnemySimple" x="10016" y="9728" name="inst_6BF58DE5" locked="0" code="MOVE_SPEED = 4;&#xA;radius = 64;&#xA;dir = -1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objEnemySimple" x="9440" y="9728" name="inst_463466D8" locked="0" code="MOVE_SPEED = 4;&#xA;radius = 64;&#xA;dir = -1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEnemySimple" x="8992" y="9728" name="inst_F2D5264A" locked="0" code="MOVE_SPEED = 3;&#xA;radius = 64;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEnemySimple" x="9568" y="9728" name="inst_005B1B43" locked="0" code="MOVE_SPEED = 3;&#xA;radius = 64;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEnemySimple" x="10016" y="9728" name="inst_6BF58DE5" locked="0" code="MOVE_SPEED = 3;&#xA;radius = 64;&#xA;dir = -1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEnemySimple" x="9440" y="9728" name="inst_463466D8" locked="0" code="MOVE_SPEED = 3;&#xA;radius = 64;&#xA;dir = -1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightRadial" x="9280" y="9632" name="inst_4F30DE4D" locked="0" code="radius = 64;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightRadial" x="9728" y="9632" name="inst_ED9EE87D" locked="0" code="radius = 64;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlock" x="9984" y="9184" name="inst_E10CB575" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
@@ -881,8 +881,8 @@
     <instance objName="objBlock" x="9440" y="8192" name="inst_A796D3DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="9472" y="8192" name="inst_D01D9CB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightAlarm" x="9216" y="9184" name="inst_E9FFE60C" locked="0" code="ROTATE_DIR = -1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLightOscillate" x="9088" y="8832" name="inst_98D83B9F" locked="0" code="MAX_RADIUS = 160;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLightOscillate" x="9216" y="8448" name="inst_4594B8EC" locked="0" code="MAX_RADIUS = 160;&#xA;radius = MAX_RADIUS;&#xA;growing = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightOscillate" x="9088" y="8832" name="inst_98D83B9F" locked="0" code="MAX_RADIUS = 160;&#xA;CHANGE_SPEED = 1.5;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightOscillate" x="9216" y="8448" name="inst_4594B8EC" locked="0" code="MAX_RADIUS = 160;&#xA;radius = MAX_RADIUS;&#xA;growing = false;&#xA;CHANGE_SPEED = 1.5;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockNoShadow" x="9056" y="9312" name="inst_F18F813E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockNoShadow" x="9088" y="9312" name="inst_492F7863" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockNoShadow" x="9120" y="9312" name="inst_182DE498" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1181,10 +1181,9 @@
     <instance objName="objBlock" x="12384" y="7456" name="inst_27A1632B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="12416" y="7456" name="inst_B3F30D16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="12448" y="7456" name="inst_6F648ECA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLightAlarm" x="11616" y="8384" name="inst_B0D57952" locked="0" code="ROTATE_DIR = -1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLightAlarm" x="11616" y="8128" name="inst_E9996CC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightAlarm" x="11616" y="8384" name="inst_B0D57952" locked="0" code="ROTATE_SPEED = 1;&#xA;ROTATE_DIR = -1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLightAlarm" x="11616" y="8128" name="inst_E9996CC3" locked="0" code="ROTATE_SPEED = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightOscillate" x="11616" y="7584" name="inst_21819E1E" locked="0" code="MIN_RADIUS = 0;&#xA;radius = MIN_RADIUS;&#xA;MAX_RADIUS = 96;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockNoShadow" x="11520" y="7744" name="inst_CE23E00D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockNoShadow" x="11520" y="7712" name="inst_304416C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockNoShadow" x="11520" y="7680" name="inst_2E9D9153" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockNoShadow" x="11520" y="7648" name="inst_3AEB8415" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1193,7 +1192,6 @@
     <instance objName="objBlockNoShadow" x="11520" y="7552" name="inst_F049EC52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockNoShadow" x="11520" y="7520" name="inst_DA6EFFED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockNoShadow" x="11520" y="7488" name="inst_97481B2A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockNoShadow" x="11680" y="7744" name="inst_821CB698" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockNoShadow" x="11680" y="7712" name="inst_CFDCA0EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockNoShadow" x="11680" y="7680" name="inst_5CD8238D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockNoShadow" x="11680" y="7648" name="inst_934CA027" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1301,6 +1299,8 @@
     <instance objName="objBlock" x="11520" y="7456" name="inst_02932D05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="11680" y="7456" name="inst_1959313F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightSpotlightLarge" x="11232" y="6880" name="inst_E4134370" locked="0" code="MAX_ANGLE_OFF = 10;&#xA;ROTATE_SPEED = 0.1;&#xA;BASE_ANGLE = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="11520" y="7744" name="inst_36A439C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="11680" y="7744" name="inst_93C422F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tsGrandSewersBG" x="7936" y="7456" w="96" h="32" xo="32" yo="64" id="10009142" name="inst_64024E86" depth="950" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -3099,7 +3099,6 @@
     <tile bgName="tsGrandSewersLit" x="11520" y="7648" w="32" h="32" xo="96" yo="64" id="10005218" name="inst_8D578432" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsGrandSewersLit" x="11520" y="7680" w="32" h="32" xo="96" yo="64" id="10005219" name="inst_B75C1A2D" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsGrandSewersLit" x="11520" y="7712" w="32" h="32" xo="96" yo="64" id="10005220" name="inst_AB550E6F" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsGrandSewersLit" x="11520" y="7744" w="32" h="32" xo="96" yo="64" id="10005221" name="inst_1AB1BD0E" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsGrandSewersLit" x="11680" y="7488" w="32" h="32" xo="32" yo="64" id="10005222" name="inst_7DD2FCE7" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsGrandSewersLit" x="11680" y="7520" w="32" h="32" xo="32" yo="64" id="10005223" name="inst_91CE7A38" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsGrandSewersLit" x="11680" y="7552" w="32" h="32" xo="32" yo="64" id="10005224" name="inst_E0AFEA92" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -3108,7 +3107,6 @@
     <tile bgName="tsGrandSewersLit" x="11680" y="7648" w="32" h="32" xo="32" yo="64" id="10005227" name="inst_0764B1E1" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsGrandSewersLit" x="11680" y="7680" w="32" h="32" xo="32" yo="64" id="10005228" name="inst_0DB1E898" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsGrandSewersLit" x="11680" y="7712" w="32" h="32" xo="32" yo="64" id="10005229" name="inst_6F2A693C" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsGrandSewersLit" x="11680" y="7744" w="32" h="32" xo="32" yo="64" id="10005230" name="inst_541424B9" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsGrandSewersLit" x="9216" y="8224" w="32" h="32" xo="32" yo="64" id="10005231" name="inst_CCE296A6" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsGrandSewersLit" x="9216" y="8256" w="32" h="32" xo="32" yo="64" id="10005232" name="inst_7C4910FD" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsGrandSewersLit" x="9216" y="8288" w="32" h="32" xo="32" yo="64" id="10005233" name="inst_F3E6CD32" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -4254,7 +4252,6 @@
     <tile bgName="tsGrandSewersLit" x="11552" y="7648" w="32" h="32" xo="128" yo="64" id="10008422" name="inst_0990B75B" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsGrandSewersLit" x="11552" y="7680" w="32" h="32" xo="128" yo="64" id="10008423" name="inst_4980D88C" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsGrandSewersLit" x="11552" y="7712" w="32" h="32" xo="128" yo="64" id="10008424" name="inst_42C2F7E4" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsGrandSewersLit" x="11552" y="7744" w="32" h="32" xo="128" yo="64" id="10008425" name="inst_328D4D3D" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsGrandSewersLit" x="11648" y="7488" w="32" h="32" xo="0" yo="64" id="10008426" name="inst_555FB199" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsGrandSewersLit" x="11648" y="7520" w="32" h="32" xo="0" yo="64" id="10008427" name="inst_71165364" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsGrandSewersLit" x="11648" y="7552" w="32" h="32" xo="0" yo="64" id="10008428" name="inst_2ADD410B" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -4263,7 +4260,6 @@
     <tile bgName="tsGrandSewersLit" x="11648" y="7648" w="32" h="32" xo="0" yo="64" id="10008431" name="inst_EAA83D07" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsGrandSewersLit" x="11648" y="7680" w="32" h="32" xo="0" yo="64" id="10008432" name="inst_3FB380CB" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsGrandSewersLit" x="11648" y="7712" w="32" h="32" xo="0" yo="64" id="10008433" name="inst_ACC07294" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsGrandSewersLit" x="11648" y="7744" w="32" h="32" xo="0" yo="64" id="10008434" name="inst_991A8F32" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsGrandSewersLit" x="9184" y="8192" w="32" h="32" xo="0" yo="64" id="10008435" name="inst_0E6EA5FC" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsGrandSewersLit" x="9184" y="8224" w="32" h="32" xo="0" yo="64" id="10008436" name="inst_97135E1D" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsGrandSewersLit" x="9184" y="8256" w="32" h="32" xo="0" yo="64" id="10008437" name="inst_C144C865" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -4649,6 +4645,8 @@
     <tile bgName="tsBlackwoodFlats" x="10720" y="7392" w="32" h="96" xo="64" yo="32" id="10012474" name="inst_26777A57" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlats" x="10752" y="7392" w="32" h="96" xo="64" yo="32" id="10012475" name="inst_7B95CC49" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsBlackwoodFlats" x="10784" y="7392" w="32" h="96" xo="64" yo="32" id="10012476" name="inst_88280F43" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsGrandSewers" x="11520" y="7744" w="32" h="32" xo="128" yo="64" id="10012635" name="inst_DD9E4DEA" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsGrandSewers" x="11680" y="7744" w="32" h="32" xo="0" yo="64" id="10012636" name="inst_FA2E9D6F" depth="-500" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
