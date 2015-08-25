@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>text = "";
 selection = 0;
+hover = false;
 </string>
           </argument>
         </arguments>
@@ -140,7 +141,14 @@ if (selection == 0 &amp;&amp; global.SAVED_ROOM == -1)
 }
 else
 {
-    draw_set_color(c_white);
+    if (hover)
+    {
+        draw_set_color(make_color_rgb(255, 135, 83));   
+    }
+    else
+    {
+        draw_set_color(c_white);
+    }
 }
 
 draw_text(x, y, text);
@@ -153,6 +161,8 @@ if (mouse_x &gt;= bbox_left &amp;&amp; mouse_x &lt;= bbox_right &amp;&amp;
     mouse_y &gt;= bbox_top &amp;&amp; mouse_y &lt;= bbox_bottom &amp;&amp;
     !objMenuController.selected)
 {
+    hover = true;
+
     if (selection == 1 &amp;&amp; global.SAVED_ROOM &gt;= 0)
     {
         with (objCursor)
@@ -174,7 +184,10 @@ if (mouse_x &gt;= bbox_left &amp;&amp; mouse_x &lt;= bbox_right &amp;&amp;
         }
     }
 }
-
+else
+{
+    hover = false;
+}
 </string>
           </argument>
         </arguments>
