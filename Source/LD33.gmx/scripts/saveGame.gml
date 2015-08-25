@@ -50,6 +50,10 @@ if (instance_exists(objPlayer))
     // Write the player's room
     file_text_write_real(file, room);
     file_text_writeln(file);
+    
+    // Write the player's room
+    file_text_write_real(file, global.DEATHS);
+    file_text_writeln(file);
         
     // Write the player's area
     file_text_write_real(file, global.SAVED_AREA);
@@ -71,6 +75,10 @@ else
     
     // Write the player's room
     file_text_write_real(file, room);
+    file_text_writeln(file);
+    
+    // Write the player's room
+    file_text_write_real(file, 0);
     file_text_writeln(file);
     
     // Write the player's area
