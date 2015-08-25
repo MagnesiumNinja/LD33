@@ -127,7 +127,7 @@ draw_set_halign(fa_center);
 draw_text(view_xview[0] + view_wview[0] / 2, view_yview[0] + TITLE_OFF, "The End");
 
 draw_set_font(fntText);
-draw_text(view_xview[0] + view_wview[0] / 2, view_yview[0] + TITLE_OFF + TEXT_BUFFER, "Deaths: " + string(global.DEATHS));
+draw_text(view_xview[0] + view_wview[0] / 2, view_yview[0] + TITLE_OFF + TEXT_BUFFER * 2, "Deaths: " + string(global.DEATHS));
 
 draw_text(view_xview[0] + view_wview[0] / 2, view_yview[0] + TEXT_OFF, "Magnesium Ninja Studios");
 
