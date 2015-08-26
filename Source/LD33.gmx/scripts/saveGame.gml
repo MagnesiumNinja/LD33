@@ -51,8 +51,12 @@ if (instance_exists(objPlayer))
     file_text_write_real(file, room);
     file_text_writeln(file);
     
-    // Write the player's room
+    // Write the player's deaths
     file_text_write_real(file, global.DEATHS);
+    file_text_writeln(file);
+       
+    // Write the player's time
+    file_text_write_real(file, global.TIME);
     file_text_writeln(file);
         
     // Write the player's area
@@ -78,6 +82,10 @@ else
     file_text_writeln(file);
     
     // Write the player's deaths
+    file_text_write_real(file, 0);
+    file_text_writeln(file);
+    
+    // Write the player's time
     file_text_write_real(file, 0);
     file_text_writeln(file);
     

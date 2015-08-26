@@ -56,7 +56,11 @@ if (file_text_read_real(file) == 1)
     // Read the player's deaths
     global.DEATHS = file_text_read_real(file);
     file_text_readln(file);
-        
+            
+    // Read the player's time
+    global.TIME = file_text_read_real(file);
+    file_text_readln(file);
+    
     // Read the player's area
     global.SAVED_AREA = file_text_read_real(file);
     file_text_readln(file);
@@ -72,6 +76,7 @@ if (file_text_read_real(file) == 1)
 else
 {
     // Skip over pointless lines
+    file_text_readln(file);
     file_text_readln(file);
     file_text_readln(file);
     file_text_readln(file);

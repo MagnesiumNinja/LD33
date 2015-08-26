@@ -31,6 +31,11 @@
     {
         focus = noone;
     }
+    
+    with (objRoomController)
+    {
+        done = true;
+    }
 
     var st = instance_create(x, y, objScreenTransitionEnd);
     st.rm = rmMenu;

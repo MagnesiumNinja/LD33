@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>TEXT_OFF = 48;
+            <string>TEXT_OFF = 60;
 
 box = 0;
 checked = false;
@@ -58,6 +58,8 @@ text = "";
     mouse_y &gt;= bbox_top &amp;&amp; mouse_y &lt;= bbox_bottom)
 {
     checked = !checked;
+    
+    audio_play_sound(sndHudClick, 50, false);
     
     switch(box)
     {
@@ -118,7 +120,9 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (checked)
+            <string>draw_self();
+
+if (checked)
 {
     image_single = 1;
     draw_sprite(sprMenuCheckMark, 0, x, y);
@@ -128,13 +132,12 @@ else
     image_single = 0;
 }
 
-draw_self();
-
 draw_set_valign(fa_center);
+draw_set_halign(fa_right);
 draw_set_font(fntText);
 
 draw_set_color(c_black);
-draw_text(x + TEXT_OFF + 2, y + 2, text);
+draw_text(x - TEXT_OFF + 2, y + 2, text);
 
 
 if (hover)
@@ -146,10 +149,11 @@ else
     draw_set_color(c_white);
 }
 
-draw_text(x + TEXT_OFF, y, text);
+draw_text(x - TEXT_OFF, y, text);
 
 
 draw_set_valign(fa_top);
+draw_set_halign(fa_left);
 draw_set_color(c_white);
 </string>
           </argument>

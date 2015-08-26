@@ -74,7 +74,7 @@ hover = false;
         case 1: // New Game
         {
             objMenuController.selected = true;
-                audio_play_sound(sndHudClick, 50, false);
+            audio_play_sound(sndHudClick, 50, false);
     
             if (saveFileExists(0))
             {
@@ -86,6 +86,7 @@ hover = false;
                 global.SAVED_Y = -1;
                 global.SAVED_TO = -1;
                 global.DEATHS = 0;
+                global.TIME = 0;
                 global.SAVED_AREA = -1;
                 
                 saveGame(0);
