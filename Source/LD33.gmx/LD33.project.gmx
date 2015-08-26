@@ -75,6 +75,8 @@
       <sprite>sprites\sprCursor</sprite>
       <sprite>sprites\sprDashEnd</sprite>
       <sprite>sprites\sprMenuButton</sprite>
+      <sprite>sprites\sprMenuCheckbox</sprite>
+      <sprite>sprites\sprMenuCheckMark</sprite>
     </sprites>
     <sprites name="Backgrounds">
       <sprite>sprites\bgSky</sprite>
