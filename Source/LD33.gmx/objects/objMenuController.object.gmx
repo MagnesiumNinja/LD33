@@ -44,8 +44,9 @@ buttons[2] = "Quit";
 numButtons = 3;
 
 boxes[0] = "Fullscreen";
+boxes[1] = "Speedrun";
 
-numBoxes = 1;
+numBoxes = 2;
 
 selected = false;
 
@@ -69,6 +70,13 @@ for (i = 0; i &lt; numBoxes; i++)
         case 0: // FULLSCREEN
         {
             b.checked = global.FULLSCREEN;
+        
+            break;
+        }
+        
+        case 1: // SPEEDRUN
+        {
+            b.checked = global.SPEEDRUN;
         
             break;
         }

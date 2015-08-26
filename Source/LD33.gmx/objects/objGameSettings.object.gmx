@@ -48,6 +48,7 @@ global.SAVED_TO = -1;
 global.DEATHS = 0;
 
 global.FULLSCREEN = false;
+global.SPEEDRUN = false;
 
 
 audio_play_sound(sndMusic, 100, true);

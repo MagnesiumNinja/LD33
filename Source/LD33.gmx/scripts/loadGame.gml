@@ -83,6 +83,10 @@ else
 // Read fullscreen
 global.FULLSCREEN = file_text_read_real(file);
 file_text_readln(file);
+        
+// Read speedrun
+global.SPEEDRUN = file_text_read_real(file);
+file_text_readln(file);
     
 // Close the file
 file_text_close(file);

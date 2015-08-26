@@ -25,7 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// CONSTANTS //
+            <string>if (global.SPEEDRUN)
+{
+    instance_destroy();
+}
+
+
+// CONSTANTS //
 
 SCROLL_RATE = 0.75;
 

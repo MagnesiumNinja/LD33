@@ -76,6 +76,11 @@ text = "";
         
             break;
         }
+        
+        case 1: // SPEEDRUN
+        {
+            global.SPEEDRUN = checked;
+        }
     }
     
     saveGame(0);
@@ -116,6 +121,7 @@ else
             <string>if (checked)
 {
     image_single = 1;
+    draw_sprite(sprMenuCheckMark, 0, x, y);
 }
 else
 {

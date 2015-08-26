@@ -25,7 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>name[0] = "";
+            <string>if (global.SPEEDRUN)
+{
+    instance_destroy();
+}
+
+name[0] = "";
 text[0] = "";
 isPlayer[0] = -1;
 colour[0] = -1;

@@ -98,6 +98,11 @@ else
 file_text_write_real(file, global.FULLSCREEN);
 file_text_writeln(file);
 
+// Write fullscreen
+file_text_write_real(file, global.SPEEDRUN);
+file_text_writeln(file);
+
+
 // Close the file
 file_text_close(file);
 
