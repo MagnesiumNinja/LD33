@@ -74,6 +74,7 @@
     <sprites name="HUD">
       <sprite>sprites\sprCursor</sprite>
       <sprite>sprites\sprDashEnd</sprite>
+      <sprite>sprites\sprMenuCheckbox</sprite>
       <sprite>sprites\sprMenuButton</sprite>
     </sprites>
     <sprites name="Backgrounds">
@@ -213,6 +214,7 @@
       <object>objects\objSaveIndicator</object>
       <object>objects\objTextboxBars</object>
       <object>objects\objMenuButton</object>
+      <object>objects\objMenuCheckbox</object>
       <object>objects\objTitleCard</object>
       <object>objects\objPause</object>
     </objects>

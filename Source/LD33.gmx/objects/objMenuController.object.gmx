@@ -31,6 +31,9 @@ MENU_START_X = view_wview[0] - 256;
 MENU_START_Y = view_hview[0] / 2;
 MENU_OFFSET = 96;
 
+MENU_BOX_OFFSET = 48;
+CHECKBOX_Y_OFF = 48;
+
 
 // VARIABLES //
 
@@ -39,6 +42,10 @@ buttons[1] = "New Game";
 buttons[2] = "Quit";
 
 numButtons = 3;
+
+boxes[0] = "Fullscreen";
+
+numBoxes = 1;
 
 selected = false;
 
@@ -49,6 +56,23 @@ for (i = 0; i &lt; numButtons; i++)
     var b = instance_create(MENU_START_X, MENU_START_Y + MENU_OFFSET * i, objMenuButton);
     b.text = buttons[i];
     b.selection = i;
+}
+
+for (i = 0; i &lt; numBoxes; i++)
+{
+    var b = instance_create(MENU_START_X - MENU_BOX_OFFSET, MENU_START_Y + MENU_OFFSET * 3 + CHECKBOX_Y_OFF * i, objMenuCheckbox);
+    b.text = boxes[i];
+    b.box = i;
+    
+    switch(i)
+    {
+        case 0: // FULLSCREEN
+        {
+            b.checked = global.FULLSCREEN;
+        
+            break;
+        }
+    }
 }
 </string>
           </argument>
@@ -73,6 +97,30 @@ for (i = 0; i &lt; numButtons; i++)
           <argument>
             <kind>1</kind>
             <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>selected = false;
+
+</string>
           </argument>
         </arguments>
       </action>

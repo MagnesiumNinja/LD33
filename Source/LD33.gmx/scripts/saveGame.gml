@@ -77,7 +77,7 @@ else
     file_text_write_real(file, room);
     file_text_writeln(file);
     
-    // Write the player's room
+    // Write the player's deaths
     file_text_write_real(file, 0);
     file_text_writeln(file);
     
@@ -93,6 +93,10 @@ else
     file_text_write_real(file, 0);
     file_text_writeln(file);
 }
+
+// Write fullscreen
+file_text_write_real(file, global.FULLSCREEN);
+file_text_writeln(file);
 
 // Close the file
 file_text_close(file);

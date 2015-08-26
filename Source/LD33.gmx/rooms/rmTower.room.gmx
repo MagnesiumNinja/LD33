@@ -119,14 +119,6 @@
     <instance objName="objBlockNoShadow" x="11200" y="6528" name="inst_F07665D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockNoShadow" x="11200" y="6496" name="inst_665364B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockNoShadow" x="11200" y="6464" name="inst_FFB9183E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockNoShadow" x="11200" y="6432" name="inst_080EDCD4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockNoShadow" x="11200" y="6400" name="inst_E841029F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockNoShadow" x="11200" y="6368" name="inst_F8448DD8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockNoShadow" x="11200" y="6336" name="inst_28FD2CFF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockNoShadow" x="11200" y="6304" name="inst_B9F362A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockNoShadow" x="11200" y="6272" name="inst_944690F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockNoShadow" x="11200" y="6240" name="inst_60A94C0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockNoShadow" x="11200" y="6208" name="inst_21DE838F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockNoShadow" x="11520" y="7488" name="inst_39EFE0BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockNoShadow" x="11520" y="7520" name="inst_4D1D093A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockNoShadow" x="11520" y="7552" name="inst_B99D829F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -977,7 +969,7 @@
     <instance objName="objLightDiagonalFlip" x="13728" y="5920" name="inst_88C87E51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlock" x="12976" y="5952" name="inst_B848DE61" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="13120" y="6112" name="inst_32464AF2" locked="0" code="saveNum = 20;&#xA;" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvisibleBarrier" x="11232" y="6304" name="inst_69BAA9E9" locked="0" code="" scaleX="57" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objInvisibleBarrier" x="11424" y="6336" name="inst_69BAA9E9" locked="0" code="" scaleX="51" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightOscillate" x="13056" y="5536" name="inst_B878EAB1" locked="0" code="MAX_RADIUS = 256;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="13056" y="5920" name="inst_EB21B64A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="13056" y="5888" name="inst_4FEF2484" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1462,7 +1454,7 @@
     <instance objName="objBlockNoShadow" x="13888" y="1696" name="inst_4B639E68" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockNoShadow" x="13888" y="1728" name="inst_DFAE4A6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGameEndBlock" x="13984" y="1760" name="inst_8F91FA08" locked="0" code="" scaleX="64" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSaveBlockerKill" x="11328" y="1792" name="inst_BD0F4B1F" locked="0" code="saveNum = 24;&#xA;" scaleX="67" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSaveBlockerKill" x="10336" y="1792" name="inst_BD0F4B1F" locked="0" code="saveNum = 24;&#xA;" scaleX="98.0645141601563" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDialogueBlock" x="12480" y="6944" name="inst_1BB61A68" locked="0" code="addTextbox(&quot;Shifter&quot;, &quot;The Overwatch Citadel. This is the seat of the city's power...&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;Beyond it lies the gates, blocked by a spotlight far larger than I can cross.&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;My only hope for salvation lies at the top of that tower.&quot;, true, c_white);" scaleX="1" scaleY="16" colour="4294967295" rotation="0"/>
     <instance objName="objDialogueFreeze" x="12480" y="6944" name="inst_B07B164B" locked="0" code="" scaleX="1" scaleY="16" colour="4294967295" rotation="0"/>
     <instance objName="objDialogueBlock" x="13088" y="7136" name="inst_9D3C1B65" locked="0" code="addTextbox(&quot;Shifter&quot;, &quot;There are so many of them...&quot;, true, c_white);&#xA;addTextbox(&quot;Shifter&quot;, &quot;Is it even possible that any of my people have made it this far?&quot;, true, c_white);&#xA;&#xA;" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
@@ -1517,6 +1509,7 @@
     <instance objName="objLightSpotlightLarge" x="11232" y="6880" name="inst_00F4BCF6" locked="0" code="MAX_ANGLE_OFF = 10;&#xA;ROTATE_SPEED = 0.1;&#xA;BASE_ANGLE = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="13056" y="4512" name="inst_4254A798" locked="0" code="saveNum = 21;&#xA;" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="13056" y="4000" name="inst_CBD17B37" locked="0" code="saveNum = 21;&#xA;" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
+    <instance objName="objInvisibleBarrier" x="11424" y="4000" name="inst_4A4DA75D" locked="0" code="" scaleX="1" scaleY="73" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tsGrandSewersBG" x="11552" y="7488" w="96" h="32" xo="32" yo="64" id="10010072" name="inst_DEC2B303" depth="950" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

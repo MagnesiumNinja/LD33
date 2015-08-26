@@ -69,7 +69,21 @@ if (file_text_read_real(file) == 1)
     global.SAVED_Y = file_text_read_real(file);
     file_text_readln(file);
 }
-
+else
+{
+    // Skip over pointless lines
+    file_text_readln(file);
+    file_text_readln(file);
+    file_text_readln(file);
+    file_text_readln(file);
+    file_text_readln(file);
+    file_text_readln(file);
+}
+    
+// Read fullscreen
+global.FULLSCREEN = file_text_read_real(file);
+file_text_readln(file);
+    
 // Close the file
 file_text_close(file);
 
