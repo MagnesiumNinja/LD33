@@ -806,7 +806,11 @@ if (!dead)
                     jumpThru = true;
                     state = PlayerStates.PHYSICAL;
                     instance_create(x, y, objShiftToPhysicalEffect);
+                    audio_play_sound(sndPlayerChange, 50, false);
                 
+                    vspd = 0;
+                    hspd = 0;
+                    
                     sprite_index = sprPlayer;
                     hShadowPos = ShadowPos.NONE;
                     vShadowPos = ShadowPos.NONE;
@@ -995,6 +999,9 @@ if (!dead)
                 image_xscale = image_yscale;
                 hShadowPos = ShadowPos.NONE;
                 vShadowPos = ShadowPos.NONE;
+                
+                vspd = 0;
+                hspd = 0;
             }
             
             if (place_meeting(x + 1, y, objBlockNoShadow) || place_meeting(x - 1, y, objBlockNoShadow) ||
