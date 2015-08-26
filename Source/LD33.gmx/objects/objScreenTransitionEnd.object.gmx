@@ -81,12 +81,16 @@ with (objCursor)
     }
     else
     {
-        makeTextbox("Shifter", "In the end, perhaps I was foolish for believing I could coexist.", true, c_white);
-        makeTextbox("Shifter", "Our differences were far to great to overcome.", true, c_white);
-        makeTextbox("Shifter", "In their eyes, we were monsters. Who can say if they were right or wrong?", true, c_white);
-        makeTextbox("Shifter", "There is no argument to be made. I must move on if I hope to survive.", true, c_white);
-        makeTextbox("Shifter", "I must find a place where I can live alone, without fear of humans...", true, c_white);
-        makeTextbox("Shifter", "...If such a place still exists.", true, c_white);
+        if (!global.SPEEDRUN)
+        {
+            makeTextbox("Shifter", "In the end, perhaps I was foolish for believing I could coexist.", true, c_white);
+            makeTextbox("Shifter", "Our differences were far to great to overcome.", true, c_white);
+            makeTextbox("Shifter", "In their eyes, we were monsters. Who can say if they were right or wrong?", true, c_white);
+            makeTextbox("Shifter", "There is no argument to be made. I must move on if I hope to survive.", true, c_white);
+            makeTextbox("Shifter", "I must find a place where I can live alone, without fear of humans...", true, c_white);
+            makeTextbox("Shifter", "...If such a place still exists.", true, c_white);
+        }
+        
         state++;
     }
 }

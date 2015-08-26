@@ -46,6 +46,10 @@ global.SAVED_Y = -1;
 
 global.SAVED_TO = -1;
 global.DEATHS = 0;
+global.TIME = 0;
+
+global.FULLSCREEN = false;
+global.SPEEDRUN = false;
 
 
 audio_play_sound(sndMusic, 100, true);
@@ -86,6 +90,13 @@ else
     {
         game_end();
     }
+}
+
+
+// Update necessary values
+if (global.FULLSCREEN)
+{
+    window_set_fullscreen(true);
 }
 </string>
           </argument>

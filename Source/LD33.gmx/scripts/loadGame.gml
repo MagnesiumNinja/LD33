@@ -56,7 +56,11 @@ if (file_text_read_real(file) == 1)
     // Read the player's deaths
     global.DEATHS = file_text_read_real(file);
     file_text_readln(file);
-        
+            
+    // Read the player's time
+    global.TIME = file_text_read_real(file);
+    file_text_readln(file);
+    
     // Read the player's area
     global.SAVED_AREA = file_text_read_real(file);
     file_text_readln(file);
@@ -69,7 +73,26 @@ if (file_text_read_real(file) == 1)
     global.SAVED_Y = file_text_read_real(file);
     file_text_readln(file);
 }
-
+else
+{
+    // Skip over pointless lines
+    file_text_readln(file);
+    file_text_readln(file);
+    file_text_readln(file);
+    file_text_readln(file);
+    file_text_readln(file);
+    file_text_readln(file);
+    file_text_readln(file);
+}
+    
+// Read fullscreen
+global.FULLSCREEN = file_text_read_real(file);
+file_text_readln(file);
+        
+// Read speedrun
+global.SPEEDRUN = file_text_read_real(file);
+file_text_readln(file);
+    
 // Close the file
 file_text_close(file);
 

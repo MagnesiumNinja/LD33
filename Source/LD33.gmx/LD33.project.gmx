@@ -214,6 +214,7 @@
       <object>objects\objTextbox</object>
       <object>objects\objSaveIndicator</object>
       <object>objects\objTextboxBars</object>
+      <object>objects\objMenuCheckbox</object>
       <object>objects\objMenuButton</object>
       <object>objects\objTitleCard</object>
       <object>objects\objPause</object>

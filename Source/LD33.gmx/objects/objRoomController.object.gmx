@@ -25,7 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// CAMERA AND CURSOR //
+            <string>// SPEEDRUN //
+
+SPEEDRUN_OFF = 16;
+done = false;
+
+
+// CAMERA AND CURSOR //
 
 camera = instance_create(objPlayer.x, objPlayer.y, objCamera);
 camera.focus = objPlayer;
@@ -80,6 +86,14 @@ if (keyboard_check_pressed(global.KEY_RESTART) &amp;&amp; !instance_exists(objSc
 if (!objPlayer.frozen &amp;&amp; keyboard_check_pressed(vk_escape) &amp;&amp; !instance_exists(objPause) &amp;&amp; !instance_exists(objScreenTransition))
 {
     instance_create(x, y, objPause);
+}
+
+
+// TIMER //
+
+if (!objPlayer.frozen &amp;&amp; !objPlayer.dead)
+{
+    global.TIME++;
 }
 
 
@@ -157,13 +171,56 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(fntName);
-draw_set_colour(c_white);
+            <string>if (!done &amp;&amp; global.SPEEDRUN)
+{
+    // Calculate time
+    var ms, s, m;
+    ms = floor(global.TIME / 0.06);
+    
+    s = floor(ms / 1000);
+    ms -= s * 1000;
+    
+    m = floor(s / 60);
+    s -= m * 60;
+    
+    // Draw the timer
+    draw_set_font(fntText);
 
-/*
-draw_text(view_xview[0] + 16, view_yview[0] + 16, "FPS: " + string(fps));
-draw_text(view_xview[0] + 16, view_yview[0] + 32, "Instances: " + string(instance_number(all)));
-*/
+    draw_set_valign(fa_bottom);    
+
+    if (ms &gt; 99)
+    {
+        draw_set_color(c_black);
+        draw_text(view_xview[0] + SPEEDRUN_OFF + 2, view_yview[0] + view_hview[0] - SPEEDRUN_OFF + 2, 
+                string_repeat("0", 2 - string_length(string(m))) + string(m) + ":" + 
+                string_repeat("0", 2 - string_length(string(s))) + string(s) + ":" + 
+                string_repeat("0", 2 - string_length(string_copy(string(ms), 0, 2))) + string_copy(string(ms), 0, 2));
+    
+        draw_set_color(c_white);
+        draw_text(view_xview[0] + SPEEDRUN_OFF, view_yview[0] + view_hview[0] - SPEEDRUN_OFF, 
+                string_repeat("0", 2 - string_length(string(m))) + string(m) + ":" + 
+                string_repeat("0", 2 - string_length(string(s))) + string(s) + ":" + 
+                string_repeat("0", 2 - string_length(string_copy(string(ms), 0, 2))) + string_copy(string(ms), 0, 2));
+    }
+    else
+    {
+        draw_set_color(c_black);
+        draw_text(view_xview[0] + SPEEDRUN_OFF + 2, view_yview[0] + view_hview[0] - SPEEDRUN_OFF + 2, 
+                string_repeat("0", 2 - string_length(string(m))) + string(m) + ":" + 
+                string_repeat("0", 2 - string_length(string(s))) + string(s) + ":" + 
+                string_repeat("0", 2 - string_length(string_copy(string(ms), 1, 1))) + string_copy(string(ms), 1, 1));
+    
+        draw_set_color(c_white);
+        draw_text(view_xview[0] + SPEEDRUN_OFF, view_yview[0] + view_hview[0] - SPEEDRUN_OFF, 
+                string_repeat("0", 2 - string_length(string(m))) + string(m) + ":" + 
+                string_repeat("0", 2 - string_length(string(s))) + string(s) + ":" + 
+                string_repeat("0", 2 - string_length(string_copy(string(ms), 1, 1))) + string_copy(string(ms), 1, 1));
+    }   
+    
+    draw_set_valign(fa_top);   
+
+    draw_set_colour(c_white);
+}
 </string>
           </argument>
         </arguments>

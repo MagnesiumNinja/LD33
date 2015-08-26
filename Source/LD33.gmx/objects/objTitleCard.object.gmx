@@ -32,7 +32,7 @@ FADE_OUT_RATE = 35;
 WAIT_TIME = 120;
 
 TITLE_OFF = 192;
-TEXT_OFF = 480;
+TEXT_OFF = 512;
 TEXT_BUFFER = 48;
 NAME_BUFFER = 32;
 
@@ -119,7 +119,19 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_alpha(alpha);
+            <string>// Calculate time
+var ms, s, m;
+ms = floor(global.TIME / 0.06);
+
+s = floor(ms / 1000);
+ms -= s * 1000;
+
+m = floor(s / 60);
+s -= m * 60;
+
+
+// Draw text
+draw_set_alpha(alpha);
 
 draw_set_font(fntTitleCard);
 draw_set_halign(fa_center);
@@ -129,6 +141,25 @@ draw_text(view_xview[0] + view_wview[0] / 2, view_yview[0] + TITLE_OFF, "The End
 draw_set_font(fntText);
 draw_text(view_xview[0] + view_wview[0] / 2, view_yview[0] + TITLE_OFF + TEXT_BUFFER * 2, "Deaths: " + string(global.DEATHS));
 
+// Draw the timer
+if (ms &gt; 99)
+{
+    draw_text(view_xview[0] + view_wview[0] / 2, view_yview[0] + TITLE_OFF + TEXT_BUFFER * 3, 
+            "Time: " +
+            string_repeat("0", 2 - string_length(string(m))) + string(m) + ":" + 
+            string_repeat("0", 2 - string_length(string(s))) + string(s) + ":" + 
+            string_repeat("0", 2 - string_length(string_copy(string(ms), 0, 2))) + string_copy(string(ms), 0, 2));
+}
+else
+{
+    draw_text(view_xview[0] + view_wview[0] / 2, view_yview[0] + TITLE_OFF + TEXT_BUFFER * 3, 
+            "Time: " +
+            string_repeat("0", 2 - string_length(string(m))) + string(m) + ":" + 
+            string_repeat("0", 2 - string_length(string(s))) + string(s) + ":" + 
+            string_repeat("0", 2 - string_length(string_copy(string(ms), 1, 1))) + string_copy(string(ms), 1, 1));
+}
+
+// Names
 draw_text(view_xview[0] + view_wview[0] / 2, view_yview[0] + TEXT_OFF, "Magnesium Ninja Studios");
 
 draw_set_font(fntName);
@@ -138,6 +169,8 @@ draw_text(view_xview[0] + view_wview[0] / 2, view_yview[0] + TEXT_OFF + NAME_BUF
 
 draw_set_halign(fa_left);
 draw_set_alpha(1);
+
+
 </string>
           </argument>
         </arguments>
